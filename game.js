@@ -4,6 +4,8 @@
 // GAME ENGINE
 // =========================================
 
+const GAME_NAME = "Transplant Tracker";
+
 const QUESTION_COUNT = 8;
 
 const SEEN_STORAGE_KEY =
@@ -13,6 +15,8 @@ const SEEN_STORAGE_KEY =
 // has its real public URL.
 const GAME_URL =
   "https://st3v30-2.github.io/transplant-tracker/";
+
+document.title = GAME_NAME;
 
 // -----------------------------------------
 // DOM
