@@ -12,7 +12,7 @@ const SEEN_STORAGE_KEY =
 // Replace this one value when the game
 // has its real public URL.
 const GAME_URL =
-  "https://YOUR-GAME-URL-HERE.example";
+  "https://st3v30-2.github.io/transplant-tracker/";
 
 // -----------------------------------------
 // DOM
