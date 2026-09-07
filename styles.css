@@ -5122,3 +5122,769 @@ button,
     rgba(57, 255, 20, 0.45);
 }
 
+
+/* =========================================================
+   DESKTOP FEEDBACK — COMPACT SAME-HEIGHT LAYOUT
+========================================================= */
+
+@media (min-width: 700px) {
+
+  /* Keep feedback from becoming a tall stacked panel */
+
+  #gameScreen .feedback-panel:not(.hidden) {
+    display: grid !important;
+
+    grid-template-columns:
+      52px
+      minmax(0, 1fr)
+      185px;
+
+    grid-template-areas:
+      "icon title button"
+      "icon text button";
+
+    align-items: center;
+
+    column-gap: 18px;
+    row-gap: 2px;
+
+    width: 100%;
+
+    height: 130px !important;
+    min-height: 130px !important;
+    max-height: 130px !important;
+
+    padding: 14px 18px !important;
+
+    margin-top: 0 !important;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+  }
+
+  #gameScreen .feedback-panel .feedback-icon {
+    grid-area: icon;
+
+    margin: 0 auto !important;
+  }
+
+  #gameScreen .feedback-panel h2 {
+    grid-area: title;
+
+    margin: 0 !important;
+
+    font-size: 25px !important;
+    line-height: 1.05 !important;
+
+    text-align: left;
+  }
+
+  #gameScreen .feedback-panel p {
+    grid-area: text;
+
+    margin: 0 !important;
+
+    font-size: 18px !important;
+    line-height: 1.1 !important;
+
+    text-align: left;
+  }
+
+  #gameScreen .feedback-panel .next-button {
+    grid-area: button;
+
+    width: 100% !important;
+
+    min-height: 58px !important;
+    height: auto !important;
+
+    margin: 0 !important;
+
+    padding: 10px 12px !important;
+  }
+
+  #gameScreen .feedback-panel.hidden {
+    display: none !important;
+  }
+
+}
+
+
+/* =========================================================
+   DESKTOP FEEDBACK — COMPACT ORIGINAL-STYLE CARD
+========================================================= */
+
+@media (min-width: 700px) {
+
+  #gameScreen .feedback-panel:not(.hidden) {
+    display: grid !important;
+
+    grid-template-columns:
+      auto auto;
+
+    grid-template-rows:
+      32px
+      24px
+      48px;
+
+    grid-template-areas:
+      "icon title"
+      "text text"
+      "button button";
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    column-gap: 10px;
+    row-gap: 3px;
+
+    width: 100%;
+
+    height: 130px !important;
+    min-height: 130px !important;
+    max-height: 130px !important;
+
+    padding: 8px 18px !important;
+
+    margin-top: 0 !important;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+  }
+
+
+  /* Pixel check / X sits beside the heading */
+
+  #gameScreen .feedback-panel .feedback-icon {
+    grid-area: icon;
+
+    width: auto;
+    height: auto;
+
+    margin: 0 !important;
+
+    align-self: center;
+    justify-self: end;
+  }
+
+
+  #gameScreen .feedback-panel h2 {
+    grid-area: title;
+
+    margin: 0 !important;
+
+    align-self: center;
+    justify-self: start;
+
+    font-size: 25px !important;
+    line-height: 1 !important;
+
+    text-align: left;
+  }
+
+
+  /* Answer explanation */
+
+  #gameScreen .feedback-panel p {
+    grid-area: text;
+
+    margin: 0 !important;
+
+    justify-self: center;
+
+    font-size: 18px !important;
+    line-height: 1 !important;
+
+    text-align: center;
+  }
+
+
+  /* Smaller centered version of the old button */
+
+  #gameScreen .feedback-panel .next-button {
+    grid-area: button;
+
+    width: auto !important;
+    min-width: 190px;
+    max-width: 260px;
+
+    min-height: 40px !important;
+    height: 40px !important;
+
+    margin: 0 auto !important;
+
+    padding: 6px 18px !important;
+
+    justify-self: center;
+
+    font-size: 9px !important;
+  }
+
+
+  #gameScreen .feedback-panel.hidden {
+    display: none !important;
+  }
+
+}
+
+
+/* =========================================================
+   DESKTOP FEEDBACK ICON POSITION FIX
+========================================================= */
+
+@media (min-width: 700px) {
+
+  #gameScreen .feedback-panel:not(.hidden) {
+    grid-template-columns:
+      52px auto;
+  }
+
+  /* Give the feedback icon its own fixed space again */
+
+  #gameScreen .feedback-panel .feedback-icon {
+    grid-area: icon;
+
+    position: relative;
+
+    width: 48px !important;
+    height: 42px !important;
+
+    margin: 0 !important;
+
+    align-self: center;
+    justify-self: center;
+
+    flex-shrink: 0;
+  }
+
+
+  /* Keep the correct pixel-check centered
+     inside that reserved space */
+
+  #gameScreen
+  .feedback-panel.feedback-correct
+  .feedback-icon::before {
+    left: 6px !important;
+    top: 18px !important;
+  }
+
+
+  /* Give the headline a little separation */
+
+  #gameScreen .feedback-panel h2 {
+    padding-left: 4px;
+  }
+
+}
+
+
+/* =========================================================
+   DESKTOP FEEDBACK — TEXT LEFT / BUTTON RIGHT
+========================================================= */
+
+@media (min-width: 700px) {
+
+  #gameScreen .feedback-panel:not(.hidden) {
+    display: grid !important;
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      210px;
+
+    grid-template-rows:
+      auto auto;
+
+    grid-template-areas:
+      "heading button"
+      "text button";
+
+    align-items: center;
+
+    column-gap: 24px;
+    row-gap: 5px;
+
+    width: 100%;
+
+    height: 130px !important;
+    min-height: 130px !important;
+    max-height: 130px !important;
+
+    padding:
+      15px 20px !important;
+
+    margin: 0 !important;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+  }
+
+
+  /* Combine icon + headline on the left */
+
+  #gameScreen .feedback-panel .feedback-icon {
+    grid-area: heading;
+
+    position: absolute;
+
+    width: 48px !important;
+    height: 42px !important;
+
+    margin: 0 !important;
+  }
+
+
+  #gameScreen .feedback-panel h2 {
+    grid-area: heading;
+
+    margin: 0 !important;
+
+    padding-left: 62px;
+
+    align-self: end;
+
+    font-size: 27px !important;
+    line-height: 1 !important;
+
+    text-align: left;
+  }
+
+
+  /* Answer explanation beneath headline */
+
+  #gameScreen .feedback-panel p {
+    grid-area: text;
+
+    margin: 0 !important;
+
+    padding-left: 62px;
+
+    align-self: start;
+
+    font-size: 19px !important;
+    line-height: 1.1 !important;
+
+    text-align: left;
+  }
+
+
+  /* Taller button on the right */
+
+  #gameScreen .feedback-panel .next-button {
+    grid-area: button;
+
+    align-self: center;
+    justify-self: stretch;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    height: 78px !important;
+    min-height: 78px !important;
+
+    margin: 0 !important;
+
+    padding:
+      10px 14px !important;
+
+    font-size: 10px !important;
+    line-height: 1.45 !important;
+  }
+
+
+  /* Keep correct pixel-check positioned correctly */
+
+  #gameScreen
+  .feedback-panel.feedback-correct
+  .feedback-icon::before {
+    left: 6px !important;
+    top: 18px !important;
+  }
+
+
+  #gameScreen .feedback-panel.hidden {
+    display: none !important;
+  }
+
+}
+
+
+/* =========================================================
+   DESKTOP FEEDBACK — CLEAN LEFT/RIGHT FINAL OVERRIDE
+========================================================= */
+
+@media (min-width: 700px) {
+
+  #gameScreen .feedback-panel:not(.hidden) {
+    display: grid !important;
+
+    grid-template-columns:
+      52px
+      minmax(0, 1fr)
+      210px !important;
+
+    grid-template-rows:
+      1fr
+      1fr !important;
+
+    grid-template-areas:
+      "icon title button"
+      "icon text button" !important;
+
+    align-items: center !important;
+
+    column-gap: 14px !important;
+    row-gap: 0 !important;
+
+    width: 100% !important;
+
+    height: 130px !important;
+    min-height: 130px !important;
+    max-height: 130px !important;
+
+    padding: 14px 18px !important;
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+
+    overflow: hidden !important;
+  }
+
+
+  /* ICON — fixed column, never overlaps text */
+
+  #gameScreen .feedback-panel .feedback-icon {
+    grid-area: icon !important;
+
+    position: relative !important;
+
+    width: 48px !important;
+    height: 42px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    align-self: center !important;
+    justify-self: center !important;
+
+    flex: none !important;
+  }
+
+
+  /* CORRECT pixel check */
+
+  #gameScreen
+  .feedback-panel.feedback-correct
+  .feedback-icon::before {
+    left: 6px !important;
+    top: 18px !important;
+  }
+
+
+  /* HEADLINE */
+
+  #gameScreen .feedback-panel h2 {
+    grid-area: title !important;
+
+    position: static !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    align-self: end !important;
+
+    text-align: left !important;
+
+    font-size: 26px !important;
+    line-height: 1 !important;
+  }
+
+
+  /* EXPLANATION */
+
+  #gameScreen .feedback-panel p {
+    grid-area: text !important;
+
+    position: static !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    align-self: start !important;
+
+    text-align: left !important;
+
+    font-size: 18px !important;
+    line-height: 1.15 !important;
+  }
+
+
+  /* TALL BUTTON ON RIGHT */
+
+  #gameScreen .feedback-panel .next-button {
+    grid-area: button !important;
+
+    position: static !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    height: 76px !important;
+    min-height: 76px !important;
+
+    margin: 0 !important;
+    padding: 10px 12px !important;
+
+    align-self: center !important;
+    justify-self: stretch !important;
+
+    font-size: 10px !important;
+    line-height: 1.4 !important;
+  }
+
+
+  #gameScreen .feedback-panel.hidden {
+    display: none !important;
+  }
+
+}
+
+
+/* =========================================================
+   DESKTOP FEEDBACK — VERTICALLY LEVEL
+========================================================= */
+
+@media (min-width: 700px) {
+
+  #gameScreen .feedback-panel:not(.hidden) {
+    display: grid !important;
+
+    grid-template-columns:
+      52px
+      minmax(0, 1fr)
+      210px !important;
+
+    grid-template-rows:
+      1fr !important;
+
+    grid-template-areas:
+      "icon copy button" !important;
+
+    align-items: center !important;
+
+    column-gap: 16px !important;
+
+    height: 130px !important;
+    min-height: 130px !important;
+    max-height: 130px !important;
+
+    padding: 14px 18px !important;
+  }
+
+
+  #gameScreen .feedback-panel .feedback-icon {
+    grid-area: icon !important;
+
+    position: relative !important;
+
+    width: 48px !important;
+    height: 42px !important;
+
+    margin: 0 !important;
+
+    align-self: center !important;
+    justify-self: center !important;
+  }
+
+
+  #gameScreen .feedback-panel h2 {
+    grid-area: copy !important;
+
+    margin: 0 0 26px 0 !important;
+    padding: 0 !important;
+
+    align-self: center !important;
+    justify-self: start !important;
+
+    font-size: 26px !important;
+    line-height: 1 !important;
+
+    text-align: left !important;
+  }
+
+
+  #gameScreen .feedback-panel p {
+    grid-area: copy !important;
+
+    margin: 30px 0 0 0 !important;
+    padding: 0 !important;
+
+    align-self: center !important;
+    justify-self: start !important;
+
+    font-size: 18px !important;
+    line-height: 1.1 !important;
+
+    text-align: left !important;
+  }
+
+
+  #gameScreen .feedback-panel .next-button {
+    grid-area: button !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    height: 76px !important;
+    min-height: 76px !important;
+
+    margin: 0 !important;
+
+    align-self: center !important;
+    justify-self: stretch !important;
+  }
+
+
+  #gameScreen
+  .feedback-panel.feedback-correct
+  .feedback-icon::before {
+    left: 6px !important;
+    top: 18px !important;
+  }
+
+}
+
+
+/* =========================================================
+   GAME HEADER — SINGLE LINE
+   Progress left / title center / score right
+========================================================= */
+
+#gameScreen .game-header {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(58px, 1fr)
+    auto
+    minmax(150px, 1fr) !important;
+
+  grid-template-rows:
+    1fr !important;
+
+  align-items: center !important;
+
+  gap: 12px !important;
+
+  padding:
+    10px 16px !important;
+}
+
+
+/* Allow the contents of game-stats
+   to occupy the main header grid */
+
+#gameScreen .game-stats {
+  display: contents !important;
+}
+
+
+/* Question number — left */
+
+#gameScreen #questionProgress {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+
+  justify-self: start !important;
+  align-self: center !important;
+
+  margin: 0 !important;
+
+  white-space: nowrap !important;
+}
+
+
+/* Game title — center */
+
+#gameScreen .brand {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+
+  justify-self: center !important;
+  align-self: center !important;
+
+  margin: 0 !important;
+
+  text-align: center !important;
+  white-space: nowrap !important;
+
+  line-height: 1 !important;
+}
+
+
+/* Score circles — right */
+
+#gameScreen .score-tracker {
+  grid-column: 3 !important;
+  grid-row: 1 !important;
+
+  justify-self: end !important;
+  align-self: center !important;
+
+  margin: 0 !important;
+
+  flex-wrap: nowrap !important;
+}
+
+
+/* =========================================================
+   SMALLER SCREENS
+========================================================= */
+
+@media (max-width: 620px) {
+
+  #gameScreen .game-header {
+    grid-template-columns:
+      48px
+      minmax(0, 1fr)
+      auto !important;
+
+    gap: 6px !important;
+
+    padding:
+      9px 8px !important;
+  }
+
+  #gameScreen .brand {
+    font-size:
+      clamp(6px, 2vw, 9px) !important;
+
+    letter-spacing:
+      -0.02em !important;
+  }
+
+  #gameScreen #questionProgress {
+    font-size:
+      19px !important;
+  }
+
+  #gameScreen .score-tracker {
+    gap:
+      2px !important;
+  }
+
+  #gameScreen .score-dot {
+    width:
+      14px !important;
+
+    height:
+      14px !important;
+
+    flex-basis:
+      14px !important;
+  }
+
+}
+
