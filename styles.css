@@ -1,0 +1,5124 @@
+/* =========================================
+   BASE
+========================================= */
+
+:root {
+  --bg: #111111;
+  --panel: #191919;
+  --panel-2: #222222;
+  --border: #343434;
+
+  --text: #f7f7f4;
+  --muted: #a9a9a4;
+  --faint: #73736e;
+
+  --ridgewood: #2d8f59;
+  --ridgewood-hover: #25784a;
+
+  --bushwick: #bb4a3d;
+  --bushwick-hover: #9f3c32;
+
+  --accent: #f0d56a;
+
+  --radius: 14px;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  background: var(--bg);
+  color: var(--text);
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font: inherit;
+}
+
+button,
+img {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  touch-action: manipulation;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+
+  border: 0;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+
+/* =========================================
+   SHARED SCREEN LAYOUT
+========================================= */
+
+#app {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.primary-button,
+.secondary-button,
+.answer-button {
+  width: 100%;
+
+  min-height: 58px;
+
+  border: 0;
+  border-radius: 12px;
+
+  padding: 15px 18px;
+
+  font-size: 17px;
+  font-weight: 800;
+
+  letter-spacing: 0.035em;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.08s ease,
+    background 0.12s ease,
+    opacity 0.12s ease;
+}
+
+.primary-button {
+  background: var(--text);
+  color: #111;
+}
+
+.secondary-button {
+  background: var(--panel-2);
+  color: var(--text);
+
+  border: 1px solid var(--border);
+}
+
+button:active {
+  transform: scale(0.985);
+}
+
+button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+
+/* =========================================
+   START SCREEN
+========================================= */
+
+.start-screen {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    max(24px, env(safe-area-inset-top))
+    20px
+    max(24px, env(safe-area-inset-bottom));
+}
+
+.start-card {
+  width: 100%;
+  max-width: 520px;
+
+  text-align: center;
+}
+
+.eyebrow {
+  margin:
+    0 0 18px;
+
+  color: var(--accent);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+}
+
+.start-card h1 {
+  margin: 0;
+
+  font-size:
+    clamp(48px, 15vw, 78px);
+
+  line-height: 0.92;
+
+  letter-spacing: -0.055em;
+}
+
+.start-card h1 span {
+  display: block;
+
+  margin: 8px 0;
+
+  color: var(--muted);
+
+  font-size: 0.42em;
+  font-style: italic;
+  font-weight: 500;
+
+  letter-spacing: 0;
+}
+
+.intro {
+  max-width: 430px;
+
+  margin:
+    28px auto;
+
+  color: var(--muted);
+
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.start-card .primary-button {
+  max-width: 380px;
+
+  margin:
+    4px auto 0;
+}
+
+.start-note {
+  margin:
+    14px 0 0;
+
+  color: var(--faint);
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   GAME
+========================================= */
+
+.game-screen {
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+
+  padding-bottom:
+    max(
+      18px,
+      env(safe-area-inset-bottom)
+    );
+}
+
+.game-header {
+  min-height: 58px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  padding:
+    max(
+      12px,
+      env(safe-area-inset-top)
+    )
+    16px
+    10px;
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+.brand {
+  min-width: 0;
+
+  overflow: hidden;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.game-stats {
+  flex-shrink: 0;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  white-space: nowrap;
+}
+
+.game-stats strong {
+  color: var(--text);
+}
+
+.stat-divider {
+  margin: 0 3px;
+}
+
+
+/* =========================================
+   PHOTO
+========================================= */
+
+.photo-stage {
+  padding:
+    12px 12px 0;
+}
+
+.photo-frame {
+  position: relative;
+
+  width: 100%;
+
+  height:
+    min(
+      52vh,
+      520px
+    );
+
+  min-height: 260px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #050505;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: var(--radius);
+}
+
+#gamePhoto {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  opacity: 0;
+
+  transition:
+    opacity 0.15s ease;
+}
+
+#gamePhoto.loaded {
+  opacity: 1;
+}
+
+.photo-loading {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform:
+    translate(-50%, -50%);
+
+  color: var(--faint);
+
+  font-size: 14px;
+}
+
+.photo-credit {
+  padding:
+    7px 3px 0;
+
+  color: var(--faint);
+
+  font-size: 11px;
+
+  text-align: right;
+}
+
+
+/* =========================================
+   ANSWERS
+========================================= */
+
+.answer-area {
+  padding:
+    12px 12px 0;
+}
+
+.question-prompt {
+  margin:
+    0 0 10px;
+
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.answer-buttons {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 10px;
+}
+
+.answer-button {
+  min-height: 66px;
+
+  color: white;
+
+  font-size: 18px;
+}
+
+.ridgewood-button {
+  background:
+    var(--ridgewood);
+}
+
+.bushwick-button {
+  background:
+    var(--bushwick);
+}
+
+
+/* =========================================
+   ANSWER FEEDBACK
+========================================= */
+
+.feedback-panel {
+  padding:
+    18px 16px
+    max(
+      18px,
+      env(safe-area-inset-bottom)
+    );
+
+  text-align: center;
+}
+
+.feedback-icon {
+  font-size: 34px;
+  line-height: 1;
+}
+
+.feedback-panel h2 {
+  margin:
+    8px 0 5px;
+
+  font-size: 24px;
+}
+
+.feedback-panel p {
+  margin:
+    0 auto 16px;
+
+  max-width: 480px;
+
+  color: var(--muted);
+
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.next-button {
+  max-width: 420px;
+}
+
+
+/* =========================================
+   RESULTS
+========================================= */
+
+.results-screen {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    max(
+      24px,
+      env(safe-area-inset-top)
+    )
+    20px
+    max(
+      24px,
+      env(safe-area-inset-bottom)
+    );
+}
+
+.results-card {
+  width: 100%;
+  max-width: 540px;
+
+  text-align: center;
+}
+
+.final-score {
+  display: flex;
+
+  align-items: baseline;
+  justify-content: center;
+
+  margin:
+    6px 0 18px;
+}
+
+.final-score strong {
+  font-size:
+    clamp(82px, 25vw, 128px);
+
+  line-height: 0.9;
+
+  letter-spacing: -0.07em;
+}
+
+.final-score span {
+  margin-left: 8px;
+
+  color: var(--muted);
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.results-card h2 {
+  margin:
+    0 0 10px;
+
+  font-size: 27px;
+}
+
+#resultMessage {
+  max-width: 440px;
+
+  margin:
+    0 auto 24px;
+
+  color: var(--muted);
+
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.results-actions {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 10px;
+}
+
+.seen-note {
+  margin:
+    16px 0 0;
+
+  color: var(--faint);
+
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   TABLET / DESKTOP
+========================================= */
+
+@media (min-width: 700px) {
+
+  .game-screen {
+    padding:
+      0 24px 28px;
+  }
+
+  .game-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .photo-stage,
+  .answer-area {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .photo-frame {
+    height:
+      min(
+        64vh,
+        650px
+      );
+
+    min-height: 420px;
+  }
+
+  .answer-buttons {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+  }
+
+  .answer-button {
+    min-height: 72px;
+
+    font-size: 19px;
+  }
+
+  .results-actions {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1050px) {
+
+  .game-header {
+    min-height: 66px;
+  }
+
+  .brand {
+    font-size: 16px;
+  }
+
+  .game-stats {
+    font-size: 14px;
+  }
+
+  .photo-frame {
+    height:
+      min(
+        68vh,
+        700px
+      );
+  }
+
+}
+
+
+/* =========================================
+   HOVER — POINTER DEVICES ONLY
+========================================= */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .primary-button:hover {
+    background: #deded9;
+  }
+
+  .secondary-button:hover {
+    background: #303030;
+  }
+
+  .ridgewood-button:hover:not(:disabled) {
+    background:
+      var(--ridgewood-hover);
+  }
+
+  .bushwick-button:hover:not(:disabled) {
+    background:
+      var(--bushwick-hover);
+  }
+
+}
+
+
+/* =========================================
+   VERY SHORT PHONE SCREENS
+========================================= */
+
+@media (max-height: 650px) {
+
+  .game-header {
+    min-height: 48px;
+  }
+
+  .photo-stage {
+    padding-top: 8px;
+  }
+
+  .photo-frame {
+    height: 43vh;
+    min-height: 220px;
+  }
+
+  .answer-button {
+    min-height: 58px;
+  }
+
+  .question-prompt {
+    margin-bottom: 7px;
+  }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (
+  prefers-reduced-motion:
+  reduce
+) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+
+    transition-duration:
+      0.01ms !important;
+
+    animation-duration:
+      0.01ms !important;
+
+    animation-iteration-count:
+      1 !important;
+  }
+
+}
+
+/* =========================================
+   8-QUESTION SCORE TRACKER
+========================================= */
+
+.game-stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.score-tracker {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.score-dot {
+  width: 20px;
+  height: 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 20px;
+
+  border:
+    2px solid #666;
+
+  border-radius: 50%;
+
+  color: white;
+
+  font-size: 13px;
+  font-weight: 900;
+
+  line-height: 1;
+
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.score-dot.correct {
+  background: var(--ridgewood);
+  border-color: var(--ridgewood);
+
+  transform: scale(1.08);
+}
+
+.score-dot.wrong {
+  background: var(--bushwick);
+  border-color: var(--bushwick);
+
+  transform: scale(1.08);
+}
+
+@media (max-width: 520px) {
+
+  .game-header {
+    align-items: flex-start;
+  }
+
+  .game-stats {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+  }
+
+  .score-tracker {
+    gap: 4px;
+  }
+
+  .score-dot {
+    width: 18px;
+    height: 18px;
+
+    flex-basis: 18px;
+
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================
+   WELCOME OVERLAY
+========================================= */
+
+.start-background {
+  width: 100%;
+  max-width: 560px;
+  text-align: center;
+}
+
+.welcome-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 50;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    max(20px, env(safe-area-inset-top))
+    20px
+    max(20px, env(safe-area-inset-bottom));
+
+  background:
+    rgba(0, 0, 0, 0.72);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.welcome-modal {
+  width: 100%;
+  max-width: 520px;
+
+  max-height: 90vh;
+  overflow-y: auto;
+
+  padding: 28px 24px;
+
+  background: var(--panel);
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 18px 60px
+    rgba(0, 0, 0, 0.45);
+
+  text-align: center;
+}
+
+.welcome-kicker {
+  margin: 0 0 10px;
+
+  color: var(--accent);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+}
+
+.welcome-modal h2 {
+  margin:
+    0 0 16px;
+
+  font-size:
+    clamp(26px, 7vw, 36px);
+
+  line-height: 1.08;
+}
+
+.welcome-modal p {
+  margin:
+    0 auto 14px;
+
+  color: var(--muted);
+
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.welcome-modal .welcome-note {
+  margin:
+    20px 0 16px;
+
+  color: var(--text);
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.welcome-modal .primary-button {
+  max-width: 360px;
+}
+
+
+/* =========================================
+   FINAL SCORE TRACKER
+========================================= */
+
+.final-score-tracker {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin:
+    0 0 24px;
+}
+
+.final-score-tracker .score-dot {
+  width: 28px;
+  height: 28px;
+
+  flex-basis: 28px;
+
+  font-size: 17px;
+}
+
+
+/* =========================================
+   RESULTS ACTIONS
+========================================= */
+
+.results-actions {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 10px;
+}
+
+.follow-button {
+  width: 100%;
+
+  min-height: 58px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 18px;
+
+  background: #000;
+  color: #fff;
+
+  border:
+    1px solid #444;
+
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  letter-spacing: 0.025em;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.copy-confirmation {
+  margin:
+    14px 0 0;
+
+  color: var(--accent);
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .follow-button:hover {
+    background: #202020;
+  }
+
+}
+
+
+/* =========================================
+   WIDER RESULT SCREENS
+========================================= */
+
+@media (min-width: 700px) {
+
+  .results-actions {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .follow-button {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* =========================================================
+   RIDGEWOOD OR BUSHWICK — RETRO ARCADE THEME
+   Visual override layer
+========================================================= */
+
+:root {
+  --bg: #050505;
+  --panel: #0d0d0d;
+  --panel-raised: #151515;
+
+  --text: #fffdf0;
+  --muted: #b9b9b9;
+
+  --cyan: #00f5ff;
+  --pink: #ff2bd6;
+  --acid: #d7ff22;
+  --yellow: #fff500;
+  --red: #ff3b5c;
+
+  --ridgewood: #00f5ff;
+  --bushwick: #ff2b83;
+
+  --border: #fff500;
+  --accent: #d7ff22;
+
+  --shadow-cyan:
+    0 0 6px rgba(0, 245, 255, 0.85),
+    0 0 18px rgba(0, 245, 255, 0.35);
+
+  --shadow-pink:
+    0 0 6px rgba(255, 43, 214, 0.85),
+    0 0 18px rgba(255, 43, 214, 0.35);
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+
+  background:
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(255, 43, 214, 0.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(0, 245, 255, 0.10),
+      transparent 35%
+    ),
+    var(--bg);
+
+  color: var(--text);
+
+  font-family:
+    "VT323",
+    ui-monospace,
+    monospace;
+
+  font-size: 21px;
+
+  letter-spacing: 0.02em;
+}
+
+body::before {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  z-index: 9999;
+
+  pointer-events: none;
+
+  opacity: 0.09;
+
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 3px,
+      rgba(255, 255, 255, 0.14) 4px
+    );
+}
+
+
+/* =========================================================
+   START / BRANDING
+========================================================= */
+
+.start-screen {
+  background:
+    radial-gradient(
+      circle at center,
+      #181818 0%,
+      #050505 68%
+    );
+}
+
+.start-background {
+  position: relative;
+
+  padding: 28px 18px;
+
+  border:
+    2px dashed
+    rgba(0, 245, 255, 0.55);
+}
+
+.start-background::before {
+  content: "★ ★ ★";
+
+  display: block;
+
+  margin-bottom: 16px;
+
+  color: var(--yellow);
+
+  font-family:
+    "Press Start 2P",
+    monospace;
+
+  font-size: 11px;
+
+  letter-spacing: 8px;
+
+  text-shadow:
+    0 0 8px
+    rgba(255, 245, 0, 0.9);
+}
+
+.eyebrow,
+.welcome-kicker {
+  font-family:
+    "Press Start 2P",
+    monospace;
+
+  color: var(--acid);
+
+  font-size:
+    clamp(8px, 2.3vw, 11px);
+
+  line-height: 1.6;
+
+  letter-spacing: 0.08em;
+
+  text-shadow:
+    0 0 8px
+    rgba(215, 255, 34, 0.7);
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.arcade-title {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 4px;
+
+  margin:
+    10px auto 0;
+
+  line-height: 0.95;
+
+  text-transform: uppercase;
+}
+
+.ridgewood-word {
+  font-family:
+    "Pixelify Sans",
+    sans-serif;
+
+  font-size:
+    clamp(48px, 13vw, 92px);
+
+  font-weight: 700;
+
+  color: var(--ridgewood);
+
+  letter-spacing: -0.035em;
+
+  text-shadow:
+    3px 3px 0 #003b41,
+    0 0 8px rgba(0, 245, 255, 0.9),
+    0 0 24px rgba(0, 245, 255, 0.45);
+}
+
+.versus-word {
+  margin:
+    5px 0 7px;
+
+  font-family:
+    "Press Start 2P",
+    monospace;
+
+  font-size:
+    clamp(11px, 3vw, 17px);
+
+  color: var(--yellow);
+
+  transform: rotate(-4deg);
+
+  text-shadow:
+    0 0 8px
+    rgba(255, 245, 0, 0.8);
+}
+
+.bushwick-word {
+  font-family:
+    "Bungee",
+    sans-serif;
+
+  font-size:
+    clamp(42px, 11vw, 78px);
+
+  color: var(--bushwick);
+
+  letter-spacing: -0.025em;
+
+  transform: skew(-3deg);
+
+  text-shadow:
+    4px 4px 0 #560021,
+    0 0 8px rgba(255, 43, 131, 0.95),
+    0 0 25px rgba(255, 43, 131, 0.45);
+}
+
+
+/* =========================================================
+   WELCOME MODAL
+========================================================= */
+
+.welcome-overlay {
+  background:
+    rgba(0, 0, 0, 0.68);
+
+  backdrop-filter:
+    blur(4px);
+
+  -webkit-backdrop-filter:
+    blur(4px);
+}
+
+.welcome-modal {
+  position: relative;
+
+  max-width: 540px;
+
+  padding:
+    30px 25px 26px;
+
+  background:
+    rgba(5, 5, 5, 0.96);
+
+  border:
+    3px solid
+    var(--cyan);
+
+  border-radius: 0;
+
+  box-shadow:
+    7px 7px 0
+      var(--pink),
+    -5px -5px 0
+      var(--yellow),
+    var(--shadow-cyan);
+}
+
+.welcome-modal::before {
+  content:
+    "* * * WELCOME PLAYER * * *";
+
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: var(--pink);
+
+  font-family:
+    "Press Start 2P",
+    monospace;
+
+  font-size:
+    clamp(8px, 2.4vw, 11px);
+
+  line-height: 1.6;
+
+  text-shadow:
+    0 0 8px
+    rgba(255, 43, 214, 0.8);
+}
+
+.welcome-modal h2 {
+  margin:
+    0 0 18px;
+
+  font-family:
+    "Pixelify Sans",
+    sans-serif;
+
+  font-size:
+    clamp(30px, 8vw, 48px);
+
+  line-height: 0.98;
+
+  color: var(--text);
+
+  text-transform: uppercase;
+}
+
+.welcome-modal p {
+  max-width: 460px;
+
+  color: #e6e6e6;
+
+  font-size: 21px;
+
+  line-height: 1.18;
+}
+
+.welcome-modal .welcome-note {
+  color: var(--yellow);
+
+  font-family:
+    "Press Start 2P",
+    monospace;
+
+  font-size: 9px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   GENERAL BUTTONS
+========================================================= */
+
+button,
+.follow-button {
+  -webkit-tap-highlight-color:
+    transparent;
+}
+
+.primary-button,
+.secondary-button,
+.follow-button,
+.answer-button {
+  border-radius: 0;
+
+  font-family:
+    "Press Start 2P",
+    monospace;
+
+  text-transform: uppercase;
+
+  line-height: 1.45;
+
+  transition:
+    transform 100ms ease,
+    box-shadow 100ms ease,
+    background 100ms ease;
+}
+
+.primary-button {
+  min-height: 58px;
+
+  background:
+    var(--acid);
+
+  color: #090909;
+
+  border:
+    3px solid
+    #ffffff;
+
+  box-shadow:
+    5px 5px 0
+    var(--pink);
+
+  font-size:
+    clamp(10px, 2.8vw, 13px);
+}
+
+.secondary-button {
+  min-height: 58px;
+
+  background:
+    #080808;
+
+  color: var(--cyan);
+
+  border:
+    3px solid
+    var(--cyan);
+
+  box-shadow:
+    5px 5px 0
+    rgba(0, 245, 255, 0.35);
+
+  font-size:
+    clamp(10px, 2.8vw, 13px);
+}
+
+.follow-button {
+  min-height: 58px;
+
+  background:
+    var(--pink);
+
+  color: #080808;
+
+  border:
+    3px solid
+    #ffffff;
+
+  box-shadow:
+    5px 5px 0
+    var(--cyan);
+
+  font-size:
+    clamp(9px, 2.6vw, 12px);
+}
+
+.primary-button:active,
+.secondary-button:active,
+.follow-button:active,
+.answer-button:active {
+  transform:
+    translate(4px, 4px);
+
+  box-shadow:
+    1px 1px 0 #000;
+}
+
+
+/* =========================================================
+   GAME HEADER
+========================================================= */
+
+.game-header {
+  border-bottom:
+    3px solid
+    var(--yellow);
+
+  background:
+    #080808;
+
+  box-shadow:
+    0 4px 0
+    rgba(255, 43, 214, 0.55);
+}
+
+.brand {
+  font-family:
+    "Press Start 2P",
+    monospace;
+
+  color: var(--text);
+
+  font-size:
+    clamp(9px, 2.6vw, 12px);
+
+  line-height: 1.5;
+
+  text-transform: uppercase;
+}
+
+#questionProgress {
+  color: var(--acid);
+
+  font-family:
+    "VT323",
+    monospace;
+
+  font-size: 25px;
+}
+
+
+/* =========================================================
+   SCORE DOTS
+========================================================= */
+
+.score-dot {
+  border:
+    2px solid
+    #727272;
+
+  background:
+    #111;
+
+  color: #000;
+
+  font-family:
+    "VT323",
+    monospace;
+
+  font-weight: 700;
+
+  box-shadow:
+    inset 0 0 0 2px
+    #000;
+}
+
+.score-dot.correct {
+  background:
+    var(--cyan);
+
+  border-color:
+    #ffffff;
+
+  color:
+    #00181a;
+
+  box-shadow:
+    0 0 8px
+      var(--cyan),
+    0 0 18px
+      rgba(0, 245, 255, 0.5);
+}
+
+.score-dot.wrong {
+  background:
+    var(--pink);
+
+  border-color:
+    #ffffff;
+
+  color:
+    #26000f;
+
+  box-shadow:
+    0 0 8px
+      var(--pink),
+    0 0 18px
+      rgba(255, 43, 131, 0.5);
+}
+
+
+/* =========================================================
+   PHOTO
+========================================================= */
+
+.photo-stage {
+  padding-top:
+    18px;
+}
+
+.photo-frame {
+  background:
+    #000;
+
+  border:
+    4px solid
+    var(--cyan);
+
+  border-radius: 0;
+
+  box-shadow:
+    6px 6px 0
+      var(--pink),
+    0 0 20px
+      rgba(0, 245, 255, 0.22);
+}
+
+.photo-credit {
+  margin-top:
+    12px;
+
+  color:
+    #909090;
+
+  font-size:
+    16px;
+
+  text-transform:
+    uppercase;
+
+  letter-spacing:
+    0.08em;
+}
+
+#photoSource {
+  color:
+    var(--yellow);
+}
+
+
+/* =========================================================
+   QUESTION / ANSWERS
+========================================================= */
+
+.question-prompt {
+  margin-bottom:
+    14px;
+
+  color:
+    var(--text);
+
+  font-family:
+    "Press Start 2P",
+    monospace;
+
+  font-size:
+    clamp(10px, 3vw, 13px);
+
+  line-height:
+    1.6;
+
+  text-transform:
+    uppercase;
+}
+
+.answer-buttons {
+  gap:
+    14px;
+}
+
+.ridgewood-button {
+  min-height:
+    72px;
+
+  background:
+    #061417;
+
+  color:
+    var(--ridgewood);
+
+  border:
+    4px solid
+    var(--ridgewood);
+
+  box-shadow:
+    5px 5px 0
+    #00383e;
+
+  font-family:
+    "Pixelify Sans",
+    sans-serif;
+
+  font-size:
+    clamp(27px, 8vw, 40px);
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    0.01em;
+
+  text-shadow:
+    0 0 8px
+    rgba(0, 245, 255, 0.65);
+}
+
+.bushwick-button {
+  min-height:
+    72px;
+
+  background:
+    #17050c;
+
+  color:
+    var(--bushwick);
+
+  border:
+    4px solid
+    var(--bushwick);
+
+  box-shadow:
+    5px 5px 0
+    #5e082b;
+
+  font-family:
+    "Bungee",
+    sans-serif;
+
+  font-size:
+    clamp(22px, 6.8vw, 34px);
+
+  letter-spacing:
+    -0.01em;
+
+  text-shadow:
+    0 0 8px
+    rgba(255, 43, 131, 0.65);
+}
+
+
+/* =========================================================
+   ANSWER FEEDBACK
+========================================================= */
+
+.feedback-panel {
+  background:
+    #090909;
+
+  border:
+    3px dashed
+    var(--yellow);
+
+  border-radius:
+    0;
+
+  box-shadow:
+    5px 5px 0
+    rgba(255, 245, 0, 0.35);
+}
+
+.feedback-icon {
+  color:
+    var(--acid);
+
+  font-family:
+    "Press Start 2P",
+    monospace;
+
+  font-size:
+    34px;
+
+  text-shadow:
+    0 0 12px
+    rgba(215, 255, 34, 0.8);
+}
+
+.feedback-panel h2 {
+  font-family:
+    "Pixelify Sans",
+    sans-serif;
+
+  font-size:
+    clamp(30px, 8vw, 45px);
+
+  text-transform:
+    uppercase;
+}
+
+.feedback-panel p {
+  font-size:
+    22px;
+}
+
+
+/* =========================================================
+   RESULTS
+========================================================= */
+
+.results-screen {
+  background:
+    radial-gradient(
+      circle at 50% 25%,
+      rgba(255, 43, 214, 0.15),
+      transparent 38%
+    ),
+    #050505;
+}
+
+.results-card {
+  position:
+    relative;
+
+  background:
+    #090909;
+
+  border:
+    3px solid
+    var(--pink);
+
+  border-radius:
+    0;
+
+  box-shadow:
+    7px 7px 0
+      var(--cyan),
+    -5px -5px 0
+      var(--yellow);
+}
+
+.results-card::before {
+  content:
+    "★ GAME OVER ★";
+
+  display:
+    block;
+
+  margin-bottom:
+    18px;
+
+  color:
+    var(--yellow);
+
+  font-family:
+    "Press Start 2P",
+    monospace;
+
+  font-size:
+    clamp(9px, 2.8vw, 12px);
+
+  line-height:
+    1.5;
+
+  text-shadow:
+    0 0 9px
+    rgba(255, 245, 0, 0.8);
+}
+
+.final-score {
+  font-family:
+    "Pixelify Sans",
+    sans-serif;
+
+  color:
+    var(--cyan);
+
+  text-shadow:
+    0 0 10px
+      rgba(0, 245, 255, 0.95),
+    0 0 28px
+      rgba(0, 245, 255, 0.45);
+}
+
+.final-score strong {
+  font-size:
+    clamp(82px, 24vw, 150px);
+}
+
+.final-score span {
+  color:
+    var(--pink);
+}
+
+#resultHeadline {
+  font-family:
+    "Bungee",
+    sans-serif;
+
+  color:
+    var(--yellow);
+
+  font-size:
+    clamp(27px, 7vw, 42px);
+
+  line-height:
+    1.05;
+
+  text-transform:
+    uppercase;
+}
+
+#resultMessage {
+  font-size:
+    23px;
+
+  line-height:
+    1.2;
+}
+
+.seen-note {
+  color:
+    #777;
+
+  font-size:
+    15px;
+}
+
+.copy-confirmation {
+  color:
+    var(--acid);
+
+  font-family:
+    "Press Start 2P",
+    monospace;
+
+  font-size:
+    9px;
+}
+
+
+/* =========================================================
+   DESKTOP HOVER
+========================================================= */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .ridgewood-button:hover {
+    background:
+      var(--ridgewood);
+
+    color:
+      #001417;
+
+    transform:
+      translate(-2px, -2px);
+
+    box-shadow:
+      8px 8px 0
+      #00383e;
+  }
+
+  .bushwick-button:hover {
+    background:
+      var(--bushwick);
+
+    color:
+      #140008;
+
+    transform:
+      translate(-2px, -2px);
+
+    box-shadow:
+      8px 8px 0
+      #5e082b;
+  }
+
+  .primary-button:hover {
+    transform:
+      translate(-2px, -2px);
+
+    box-shadow:
+      8px 8px 0
+      var(--pink);
+  }
+
+  .secondary-button:hover {
+    transform:
+      translate(-2px, -2px);
+
+    box-shadow:
+      8px 8px 0
+      rgba(0, 245, 255, 0.5);
+  }
+
+  .follow-button:hover {
+    background:
+      var(--pink);
+
+    color:
+      #000;
+
+    transform:
+      translate(-2px, -2px);
+
+    box-shadow:
+      8px 8px 0
+      var(--cyan);
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 520px) {
+
+  body {
+    font-size:
+      19px;
+  }
+
+  .welcome-modal {
+    padding:
+      25px 18px 22px;
+
+    box-shadow:
+      5px 5px 0
+        var(--pink),
+      -3px -3px 0
+        var(--yellow);
+  }
+
+  .ridgewood-button,
+  .bushwick-button {
+    min-height:
+      66px;
+  }
+
+  .game-header {
+    gap:
+      8px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (
+  prefers-reduced-motion:
+  reduce
+) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior:
+      auto !important;
+
+    transition-duration:
+      0.01ms !important;
+  }
+
+}
+
+
+/* =========================================================
+   NEIGHBORHOOD COLOR + TYPE TWEAK
+   Keep existing layout/window styling
+========================================================= */
+
+:root {
+  --ridgewood-choice: #29f0c0;
+  --bushwick-choice: #ff3344;
+}
+
+
+/* RIDGEWOOD — friendlier pixel treatment */
+
+.ridgewood-button {
+  font-family:
+    "Pixelify Sans",
+    sans-serif;
+
+  font-weight: 600;
+
+  font-size:
+    clamp(28px, 8vw, 42px);
+
+  letter-spacing:
+    0.02em;
+
+  color:
+    var(--ridgewood-choice);
+
+  background:
+    #061411;
+
+  border-color:
+    var(--ridgewood-choice);
+
+  box-shadow:
+    5px 5px 0 #075b47;
+
+  text-shadow:
+    0 0 7px rgba(41, 240, 192, 0.75);
+}
+
+
+/* BUSHWICK — same pixel family, harder treatment */
+
+.bushwick-button {
+  font-family:
+    "Pixelify Sans",
+    sans-serif;
+
+  font-weight: 700;
+
+  font-size:
+    clamp(30px, 8.5vw, 44px);
+
+  letter-spacing:
+    -0.03em;
+
+  color:
+    var(--bushwick-choice);
+
+  background:
+    #180507;
+
+  border-color:
+    var(--bushwick-choice);
+
+  box-shadow:
+    5px 5px 0 #73131c;
+
+  text-shadow:
+    2px 2px 0 #5b0710,
+    0 0 8px rgba(255, 51, 68, 0.72);
+
+  transform:
+    skew(-2deg);
+}
+
+
+/* Match the title words to the neighborhood colors,
+   without changing the existing title layout. */
+
+.ridgewood-word {
+  color:
+    var(--ridgewood-choice);
+}
+
+.bushwick-word {
+  color:
+    var(--bushwick-choice);
+}
+
+
+/* Desktop hover */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .ridgewood-button:hover {
+    background:
+      var(--ridgewood-choice);
+
+    color:
+      #04110d;
+
+    box-shadow:
+      8px 8px 0 #075b47;
+  }
+
+  .bushwick-button:hover {
+    background:
+      var(--bushwick-choice);
+
+    color:
+      #150204;
+
+    box-shadow:
+      8px 8px 0 #73131c;
+  }
+
+}
+
+
+/* =========================================================
+   TERMINAL GREEN UI ACCENTS
+   Matrix / homebrew shell treatment
+========================================================= */
+
+:root {
+  --terminal-green: #39ff14;
+  --terminal-green-dim: #147a0d;
+  --terminal-green-dark: #051505;
+  --terminal-green-glow:
+    0 0 5px rgba(57, 255, 20, 0.95),
+    0 0 14px rgba(57, 255, 20, 0.55);
+}
+
+
+/* PHOTO FRAME */
+
+.photo-frame {
+  background:
+    #000;
+
+  border:
+    3px solid
+    var(--terminal-green);
+
+  box-shadow:
+    5px 5px 0
+      var(--terminal-green-dim),
+    0 0 14px
+      rgba(57, 255, 20, 0.32);
+}
+
+
+/* PHOTO SOURCE TEXT */
+
+#photoSource {
+  color:
+    var(--terminal-green);
+
+  text-shadow:
+    0 0 5px
+    rgba(57, 255, 20, 0.6);
+}
+
+
+/* HEADER */
+
+.game-header {
+  border-bottom-color:
+    var(--terminal-green);
+
+  box-shadow:
+    0 3px 0
+    var(--terminal-green-dim);
+}
+
+#questionProgress {
+  color:
+    var(--terminal-green);
+
+  text-shadow:
+    var(--terminal-green-glow);
+}
+
+
+/* UNANSWERED SCORE DOTS */
+
+.score-dot {
+  background:
+    #020802;
+
+  border:
+    2px solid
+    var(--terminal-green-dim);
+
+  color:
+    var(--terminal-green);
+
+  box-shadow:
+    inset 0 0 5px
+    rgba(57, 255, 20, 0.16);
+}
+
+
+/* CORRECT DOT */
+
+.score-dot.correct {
+  background:
+    var(--terminal-green);
+
+  border-color:
+    #baffad;
+
+  color:
+    #001600;
+
+  box-shadow:
+    0 0 7px
+      var(--terminal-green),
+    0 0 16px
+      rgba(57, 255, 20, 0.65);
+}
+
+
+/* INCORRECT DOT — keep red,
+   but make it feel like the same terminal system */
+
+.score-dot.wrong {
+  background:
+    var(--bushwick-choice);
+
+  border-color:
+    #ff9aa2;
+
+  color:
+    #1c0003;
+
+  box-shadow:
+    0 0 7px
+      var(--bushwick-choice),
+    0 0 15px
+      rgba(255, 51, 68, 0.55);
+}
+
+
+/* FINAL SCORE */
+
+.final-score {
+  color:
+    var(--terminal-green);
+
+  text-shadow:
+    0 0 7px
+      rgba(57, 255, 20, 1),
+    0 0 22px
+      rgba(57, 255, 20, 0.45);
+}
+
+
+/* FINAL SCORE DOTS */
+
+.final-score-tracker .score-dot.correct {
+  background:
+    var(--terminal-green);
+
+  border-color:
+    #baffad;
+}
+
+
+/* LOADING TEXT */
+
+.photo-loading {
+  color:
+    var(--terminal-green);
+
+  font-family:
+    "VT323",
+    monospace;
+
+  text-shadow:
+    0 0 6px
+    rgba(57, 255, 20, 0.7);
+}
+
+
+/* SUBTLE TERMINAL-LIKE IMAGE SCREEN */
+
+.photo-frame::after {
+  content: "";
+
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  pointer-events:
+    none;
+
+  box-shadow:
+    inset 0 0 18px
+    rgba(57, 255, 20, 0.08);
+}
+
+
+
+/* =========================================================
+   FULL TERMINAL TREATMENT
+   Opening + Results
+   No blue / pink / yellow
+========================================================= */
+
+
+/* ---------- OPENING SCREEN ---------- */
+
+.start-screen {
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(57, 255, 20, 0.06),
+      transparent 55%
+    ),
+    #000;
+}
+
+.start-background {
+  border-color:
+    rgba(57, 255, 20, 0.55);
+}
+
+.start-background::before {
+  color:
+    var(--terminal-green);
+
+  text-shadow:
+    0 0 8px
+    rgba(57, 255, 20, 0.75);
+}
+
+.eyebrow,
+.welcome-kicker {
+  color:
+    var(--terminal-green);
+
+  text-shadow:
+    0 0 7px
+    rgba(57, 255, 20, 0.65);
+}
+
+.versus-word {
+  color:
+    #ffffff;
+
+  text-shadow:
+    0 0 6px
+    rgba(255, 255, 255, 0.45);
+}
+
+
+/* ---------- WELCOME WINDOW ---------- */
+
+.welcome-overlay {
+  background:
+    rgba(0, 0, 0, 0.76);
+}
+
+.welcome-modal {
+  background:
+    rgba(0, 5, 0, 0.97);
+
+  border:
+    3px solid
+    var(--terminal-green);
+
+  box-shadow:
+    6px 6px 0
+      var(--terminal-green-dim),
+    -3px -3px 0
+      #ffffff,
+    0 0 20px
+      rgba(57, 255, 20, 0.3);
+}
+
+.welcome-modal::before {
+  color:
+    var(--terminal-green);
+
+  text-shadow:
+    0 0 8px
+    rgba(57, 255, 20, 0.75);
+}
+
+.welcome-modal h2 {
+  color:
+    #ffffff;
+}
+
+.welcome-modal p {
+  color:
+    #e8ffe5;
+}
+
+.welcome-modal .welcome-note {
+  color:
+    var(--terminal-green);
+
+  text-shadow:
+    0 0 5px
+    rgba(57, 255, 20, 0.5);
+}
+
+
+/* BEGIN BUTTON */
+
+.welcome-modal .primary-button {
+  background:
+    var(--terminal-green);
+
+  color:
+    #001500;
+
+  border-color:
+    #ffffff;
+
+  box-shadow:
+    5px 5px 0
+    var(--terminal-green-dim);
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .welcome-modal .primary-button:hover {
+    background:
+      #8aff74;
+
+    box-shadow:
+      8px 8px 0
+      var(--terminal-green-dim);
+  }
+
+}
+
+
+/* =========================================================
+   RESULTS SCREEN
+========================================================= */
+
+.results-screen {
+  background:
+    radial-gradient(
+      circle at 50% 25%,
+      rgba(57, 255, 20, 0.07),
+      transparent 40%
+    ),
+    #000;
+}
+
+.results-card {
+  background:
+    #020702;
+
+  border:
+    3px solid
+    var(--terminal-green);
+
+  box-shadow:
+    7px 7px 0
+      var(--terminal-green-dim),
+    -4px -4px 0
+      #ffffff,
+    0 0 22px
+      rgba(57, 255, 20, 0.28);
+}
+
+.results-card::before {
+  color:
+    var(--terminal-green);
+
+  text-shadow:
+    0 0 9px
+    rgba(57, 255, 20, 0.8);
+}
+
+.final-score {
+  color:
+    var(--terminal-green);
+
+  text-shadow:
+    0 0 7px
+      rgba(57, 255, 20, 1),
+    0 0 22px
+      rgba(57, 255, 20, 0.45);
+}
+
+.final-score span {
+  color:
+    #ffffff;
+}
+
+#resultHeadline {
+  color:
+    var(--terminal-green);
+
+  text-shadow:
+    0 0 7px
+    rgba(57, 255, 20, 0.55);
+}
+
+#resultMessage {
+  color:
+    #e8ffe5;
+}
+
+.seen-note {
+  color:
+    #6f946a;
+}
+
+.copy-confirmation {
+  color:
+    var(--terminal-green);
+}
+
+
+/* ---------- RESULTS BUTTONS ---------- */
+
+.results-actions .primary-button {
+  background:
+    var(--terminal-green);
+
+  color:
+    #001500;
+
+  border-color:
+    #ffffff;
+
+  box-shadow:
+    5px 5px 0
+    var(--terminal-green-dim);
+}
+
+.results-actions .secondary-button {
+  background:
+    #020702;
+
+  color:
+    var(--terminal-green);
+
+  border-color:
+    var(--terminal-green);
+
+  box-shadow:
+    5px 5px 0
+    var(--terminal-green-dim);
+}
+
+.results-actions .follow-button {
+  background:
+    #020702;
+
+  color:
+    #ffffff;
+
+  border-color:
+    #ffffff;
+
+  box-shadow:
+    5px 5px 0
+    var(--terminal-green-dim);
+}
+
+
+/* Desktop hover */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .results-actions .primary-button:hover {
+    background:
+      #8aff74;
+
+    color:
+      #001500;
+
+    box-shadow:
+      8px 8px 0
+      var(--terminal-green-dim);
+  }
+
+  .results-actions .secondary-button:hover {
+    background:
+      #071807;
+
+    color:
+      var(--terminal-green);
+
+    box-shadow:
+      8px 8px 0
+      var(--terminal-green-dim);
+  }
+
+  .results-actions .follow-button:hover {
+    background:
+      #0b160b;
+
+    color:
+      var(--terminal-green);
+
+    box-shadow:
+      8px 8px 0
+      var(--terminal-green-dim);
+  }
+
+}
+
+
+
+/* =========================================================
+   ANSWER FEEDBACK — TERMINAL GREEN / RED ONLY
+========================================================= */
+
+.feedback-panel {
+  background:
+    #010501;
+
+  border-radius:
+    0;
+}
+
+
+/* CORRECT */
+
+.feedback-panel.feedback-correct {
+  border:
+    3px solid
+    var(--terminal-green);
+
+  box-shadow:
+    5px 5px 0
+      var(--terminal-green-dim),
+    0 0 16px
+      rgba(57, 255, 20, 0.25);
+}
+
+.feedback-panel.feedback-correct .feedback-icon,
+.feedback-panel.feedback-correct h2 {
+  color:
+    var(--terminal-green);
+
+  text-shadow:
+    0 0 8px
+    rgba(57, 255, 20, 0.7);
+}
+
+.feedback-panel.feedback-correct p {
+  color:
+    #eaffE6;
+}
+
+
+/* INCORRECT */
+
+.feedback-panel.feedback-wrong {
+  border:
+    3px solid
+    var(--bushwick-choice);
+
+  box-shadow:
+    5px 5px 0
+      #73131c,
+    0 0 16px
+      rgba(255, 51, 68, 0.25);
+}
+
+.feedback-panel.feedback-wrong .feedback-icon,
+.feedback-panel.feedback-wrong h2 {
+  color:
+    var(--bushwick-choice);
+
+  text-shadow:
+    0 0 8px
+    rgba(255, 51, 68, 0.7);
+}
+
+.feedback-panel.feedback-wrong p {
+  color:
+    #ffe9eb;
+}
+
+
+/* NEXT BUTTON INSIDE FEEDBACK */
+
+.feedback-panel .primary-button {
+  background:
+    #020702;
+
+  color:
+    var(--terminal-green);
+
+  border:
+    3px solid
+    var(--terminal-green);
+
+  box-shadow:
+    5px 5px 0
+    var(--terminal-green-dim);
+}
+
+.feedback-panel.feedback-wrong .primary-button {
+  color:
+    #ffffff;
+
+  border-color:
+    var(--bushwick-choice);
+
+  box-shadow:
+    5px 5px 0
+    #73131c;
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+
+  .feedback-panel.feedback-correct .primary-button:hover {
+    background:
+      var(--terminal-green);
+
+    color:
+      #001500;
+
+    box-shadow:
+      8px 8px 0
+      var(--terminal-green-dim);
+  }
+
+  .feedback-panel.feedback-wrong .primary-button:hover {
+    background:
+      var(--bushwick-choice);
+
+    color:
+      #ffffff;
+
+    box-shadow:
+      8px 8px 0
+      #73131c;
+  }
+
+}
+
+
+/* =========================================================
+   RESULTS BUTTON SPACING
+========================================================= */
+
+.results-card {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.results-actions {
+  width: 100%;
+  max-width: 520px;
+
+  margin:
+    0 auto;
+
+  padding:
+    0 10px;
+
+  box-sizing:
+    border-box;
+
+  gap:
+    14px;
+}
+
+.results-actions .primary-button,
+.results-actions .secondary-button,
+.results-actions .follow-button {
+  width:
+    calc(100% - 16px);
+
+  max-width:
+    460px;
+
+  margin-left:
+    auto;
+
+  margin-right:
+    auto;
+}
+
+
+/* Slightly roomier desktop layout */
+
+@media (min-width: 700px) {
+
+  .results-card {
+    padding-left:
+      40px;
+
+    padding-right:
+      40px;
+  }
+
+  .results-actions {
+    max-width:
+      560px;
+
+    column-gap:
+      18px;
+
+    row-gap:
+      16px;
+  }
+
+  .results-actions .primary-button,
+  .results-actions .secondary-button {
+    width:
+      calc(100% - 8px);
+  }
+
+  .results-actions .follow-button {
+    width:
+      calc(100% - 32px);
+
+    max-width:
+      500px;
+  }
+
+}
+
+
+/* Keep enough space on narrow phones */
+
+@media (max-width: 520px) {
+
+  .results-card {
+    padding-left:
+      20px;
+
+    padding-right:
+      20px;
+  }
+
+  .results-actions {
+    padding:
+      0 6px;
+  }
+
+}
+
+
+
+/* =========================================================
+   RETRO SCORE COUNTERS — NO OUTER GLOW
+========================================================= */
+
+.score-dot {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #020802;
+
+  border: 2px solid #376b32;
+
+  color: #000;
+
+  font-family:
+    "VT323",
+    monospace;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  text-shadow: none;
+
+  box-shadow:
+    inset 0 0 0 2px #000;
+
+  image-rendering: pixelated;
+}
+
+
+/* CORRECT */
+
+.score-dot.correct {
+  background:
+    var(--terminal-green);
+
+  color:
+    #001200;
+
+  border:
+    2px solid #d8ffd0;
+
+  text-shadow: none;
+
+  box-shadow:
+    inset 0 0 0 2px
+    #0b5e08;
+}
+
+
+/* INCORRECT */
+
+.score-dot.wrong {
+  background:
+    var(--bushwick-choice);
+
+  color:
+    #170002;
+
+  border:
+    2px solid #ffd5d8;
+
+  text-shadow: none;
+
+  box-shadow:
+    inset 0 0 0 2px
+    #741019;
+}
+
+
+/* Make the final result counters slightly
+   chunkier while keeping the same flat style */
+
+.final-score-tracker .score-dot {
+  width: 28px;
+  height: 28px;
+
+  flex-basis: 28px;
+
+  font-size: 22px;
+
+  box-shadow:
+    inset 0 0 0 2px #000;
+}
+
+.final-score-tracker .score-dot.correct {
+  box-shadow:
+    inset 0 0 0 2px
+    #0b5e08;
+}
+
+.final-score-tracker .score-dot.wrong {
+  box-shadow:
+    inset 0 0 0 2px
+    #741019;
+}
+
+
+
+/* =========================================================
+   TRUE PIXEL-ART SCORE ICONS
+   Drawn with square pixels, not font glyphs
+========================================================= */
+
+.score-dot.correct,
+.score-dot.wrong {
+  position: relative;
+
+  /* Hide the ✓ / X character inserted by JS */
+  font-size: 0;
+
+  overflow: hidden;
+}
+
+
+/* Base pixel */
+
+.score-dot.correct::before,
+.score-dot.wrong::before {
+  content: "";
+
+  position: absolute;
+
+  width: 3px;
+  height: 3px;
+
+  background: #001300;
+
+  image-rendering: pixelated;
+}
+
+
+/* =========================================================
+   8-BIT CHECK MARK
+========================================================= */
+
+.score-dot.correct::before {
+  left: 5px;
+  top: 9px;
+
+  background: #001300;
+
+  box-shadow:
+    3px 3px 0 #001300,
+    6px 6px 0 #001300,
+
+    9px 3px 0 #001300,
+    12px 0 0 #001300,
+
+    15px -3px 0 #001300;
+}
+
+
+/* =========================================================
+   8-BIT X
+========================================================= */
+
+.score-dot.wrong::before {
+  left: 5px;
+  top: 5px;
+
+  background: #210003;
+
+  box-shadow:
+    3px 3px 0 #210003,
+    6px 6px 0 #210003,
+    9px 9px 0 #210003,
+
+    9px 0 0 #210003,
+    6px 3px 0 #210003,
+    3px 6px 0 #210003,
+    0 9px 0 #210003;
+}
+
+
+/* =========================================================
+   LARGER PIXEL ICONS ON FINAL SCORE SCREEN
+========================================================= */
+
+.final-score-tracker .score-dot.correct::before,
+.final-score-tracker .score-dot.wrong::before {
+  width: 4px;
+  height: 4px;
+}
+
+
+/* Final check */
+
+.final-score-tracker .score-dot.correct::before {
+  left: 5px;
+  top: 12px;
+
+  box-shadow:
+    4px 4px 0 #001300,
+    8px 8px 0 #001300,
+
+    12px 4px 0 #001300,
+    16px 0 0 #001300,
+
+    20px -4px 0 #001300;
+}
+
+
+/* Final X */
+
+.final-score-tracker .score-dot.wrong::before {
+  left: 4px;
+  top: 4px;
+
+  box-shadow:
+    4px 4px 0 #210003,
+    8px 8px 0 #210003,
+    12px 12px 0 #210003,
+    16px 16px 0 #210003,
+
+    16px 0 0 #210003,
+    12px 4px 0 #210003,
+    8px 8px 0 #210003,
+    4px 12px 0 #210003,
+    0 16px 0 #210003;
+}
+
+
+
+/* =========================================================
+   SCORE ICON FIX — CENTERED 8-BIT PIXEL ART
+========================================================= */
+
+/* Remove the oversized previous pixel patterns */
+
+.score-dot.correct::before,
+.score-dot.wrong::before {
+  content: "";
+
+  position: absolute;
+
+  background: transparent;
+
+  box-shadow: none;
+
+  transform: none;
+
+  image-rendering: pixelated;
+}
+
+
+/* ---------------------------------------------------------
+   TOP HUD — 2PX PIXEL GRID
+--------------------------------------------------------- */
+
+/* CHECK */
+
+.score-dot.correct::before {
+  width: 2px;
+  height: 2px;
+
+  left: 4px;
+  top: 9px;
+
+  background: #001300;
+
+  box-shadow:
+
+    /* downward stroke */
+    2px 2px 0 #001300,
+    4px 4px 0 #001300,
+
+    /* upward stroke */
+    6px 2px 0 #001300,
+    8px 0 0 #001300,
+    10px -2px 0 #001300;
+}
+
+
+/* X */
+
+.score-dot.wrong::before {
+  width: 2px;
+  height: 2px;
+
+  left: 4px;
+  top: 4px;
+
+  background: #210003;
+
+  box-shadow:
+
+    /* \ diagonal */
+    2px 2px 0 #210003,
+    4px 4px 0 #210003,
+    6px 6px 0 #210003,
+    8px 8px 0 #210003,
+    10px 10px 0 #210003,
+
+    /* / diagonal */
+    10px 0 0 #210003,
+    8px 2px 0 #210003,
+    6px 4px 0 #210003,
+    4px 6px 0 #210003,
+    2px 8px 0 #210003,
+    0 10px 0 #210003;
+}
+
+
+/* ---------------------------------------------------------
+   FINAL SCORE — LARGER 3PX PIXEL GRID
+--------------------------------------------------------- */
+
+/* CHECK */
+
+.final-score-tracker .score-dot.correct::before {
+  width: 3px;
+  height: 3px;
+
+  left: 5px;
+  top: 12px;
+
+  background: #001300;
+
+  box-shadow:
+
+    3px 3px 0 #001300,
+    6px 6px 0 #001300,
+
+    9px 3px 0 #001300,
+    12px 0 0 #001300,
+    15px -3px 0 #001300;
+}
+
+
+/* X */
+
+.final-score-tracker .score-dot.wrong::before {
+  width: 3px;
+  height: 3px;
+
+  left: 5px;
+  top: 5px;
+
+  background: #210003;
+
+  box-shadow:
+
+    /* \ diagonal */
+    3px 3px 0 #210003,
+    6px 6px 0 #210003,
+    9px 9px 0 #210003,
+    12px 12px 0 #210003,
+    15px 15px 0 #210003,
+
+    /* / diagonal */
+    15px 0 0 #210003,
+    12px 3px 0 #210003,
+    9px 6px 0 #210003,
+    6px 9px 0 #210003,
+    3px 12px 0 #210003,
+    0 15px 0 #210003;
+}
+
+
+
+/* =========================================================
+   SCORE COUNTERS — COLOR ONLY
+========================================================= */
+
+.score-dot,
+.score-dot.correct,
+.score-dot.wrong {
+  position: relative;
+
+  font-size: 0;
+
+  text-shadow: none;
+}
+
+.score-dot::before,
+.score-dot::after,
+.score-dot.correct::before,
+.score-dot.correct::after,
+.score-dot.wrong::before,
+.score-dot.wrong::after {
+  content: none !important;
+
+  display: none !important;
+
+  box-shadow: none !important;
+}
+
+
+/* UNANSWERED */
+
+.score-dot {
+  background: #020802;
+
+  border: 2px solid #376b32;
+
+  box-shadow:
+    inset 0 0 0 2px #000;
+}
+
+
+/* CORRECT */
+
+.score-dot.correct {
+  background:
+    var(--terminal-green);
+
+  border:
+    2px solid #baffad;
+
+  box-shadow:
+    inset 0 0 0 2px #0b5e08;
+}
+
+
+/* INCORRECT */
+
+.score-dot.wrong {
+  background:
+    var(--bushwick-choice);
+
+  border:
+    2px solid #ffb8bd;
+
+  box-shadow:
+    inset 0 0 0 2px #741019;
+}
+
+
+/* FINAL SCORE TRACKER */
+
+.final-score-tracker .score-dot,
+.final-score-tracker .score-dot.correct,
+.final-score-tracker .score-dot.wrong {
+  font-size: 0;
+}
+
+.final-score-tracker .score-dot::before,
+.final-score-tracker .score-dot::after {
+  content: none !important;
+
+  display: none !important;
+}
+
+
+
+/* =========================================================
+   BLACK + WHITE NEIGHBORHOOD BUTTONS
+========================================================= */
+
+.ridgewood-button,
+.bushwick-button {
+  position: relative;
+
+  font-family:
+    "Pixelify Sans",
+    sans-serif;
+
+  text-shadow: none;
+
+  border-radius: 0;
+
+  transition:
+    transform 100ms ease,
+    background 100ms ease,
+    color 100ms ease,
+    box-shadow 100ms ease;
+}
+
+
+/* ---------------------------------------------------------
+   RIDGEWOOD
+   Dark arcade-panel / double-border treatment
+--------------------------------------------------------- */
+
+.ridgewood-button {
+  background:
+    #000;
+
+  color:
+    #fff;
+
+  border:
+    3px solid #fff;
+
+  outline:
+    2px solid #000;
+
+  outline-offset:
+    -7px;
+
+  box-shadow:
+    6px 6px 0 #fff;
+
+  font-weight:
+    600;
+
+  font-size:
+    clamp(28px, 8vw, 42px);
+
+  letter-spacing:
+    0.035em;
+
+  transform:
+    none;
+}
+
+
+/* Small pixel-like corner accents */
+
+.ridgewood-button::before,
+.ridgewood-button::after {
+  content: "";
+
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  background: #fff;
+
+  pointer-events: none;
+}
+
+.ridgewood-button::before {
+  top: 8px;
+  left: 8px;
+}
+
+.ridgewood-button::after {
+  right: 8px;
+  bottom: 8px;
+}
+
+
+/* ---------------------------------------------------------
+   BUSHWICK
+   Inverted warning-label treatment
+--------------------------------------------------------- */
+
+.bushwick-button {
+  background:
+    #fff;
+
+  color:
+    #000;
+
+  border:
+    4px solid #000;
+
+  outline:
+    2px solid #fff;
+
+  outline-offset:
+    2px;
+
+  box-shadow:
+    7px 7px 0 #fff;
+
+  font-weight:
+    700;
+
+  font-size:
+    clamp(30px, 8.5vw, 44px);
+
+  letter-spacing:
+    -0.035em;
+
+  transform:
+    skew(-2deg);
+}
+
+
+/* Hard black corner blocks */
+
+.bushwick-button::before,
+.bushwick-button::after {
+  content: "";
+
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+
+  background: #000;
+
+  pointer-events: none;
+}
+
+.bushwick-button::before {
+  top: 7px;
+  right: 7px;
+}
+
+.bushwick-button::after {
+  left: 7px;
+  bottom: 7px;
+}
+
+
+/* ---------------------------------------------------------
+   HOVER / PRESS
+--------------------------------------------------------- */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .ridgewood-button:hover {
+    background:
+      #fff;
+
+    color:
+      #000;
+
+    transform:
+      translate(-2px, -2px);
+
+    box-shadow:
+      9px 9px 0 #fff;
+  }
+
+  .ridgewood-button:hover::before,
+  .ridgewood-button:hover::after {
+    background:
+      #000;
+  }
+
+
+  .bushwick-button:hover {
+    background:
+      #000;
+
+    color:
+      #fff;
+
+    transform:
+      skew(-2deg)
+      translate(-2px, -2px);
+
+    box-shadow:
+      10px 10px 0 #fff;
+  }
+
+  .bushwick-button:hover::before,
+  .bushwick-button:hover::after {
+    background:
+      #fff;
+  }
+
+}
+
+
+.ridgewood-button:active {
+  transform:
+    translate(5px, 5px);
+
+  box-shadow:
+    1px 1px 0 #fff;
+}
+
+
+.bushwick-button:active {
+  transform:
+    skew(-2deg)
+    translate(5px, 5px);
+
+  box-shadow:
+    1px 1px 0 #fff;
+}
+
+
+/* =========================================================
+   ANSWER BUTTON SPACING
+========================================================= */
+
+.answer-buttons {
+  gap: 22px;
+}
+
+/* Reclaim a little vertical space below the photo */
+
+.photo-credit {
+  margin-bottom: 4px;
+}
+
+.answer-area {
+  padding-top: 8px;
+}
+
+/* A little more separation on wider screens */
+
+@media (min-width: 700px) {
+
+  .answer-buttons {
+    gap: 28px;
+  }
+
+}
+
+/* Keep it comfortable on smaller phones */
+
+@media (max-width: 520px) {
+
+  .answer-buttons {
+    gap: 18px;
+  }
+
+}
+
+/* Welcome copy update */
+
+.welcome-modal::before {
+  content: "* * * Welcome Neighbor! * * *";
+}
+
+
+/* =========================================================
+   ANSWER BUTTONS — PURE BLACK / WHITE
+   No colored hover states
+========================================================= */
+
+.ridgewood-button,
+.bushwick-button {
+  background: #000 !important;
+  color: #fff !important;
+
+  border-color: #fff !important;
+
+  text-shadow: none !important;
+}
+
+
+/* RIDGEWOOD keeps its inset arcade-panel detail */
+
+.ridgewood-button {
+  outline:
+    2px solid #000;
+
+  outline-offset:
+    -7px;
+
+  box-shadow:
+    6px 6px 0 #fff;
+}
+
+.ridgewood-button::before,
+.ridgewood-button::after {
+  background:
+    #fff !important;
+}
+
+
+/* BUSHWICK keeps its heavier / skewed treatment */
+
+.bushwick-button {
+  outline:
+    2px solid #fff;
+
+  outline-offset:
+    2px;
+
+  box-shadow:
+    7px 7px 0 #fff;
+}
+
+.bushwick-button::before,
+.bushwick-button::after {
+  background:
+    #fff !important;
+}
+
+
+/* ---------------------------------------------------------
+   HOVER
+   Keep colors unchanged
+--------------------------------------------------------- */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .ridgewood-button:hover {
+    background:
+      #000 !important;
+
+    color:
+      #fff !important;
+
+    border-color:
+      #fff !important;
+
+    box-shadow:
+      8px 8px 0 #fff;
+
+    transform:
+      translate(-1px, -1px);
+  }
+
+  .bushwick-button:hover {
+    background:
+      #000 !important;
+
+    color:
+      #fff !important;
+
+    border-color:
+      #fff !important;
+
+    box-shadow:
+      9px 9px 0 #fff;
+
+    transform:
+      skew(-2deg)
+      translate(-1px, -1px);
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   CLICK / PRESS
+   Invert black and white
+--------------------------------------------------------- */
+
+.ridgewood-button:active {
+  background:
+    #fff !important;
+
+  color:
+    #000 !important;
+
+  border-color:
+    #fff !important;
+
+  transform:
+    translate(5px, 5px);
+
+  box-shadow:
+    1px 1px 0 #fff;
+}
+
+.ridgewood-button:active::before,
+.ridgewood-button:active::after {
+  background:
+    #000 !important;
+}
+
+
+.bushwick-button:active {
+  background:
+    #fff !important;
+
+  color:
+    #000 !important;
+
+  border-color:
+    #fff !important;
+
+  transform:
+    skew(-2deg)
+    translate(5px, 5px);
+
+  box-shadow:
+    1px 1px 0 #fff;
+}
+
+.bushwick-button:active::before,
+.bushwick-button:active::after {
+  background:
+    #000 !important;
+}
+
+
+/* Keyboard focus stays monochrome */
+
+.ridgewood-button:focus-visible,
+.bushwick-button:focus-visible {
+  outline:
+    3px dashed #fff;
+
+  outline-offset:
+    5px;
+}
+
+
+
+/* =========================================================
+   ARCADE ANSWER TEXT JITTER
+========================================================= */
+
+.choice-label {
+  display: inline-block;
+}
+
+
+/* Only animate on devices that actually have hover */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .ridgewood-button:hover .choice-label,
+  .bushwick-button:hover .choice-label {
+    animation:
+      arcade-text-jitter
+      0.22s
+      steps(2, end)
+      infinite;
+  }
+
+}
+
+
+/* Slightly irregular 8-bit cabinet vibration */
+
+@keyframes arcade-text-jitter {
+
+  0% {
+    transform:
+      translate(0, 0);
+  }
+
+  20% {
+    transform:
+      translate(-1px, 1px);
+  }
+
+  40% {
+    transform:
+      translate(1px, 0);
+  }
+
+  60% {
+    transform:
+      translate(-1px, -1px);
+  }
+
+  80% {
+    transform:
+      translate(1px, 1px);
+  }
+
+  100% {
+    transform:
+      translate(0, 0);
+  }
+
+}
+
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .ridgewood-button:hover .choice-label,
+  .bushwick-button:hover .choice-label {
+    animation: none;
+  }
+
+}
+
+
+/* =========================================================
+   UNIVERSAL BUTTON TEXT JITTER
+========================================================= */
+
+.ui-jitter-label,
+.choice-label {
+  display: inline-block;
+}
+
+@keyframes universal-button-jitter {
+
+  0% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(-1px, 1px);
+  }
+
+  40% {
+    transform: translate(1px, -1px);
+  }
+
+  60% {
+    transform: translate(-1px, 0);
+  }
+
+  80% {
+    transform: translate(1px, 1px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  button:hover .ui-jitter-label,
+  button:hover .choice-label,
+  a:hover .ui-jitter-label {
+    animation:
+      universal-button-jitter
+      0.20s
+      steps(2, end)
+      infinite !important;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  button:hover .ui-jitter-label,
+  button:hover .choice-label,
+  a:hover .ui-jitter-label {
+    animation: none !important;
+  }
+
+}
+
+
+/* =========================================================
+   GAME HEADER LAYOUT
+   Progress left / title center / score right
+========================================================= */
+
+.game-header {
+  display: grid;
+
+  grid-template-columns:
+    minmax(70px, 1fr)
+    auto
+    minmax(120px, 1fr);
+
+  align-items: center;
+
+  gap: 16px;
+
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+
+/* Move the question counter to the left */
+
+.game-stats {
+  display: contents;
+}
+
+#questionProgress {
+  grid-column: 1;
+
+  justify-self: start;
+
+  margin: 0;
+
+  white-space: nowrap;
+}
+
+
+/* Center the game title */
+
+.brand {
+  grid-column: 2;
+
+  justify-self: center;
+
+  text-align: center;
+
+  white-space: nowrap;
+}
+
+
+/* Score indicators stay on the right */
+
+.score-tracker {
+  grid-column: 3;
+
+  justify-self: end;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 620px) {
+
+  .game-header {
+    grid-template-columns:
+      auto
+      1fr
+      auto;
+
+    gap: 8px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #questionProgress {
+    font-size: 21px;
+  }
+
+  .brand {
+    font-size:
+      clamp(7px, 2.2vw, 10px);
+
+    white-space: normal;
+
+    line-height: 1.4;
+  }
+
+  .score-tracker {
+    gap: 3px;
+  }
+
+  .score-dot {
+    width: 16px;
+    height: 16px;
+
+    flex-basis: 16px;
+  }
+
+}
+
+
+/* =========================================================
+   FINAL SCORE — LEGIBLE 8-BIT NUMERALS
+========================================================= */
+
+#finalScore {
+  font-family:
+    "Press Start 2P",
+    monospace;
+
+  font-size:
+    clamp(68px, 19vw, 118px);
+
+  line-height: 1;
+
+  letter-spacing: 0;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   REMOVE OLD GAME OVER DECORATION COMPLETELY
+========================================================= */
+
+#resultsScreen .results-card::before,
+#resultsScreen .results-card::after {
+  content: "" !important;
+  display: none !important;
+  visibility: hidden !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+
+/* =========================================================
+   FINAL SCORE HEADING SPACING
+========================================================= */
+
+.results-card > .eyebrow {
+  margin-top: 22px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 700px) {
+
+  .results-card > .eyebrow {
+    margin-top: 28px;
+  }
+
+}
+
+
+/* =========================================================
+   RESULTS CARD TOP PADDING — FINAL OVERRIDE
+========================================================= */
+
+#resultsScreen .results-card {
+  padding-top: 36px !important;
+  box-sizing: border-box;
+}
+
+#resultsScreen .results-card > .eyebrow {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 520px) {
+
+  #resultsScreen .results-card {
+    padding-top: 30px !important;
+  }
+
+}
+
+
+/* =========================================================
+   ANSWER BUTTONS — RETRO DUNGEON-CRAWLER PLAQUES
+========================================================= */
+
+.ridgewood-button,
+.bushwick-button {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 78px;
+
+  padding:
+    15px 34px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #161616 0%,
+      #050505 45%,
+      #0d0d0d 100%
+    ) !important;
+
+  color:
+    #fff !important;
+
+  border:
+    3px solid #fff !important;
+
+  outline: none;
+
+  border-radius: 0;
+
+  font-family:
+    "Pixelify Sans",
+    sans-serif;
+
+  text-shadow:
+    2px 2px 0 #333;
+
+  box-shadow:
+    inset 0 0 0 3px #333,
+    inset 0 0 0 6px #000,
+    6px 6px 0 #fff;
+
+  clip-path:
+    polygon(
+      10px 0,
+      calc(100% - 10px) 0,
+      100% 10px,
+      100% calc(100% - 10px),
+      calc(100% - 10px) 100%,
+      10px 100%,
+      0 calc(100% - 10px),
+      0 10px
+    );
+}
+
+
+/* ---------------------------------------------------------
+   ENGRAVED INNER LINE
+--------------------------------------------------------- */
+
+.ridgewood-button::before,
+.bushwick-button::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 8px;
+
+  width: auto;
+  height: auto;
+
+  background: none !important;
+
+  border:
+    1px solid #777;
+
+  clip-path:
+    polygon(
+      7px 0,
+      calc(100% - 7px) 0,
+      100% 7px,
+      100% calc(100% - 7px),
+      calc(100% - 7px) 100%,
+      7px 100%,
+      0 calc(100% - 7px),
+      0 7px
+    );
+
+  pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   LITTLE INSCRIBED CORNER MARK
+--------------------------------------------------------- */
+
+.ridgewood-button::after,
+.bushwick-button::after {
+  content: "◆";
+
+  position: absolute;
+
+  width: auto;
+  height: auto;
+
+  right: 12px;
+  bottom: 7px;
+
+  background: none !important;
+
+  color: #777;
+
+  font-family:
+    "VT323",
+    monospace;
+
+  font-size: 15px;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   RIDGEWOOD
+   Slightly cleaner / more symmetrical tablet
+--------------------------------------------------------- */
+
+.ridgewood-button {
+  font-weight: 600;
+
+  letter-spacing:
+    0.055em;
+
+  transform: none;
+}
+
+.ridgewood-button::after {
+  content: "◇";
+}
+
+
+/* ---------------------------------------------------------
+   BUSHWICK
+   Rougher / heavier tablet
+--------------------------------------------------------- */
+
+.bushwick-button {
+  font-weight: 700;
+
+  letter-spacing:
+    -0.02em;
+
+  transform:
+    skew(-1deg);
+
+  box-shadow:
+    inset 0 0 0 3px #444,
+    inset 0 0 0 6px #000,
+    7px 7px 0 #fff;
+}
+
+.bushwick-button::after {
+  content: "◆";
+}
+
+
+/* ---------------------------------------------------------
+   HOVER
+   Stay monochrome.
+   Existing text jitter still runs.
+--------------------------------------------------------- */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .ridgewood-button:hover {
+    background:
+      linear-gradient(
+        180deg,
+        #1d1d1d 0%,
+        #080808 48%,
+        #121212 100%
+      ) !important;
+
+    color:
+      #fff !important;
+
+    border-color:
+      #fff !important;
+
+    transform:
+      translate(-1px, -1px);
+
+    box-shadow:
+      inset 0 0 0 3px #555,
+      inset 0 0 0 6px #000,
+      8px 8px 0 #fff;
+  }
+
+
+  .bushwick-button:hover {
+    background:
+      linear-gradient(
+        180deg,
+        #1d1d1d 0%,
+        #080808 48%,
+        #121212 100%
+      ) !important;
+
+    color:
+      #fff !important;
+
+    border-color:
+      #fff !important;
+
+    transform:
+      skew(-1deg)
+      translate(-1px, -1px);
+
+    box-shadow:
+      inset 0 0 0 3px #555,
+      inset 0 0 0 6px #000,
+      9px 9px 0 #fff;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   CLICK / PRESS — INVERT THE PLAQUE
+--------------------------------------------------------- */
+
+.ridgewood-button:active,
+.bushwick-button:active {
+  background:
+    #fff !important;
+
+  color:
+    #000 !important;
+
+  border-color:
+    #fff !important;
+
+  text-shadow:
+    none;
+
+  box-shadow:
+    inset 0 0 0 3px #aaa,
+    inset 0 0 0 6px #fff,
+    1px 1px 0 #fff;
+}
+
+.ridgewood-button:active {
+  transform:
+    translate(5px, 5px);
+}
+
+.bushwick-button:active {
+  transform:
+    skew(-1deg)
+    translate(5px, 5px);
+}
+
+
+/* Inner engraving also inverts */
+
+.ridgewood-button:active::before,
+.bushwick-button:active::before {
+  border-color:
+    #555;
+}
+
+.ridgewood-button:active::after,
+.bushwick-button:active::after {
+  color:
+    #333;
+}
+
+
+/* =========================================================
+   ANSWER BUTTONS — RETRO DUNGEON-CRAWLER PLAQUES
+========================================================= */
+
+.ridgewood-button,
+.bushwick-button {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 78px;
+
+  padding:
+    15px 34px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #161616 0%,
+      #050505 45%,
+      #0d0d0d 100%
+    ) !important;
+
+  color:
+    #fff !important;
+
+  border:
+    3px solid #fff !important;
+
+  outline: none;
+
+  border-radius: 0;
+
+  font-family:
+    "Pixelify Sans",
+    sans-serif;
+
+  text-shadow:
+    2px 2px 0 #333;
+
+  box-shadow:
+    inset 0 0 0 3px #333,
+    inset 0 0 0 6px #000,
+    6px 6px 0 #fff;
+
+  clip-path:
+    polygon(
+      10px 0,
+      calc(100% - 10px) 0,
+      100% 10px,
+      100% calc(100% - 10px),
+      calc(100% - 10px) 100%,
+      10px 100%,
+      0 calc(100% - 10px),
+      0 10px
+    );
+}
+
+
+/* ---------------------------------------------------------
+   ENGRAVED INNER LINE
+--------------------------------------------------------- */
+
+.ridgewood-button::before,
+.bushwick-button::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 8px;
+
+  width: auto;
+  height: auto;
+
+  background: none !important;
+
+  border:
+    1px solid #777;
+
+  clip-path:
+    polygon(
+      7px 0,
+      calc(100% - 7px) 0,
+      100% 7px,
+      100% calc(100% - 7px),
+      calc(100% - 7px) 100%,
+      7px 100%,
+      0 calc(100% - 7px),
+      0 7px
+    );
+
+  pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   LITTLE INSCRIBED CORNER MARK
+--------------------------------------------------------- */
+
+.ridgewood-button::after,
+.bushwick-button::after {
+  content: "◆";
+
+  position: absolute;
+
+  width: auto;
+  height: auto;
+
+  right: 12px;
+  bottom: 7px;
+
+  background: none !important;
+
+  color: #777;
+
+  font-family:
+    "VT323",
+    monospace;
+
+  font-size: 15px;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   RIDGEWOOD
+   Slightly cleaner / more symmetrical tablet
+--------------------------------------------------------- */
+
+.ridgewood-button {
+  font-weight: 600;
+
+  letter-spacing:
+    0.055em;
+
+  transform: none;
+}
+
+.ridgewood-button::after {
+  content: "◇";
+}
+
+
+/* ---------------------------------------------------------
+   BUSHWICK
+   Rougher / heavier tablet
+--------------------------------------------------------- */
+
+.bushwick-button {
+  font-weight: 700;
+
+  letter-spacing:
+    -0.02em;
+
+  transform:
+    skew(-1deg);
+
+  box-shadow:
+    inset 0 0 0 3px #444,
+    inset 0 0 0 6px #000,
+    7px 7px 0 #fff;
+}
+
+.bushwick-button::after {
+  content: "◆";
+}
+
+
+/* ---------------------------------------------------------
+   HOVER
+   Stay monochrome.
+   Existing text jitter still runs.
+--------------------------------------------------------- */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .ridgewood-button:hover {
+    background:
+      linear-gradient(
+        180deg,
+        #1d1d1d 0%,
+        #080808 48%,
+        #121212 100%
+      ) !important;
+
+    color:
+      #fff !important;
+
+    border-color:
+      #fff !important;
+
+    transform:
+      translate(-1px, -1px);
+
+    box-shadow:
+      inset 0 0 0 3px #555,
+      inset 0 0 0 6px #000,
+      8px 8px 0 #fff;
+  }
+
+
+  .bushwick-button:hover {
+    background:
+      linear-gradient(
+        180deg,
+        #1d1d1d 0%,
+        #080808 48%,
+        #121212 100%
+      ) !important;
+
+    color:
+      #fff !important;
+
+    border-color:
+      #fff !important;
+
+    transform:
+      skew(-1deg)
+      translate(-1px, -1px);
+
+    box-shadow:
+      inset 0 0 0 3px #555,
+      inset 0 0 0 6px #000,
+      9px 9px 0 #fff;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   CLICK / PRESS — INVERT THE PLAQUE
+--------------------------------------------------------- */
+
+.ridgewood-button:active,
+.bushwick-button:active {
+  background:
+    #fff !important;
+
+  color:
+    #000 !important;
+
+  border-color:
+    #fff !important;
+
+  text-shadow:
+    none;
+
+  box-shadow:
+    inset 0 0 0 3px #aaa,
+    inset 0 0 0 6px #fff,
+    1px 1px 0 #fff;
+}
+
+.ridgewood-button:active {
+  transform:
+    translate(5px, 5px);
+}
+
+.bushwick-button:active {
+  transform:
+    skew(-1deg)
+    translate(5px, 5px);
+}
+
+
+/* Inner engraving also inverts */
+
+.ridgewood-button:active::before,
+.bushwick-button:active::before {
+  border-color:
+    #555;
+}
+
+.ridgewood-button:active::after,
+.bushwick-button:active::after {
+  color:
+    #333;
+}
+
+
+/* =========================================================
+   DUNGEON PLAQUE V2
+   More carved detail, no diamonds
+========================================================= */
+
+.ridgewood-button,
+.bushwick-button {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 82px;
+
+  padding:
+    18px 42px;
+
+  background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(255,255,255,0.025) 0,
+      rgba(255,255,255,0.025) 2px,
+      transparent 2px,
+      transparent 7px
+    ),
+    linear-gradient(
+      180deg,
+      #1c1c1c 0%,
+      #090909 26%,
+      #030303 55%,
+      #111 100%
+    ) !important;
+
+  color: #fff !important;
+
+  border:
+    4px solid #fff !important;
+
+  border-radius: 0;
+
+  outline: none;
+
+  clip-path:
+    polygon(
+      14px 0,
+      calc(100% - 14px) 0,
+      100% 14px,
+      100% calc(100% - 14px),
+      calc(100% - 14px) 100%,
+      14px 100%,
+      0 calc(100% - 14px),
+      0 14px
+    );
+
+  box-shadow:
+    inset 0 0 0 2px #555,
+    inset 0 0 0 5px #050505,
+    inset 0 0 0 8px #888,
+    inset 0 0 18px #000,
+    7px 7px 0 #fff;
+
+  text-shadow:
+    2px 2px 0 #000,
+    -1px -1px 0 #555;
+}
+
+
+/* ---------------------------------------------------------
+   CARVED INNER FRAME
+--------------------------------------------------------- */
+
+.ridgewood-button::before,
+.bushwick-button::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 10px;
+
+  width: auto;
+  height: auto;
+
+  background: transparent !important;
+
+  border:
+    2px solid #666;
+
+  pointer-events: none;
+
+  clip-path:
+    polygon(
+      8px 0,
+      calc(100% - 8px) 0,
+      100% 8px,
+      100% calc(100% - 8px),
+      calc(100% - 8px) 100%,
+      8px 100%,
+      0 calc(100% - 8px),
+      0 8px
+    );
+
+  box-shadow:
+    inset 0 0 0 1px #111;
+}
+
+
+/* ---------------------------------------------------------
+   REMOVE OLD DIAMONDS COMPLETELY
+--------------------------------------------------------- */
+
+.ridgewood-button::after,
+.bushwick-button::after {
+  content: none !important;
+
+  display: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   INSCRIBED TEXT
+--------------------------------------------------------- */
+
+.ridgewood-button .choice-label,
+.bushwick-button .choice-label {
+  position: relative;
+
+  z-index: 2;
+
+  display: inline-block;
+
+  padding:
+    2px 10px;
+
+  background:
+    rgba(0,0,0,0.45);
+
+  border-top:
+    1px solid #555;
+
+  border-bottom:
+    1px solid #222;
+
+  text-shadow:
+    2px 2px 0 #000,
+    -1px -1px 0 #666;
+}
+
+
+/* RIDGEWOOD — slightly cleaner tablet */
+
+.ridgewood-button {
+  letter-spacing:
+    0.055em;
+
+  box-shadow:
+    inset 0 0 0 2px #555,
+    inset 0 0 0 5px #050505,
+    inset 0 0 0 8px #777,
+    inset 0 0 18px #000,
+    7px 7px 0 #fff;
+}
+
+
+/* BUSHWICK — slightly rougher / heavier */
+
+.bushwick-button {
+  letter-spacing:
+    -0.025em;
+
+  transform:
+    skew(-1deg);
+
+  box-shadow:
+    inset 0 0 0 2px #666,
+    inset 0 0 0 5px #000,
+    inset 0 0 0 9px #888,
+    inset 0 0 22px #000,
+    8px 8px 0 #fff;
+}
+
+
+/* ---------------------------------------------------------
+   HOVER
+   Still monochrome; text jitter remains active
+--------------------------------------------------------- */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .ridgewood-button:hover {
+    background:
+      repeating-linear-gradient(
+        135deg,
+        rgba(255,255,255,0.035) 0,
+        rgba(255,255,255,0.035) 2px,
+        transparent 2px,
+        transparent 7px
+      ),
+      linear-gradient(
+        180deg,
+        #242424 0%,
+        #0d0d0d 30%,
+        #050505 60%,
+        #161616 100%
+      ) !important;
+
+    color:
+      #fff !important;
+
+    transform:
+      translate(-1px, -1px);
+
+    box-shadow:
+      inset 0 0 0 2px #777,
+      inset 0 0 0 5px #050505,
+      inset 0 0 0 8px #aaa,
+      inset 0 0 18px #000,
+      9px 9px 0 #fff;
+  }
+
+
+  .bushwick-button:hover {
+    background:
+      repeating-linear-gradient(
+        135deg,
+        rgba(255,255,255,0.035) 0,
+        rgba(255,255,255,0.035) 2px,
+        transparent 2px,
+        transparent 7px
+      ),
+      linear-gradient(
+        180deg,
+        #242424 0%,
+        #0d0d0d 30%,
+        #050505 60%,
+        #161616 100%
+      ) !important;
+
+    color:
+      #fff !important;
+
+    transform:
+      skew(-1deg)
+      translate(-1px, -1px);
+
+    box-shadow:
+      inset 0 0 0 2px #777,
+      inset 0 0 0 5px #000,
+      inset 0 0 0 9px #aaa,
+      inset 0 0 22px #000,
+      10px 10px 0 #fff;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   CLICK / PRESS — INVERTED CARVED PLAQUE
+--------------------------------------------------------- */
+
+.ridgewood-button:active,
+.bushwick-button:active {
+  background:
+    #fff !important;
+
+  color:
+    #000 !important;
+
+  text-shadow:
+    none;
+
+  box-shadow:
+    inset 0 0 0 2px #aaa,
+    inset 0 0 0 5px #fff,
+    inset 0 0 0 8px #555,
+    1px 1px 0 #fff;
+}
+
+.ridgewood-button:active .choice-label,
+.bushwick-button:active .choice-label {
+  background:
+    #fff;
+
+  border-top-color:
+    #aaa;
+
+  border-bottom-color:
+    #555;
+
+  text-shadow:
+    none;
+}
+
+.ridgewood-button:active {
+  transform:
+    translate(6px, 6px);
+}
+
+.bushwick-button:active {
+  transform:
+    skew(-1deg)
+    translate(6px, 6px);
+}
+
+
+/* =========================================================
+   REMOVE INNER TEXT BOX FROM DUNGEON BUTTONS
+========================================================= */
+
+.ridgewood-button .choice-label,
+.bushwick-button .choice-label {
+  background: transparent !important;
+
+  border: 0 !important;
+
+  padding: 0 !important;
+
+  box-shadow: none !important;
+
+  text-shadow:
+    2px 2px 0 #000,
+    -1px -1px 0 #666;
+}
+
+.ridgewood-button:active .choice-label,
+.bushwick-button:active .choice-label {
+  background: transparent !important;
+
+  border: 0 !important;
+
+  text-shadow: none;
+}
+
+
+/* =========================================================
+   CORRECT FEEDBACK — 8-BIT PIXEL CHECK
+========================================================= */
+
+.feedback-panel.feedback-correct .feedback-icon {
+  position: relative;
+
+  width: 48px;
+  height: 42px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Hide the normal ✓ character */
+  font-size: 0;
+  text-shadow: none;
+}
+
+
+/* Build the check from square pixels */
+
+.feedback-panel.feedback-correct .feedback-icon::before {
+  content: "";
+
+  position: absolute;
+
+  width: 6px;
+  height: 6px;
+
+  left: 6px;
+  top: 18px;
+
+  background:
+    var(--terminal-green);
+
+  box-shadow:
+    6px 6px 0 var(--terminal-green),
+    12px 12px 0 var(--terminal-green),
+    18px 6px 0 var(--terminal-green),
+    24px 0 0 var(--terminal-green),
+    30px -6px 0 var(--terminal-green);
+}
+
+
+/* =========================================================
+   FOLLOW BUTTON — NEUTRAL DROP SHADOW
+========================================================= */
+
+.results-actions .follow-button {
+  box-shadow:
+    6px 6px 0 rgba(255, 255, 255, 0.55);
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .results-actions .follow-button:hover {
+    box-shadow:
+      8px 8px 0 rgba(255, 255, 255, 0.68);
+  }
+
+}
+
+
+/* =========================================================
+   RESULTS HEADLINE — PIXEL RETRO FONT
+========================================================= */
+
+#resultHeadline {
+  font-family:
+    "Press Start 2P",
+    monospace;
+
+  font-size:
+    clamp(18px, 5vw, 30px);
+
+  line-height: 1.45;
+
+  letter-spacing: 0;
+
+  text-transform: uppercase;
+
+  color:
+    var(--terminal-green);
+
+  text-shadow:
+    0 0 5px
+    rgba(57, 255, 20, 0.45);
+}
+

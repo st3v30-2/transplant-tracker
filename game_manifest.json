@@ -1,0 +1,4987 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-07T21:10:03.665Z",
+  "questionCount": 8,
+  "sourceWeights": {
+    "Mapillary": 0.8,
+    "KartaView": 0.2
+  },
+  "neighborhoodSplits": [
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      6,
+      2
+    ]
+  ],
+  "nearbyDistanceMeters": 60,
+  "photos": [
+    {
+      "id": "p_477308053fb2",
+      "image": "images/p_477308053fb2.webp",
+      "source": "KartaView",
+      "sourceId": "321137512",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_160ed7f23d1d",
+      "image": "images/p_160ed7f23d1d.webp",
+      "source": "KartaView",
+      "sourceId": "321137720",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_acf4da8d5f84",
+      "image": "images/p_acf4da8d5f84.webp",
+      "source": "KartaView",
+      "sourceId": "321137826",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_909bbba522e6",
+      "image": "images/p_909bbba522e6.webp",
+      "source": "KartaView",
+      "sourceId": "321138454",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_0ec2a07759dc",
+      "image": "images/p_0ec2a07759dc.webp",
+      "source": "KartaView",
+      "sourceId": "321138524",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_4777e2739c6c",
+      "image": "images/p_4777e2739c6c.webp",
+      "source": "KartaView",
+      "sourceId": "321138592",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_0701d1ea65ad",
+      "image": "images/p_0701d1ea65ad.webp",
+      "source": "KartaView",
+      "sourceId": "321138624",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a4e627e62f57",
+      "image": "images/p_a4e627e62f57.webp",
+      "source": "KartaView",
+      "sourceId": "321138690",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b65eaf8b05b7",
+      "image": "images/p_b65eaf8b05b7.webp",
+      "source": "KartaView",
+      "sourceId": "321138742",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_32405565611e",
+      "image": "images/p_32405565611e.webp",
+      "source": "KartaView",
+      "sourceId": "321138816",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_637526d42465",
+      "image": "images/p_637526d42465.webp",
+      "source": "KartaView",
+      "sourceId": "321138874",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_792e86b59f64",
+      "image": "images/p_792e86b59f64.webp",
+      "source": "KartaView",
+      "sourceId": "321138902",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_d840a00cf7f2",
+        "p_e8ac38f76907"
+      ]
+    },
+    {
+      "id": "p_d840a00cf7f2",
+      "image": "images/p_d840a00cf7f2.webp",
+      "source": "KartaView",
+      "sourceId": "321138916",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_792e86b59f64",
+        "p_e8ac38f76907"
+      ]
+    },
+    {
+      "id": "p_2965193d9034",
+      "image": "images/p_2965193d9034.webp",
+      "source": "KartaView",
+      "sourceId": "321138966",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_0aaaaceea9a8",
+      "image": "images/p_0aaaaceea9a8.webp",
+      "source": "KartaView",
+      "sourceId": "321138998",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a161888e6bb4",
+      "image": "images/p_a161888e6bb4.webp",
+      "source": "KartaView",
+      "sourceId": "321139042",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_f147fe82e449"
+      ]
+    },
+    {
+      "id": "p_a7da8724f4e1",
+      "image": "images/p_a7da8724f4e1.webp",
+      "source": "KartaView",
+      "sourceId": "321139164",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_a80f029586a4"
+      ]
+    },
+    {
+      "id": "p_de302924f418",
+      "image": "images/p_de302924f418.webp",
+      "source": "KartaView",
+      "sourceId": "321139184",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_98c75302db07",
+      "image": "images/p_98c75302db07.webp",
+      "source": "KartaView",
+      "sourceId": "321139214",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_93799e05257e"
+      ]
+    },
+    {
+      "id": "p_bee564dcb2d9",
+      "image": "images/p_bee564dcb2d9.webp",
+      "source": "KartaView",
+      "sourceId": "321141974",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_7cd2e4008594",
+        "p_a086d27b4e18"
+      ]
+    },
+    {
+      "id": "p_33757da8bf79",
+      "image": "images/p_33757da8bf79.webp",
+      "source": "KartaView",
+      "sourceId": "321142182",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_934ce362b0bb",
+      "image": "images/p_934ce362b0bb.webp",
+      "source": "KartaView",
+      "sourceId": "321142282",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_fe0429ffde80"
+      ]
+    },
+    {
+      "id": "p_36ed58ecf480",
+      "image": "images/p_36ed58ecf480.webp",
+      "source": "KartaView",
+      "sourceId": "321142466",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_93a345656ed0"
+      ]
+    },
+    {
+      "id": "p_894de17d6c74",
+      "image": "images/p_894de17d6c74.webp",
+      "source": "KartaView",
+      "sourceId": "321142558",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_a7b9eaf23984",
+        "p_96a4446744d8"
+      ]
+    },
+    {
+      "id": "p_97da95fc69d1",
+      "image": "images/p_97da95fc69d1.webp",
+      "source": "KartaView",
+      "sourceId": "321142586",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_7f67910cf238",
+        "p_72571d5406ab"
+      ]
+    },
+    {
+      "id": "p_22558cbe99b5",
+      "image": "images/p_22558cbe99b5.webp",
+      "source": "KartaView",
+      "sourceId": "323694267",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_7258d78e8345"
+      ]
+    },
+    {
+      "id": "p_f79b4d8caf73",
+      "image": "images/p_f79b4d8caf73.webp",
+      "source": "KartaView",
+      "sourceId": "323694785",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_2a326edaa80c"
+      ]
+    },
+    {
+      "id": "p_df815a16d509",
+      "image": "images/p_df815a16d509.webp",
+      "source": "KartaView",
+      "sourceId": "327386027",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_9feb370846e1",
+        "p_bd39efd38b5e",
+        "p_6227e07f708b"
+      ]
+    },
+    {
+      "id": "p_b10f5dc9caa7",
+      "image": "images/p_b10f5dc9caa7.webp",
+      "source": "KartaView",
+      "sourceId": "327387871",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_8ca337553f4c",
+        "p_0a4fe7b3e41e",
+        "p_af948bfba803"
+      ]
+    },
+    {
+      "id": "p_956ba8d2f063",
+      "image": "images/p_956ba8d2f063.webp",
+      "source": "KartaView",
+      "sourceId": "327388095",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_7e02368a1033",
+        "p_9d10506034aa",
+        "p_3b5bc4b9091c"
+      ]
+    },
+    {
+      "id": "p_35591d0e7654",
+      "image": "images/p_35591d0e7654.webp",
+      "source": "KartaView",
+      "sourceId": "327388137",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_447d17610980"
+      ]
+    },
+    {
+      "id": "p_5f91c3ae7ce7",
+      "image": "images/p_5f91c3ae7ce7.webp",
+      "source": "KartaView",
+      "sourceId": "327388159",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_a4e551b4aa48"
+      ]
+    },
+    {
+      "id": "p_2e254656b204",
+      "image": "images/p_2e254656b204.webp",
+      "source": "KartaView",
+      "sourceId": "327388443",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_85578470d03e"
+      ]
+    },
+    {
+      "id": "p_0e9553fa1117",
+      "image": "images/p_0e9553fa1117.webp",
+      "source": "KartaView",
+      "sourceId": "327388471",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_0c5511662a8f"
+      ]
+    },
+    {
+      "id": "p_7258d78e8345",
+      "image": "images/p_7258d78e8345.webp",
+      "source": "KartaView",
+      "sourceId": "327389139",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_22558cbe99b5"
+      ]
+    },
+    {
+      "id": "p_74352afed253",
+      "image": "images/p_74352afed253.webp",
+      "source": "KartaView",
+      "sourceId": "328189749",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_0812ed305cbe"
+      ]
+    },
+    {
+      "id": "p_eb257ac7b1a7",
+      "image": "images/p_eb257ac7b1a7.webp",
+      "source": "KartaView",
+      "sourceId": "328189807",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_e761aef26a4b",
+      "image": "images/p_e761aef26a4b.webp",
+      "source": "KartaView",
+      "sourceId": "328212381",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_2dd21880edff",
+      "image": "images/p_2dd21880edff.webp",
+      "source": "KartaView",
+      "sourceId": "328222757",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_f15ea7de8449",
+      "image": "images/p_f15ea7de8449.webp",
+      "source": "KartaView",
+      "sourceId": "328222973",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_9bc576452011"
+      ]
+    },
+    {
+      "id": "p_1d3624c42086",
+      "image": "images/p_1d3624c42086.webp",
+      "source": "KartaView",
+      "sourceId": "328239499",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_6264d476b74e"
+      ]
+    },
+    {
+      "id": "p_e8d00bd3a2de",
+      "image": "images/p_e8d00bd3a2de.webp",
+      "source": "KartaView",
+      "sourceId": "328239567",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_0f2d2ef6e372"
+      ]
+    },
+    {
+      "id": "p_7cd148d96701",
+      "image": "images/p_7cd148d96701.webp",
+      "source": "KartaView",
+      "sourceId": "330887059",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_837c91dc2e23",
+        "p_7beec7ea0a05",
+        "p_4c224c0a4f7f",
+        "p_7556a2a283f4",
+        "p_826ec966a1c5"
+      ]
+    },
+    {
+      "id": "p_837c91dc2e23",
+      "image": "images/p_837c91dc2e23.webp",
+      "source": "KartaView",
+      "sourceId": "330887063",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_7cd148d96701",
+        "p_7beec7ea0a05",
+        "p_4c224c0a4f7f",
+        "p_7556a2a283f4",
+        "p_826ec966a1c5"
+      ]
+    },
+    {
+      "id": "p_f82ffe786ad5",
+      "image": "images/p_f82ffe786ad5.webp",
+      "source": "KartaView",
+      "sourceId": "330887139",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_1be33d9897fa",
+        "p_57b322e74610",
+        "p_1027984a055f",
+        "p_45659cf7769b",
+        "p_daf1a3d77938",
+        "p_3c71dcd63fee",
+        "p_7552820099e2"
+      ]
+    },
+    {
+      "id": "p_cc2e3e42ce6f",
+      "image": "images/p_cc2e3e42ce6f.webp",
+      "source": "KartaView",
+      "sourceId": "330887317",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_5118296a33f7",
+        "p_5613bf35ec96",
+        "p_ce4e44899c4b"
+      ]
+    },
+    {
+      "id": "p_4edb5104c68c",
+      "image": "images/p_4edb5104c68c.webp",
+      "source": "KartaView",
+      "sourceId": "330887371",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_8f9dd0e3c05c",
+        "p_5a946a60b128",
+        "p_a332d745aed5",
+        "p_f593ad18b739"
+      ]
+    },
+    {
+      "id": "p_3ada1fd8b1e3",
+      "image": "images/p_3ada1fd8b1e3.webp",
+      "source": "KartaView",
+      "sourceId": "330887403",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_0a3a4a533247",
+      "image": "images/p_0a3a4a533247.webp",
+      "source": "KartaView",
+      "sourceId": "330887435",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_53e420882117",
+        "p_7f59f376dd11",
+        "p_9cee0547c147"
+      ]
+    },
+    {
+      "id": "p_f0bed7f9203b",
+      "image": "images/p_f0bed7f9203b.webp",
+      "source": "KartaView",
+      "sourceId": "330887669",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_5818b4ef8c72",
+      "image": "images/p_5818b4ef8c72.webp",
+      "source": "KartaView",
+      "sourceId": "330887889",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_e8ac38f76907",
+      "image": "images/p_e8ac38f76907.webp",
+      "source": "KartaView",
+      "sourceId": "330888205",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_792e86b59f64",
+        "p_d840a00cf7f2"
+      ]
+    },
+    {
+      "id": "p_54c674128834",
+      "image": "images/p_54c674128834.webp",
+      "source": "KartaView",
+      "sourceId": "330888341",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_0f0022d630b2"
+      ]
+    },
+    {
+      "id": "p_dcf51f4f3241",
+      "image": "images/p_dcf51f4f3241.webp",
+      "source": "KartaView",
+      "sourceId": "330888437",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_a392f7b8ac95",
+        "p_e0a85fb2db27",
+        "p_110bae8bb8a6"
+      ]
+    },
+    {
+      "id": "p_a91168cabf9d",
+      "image": "images/p_a91168cabf9d.webp",
+      "source": "KartaView",
+      "sourceId": "330888513",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_a73b4dc01024"
+      ]
+    },
+    {
+      "id": "p_60fa11b63137",
+      "image": "images/p_60fa11b63137.webp",
+      "source": "KartaView",
+      "sourceId": "330888557",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_5ad3c514583c",
+      "image": "images/p_5ad3c514583c.webp",
+      "source": "KartaView",
+      "sourceId": "330888593",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_8c60eb82aa3e",
+      "image": "images/p_8c60eb82aa3e.webp",
+      "source": "KartaView",
+      "sourceId": "330888711",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_d0dd9ee7336d"
+      ]
+    },
+    {
+      "id": "p_77a1a8ea2d16",
+      "image": "images/p_77a1a8ea2d16.webp",
+      "source": "KartaView",
+      "sourceId": "330888809",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_2efb26f0eeff",
+      "image": "images/p_2efb26f0eeff.webp",
+      "source": "KartaView",
+      "sourceId": "330889111",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_3ec3580fcfcd",
+      "image": "images/p_3ec3580fcfcd.webp",
+      "source": "KartaView",
+      "sourceId": "332334657",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_4b376a5cff25"
+      ]
+    },
+    {
+      "id": "p_43e7dcddec83",
+      "image": "images/p_43e7dcddec83.webp",
+      "source": "KartaView",
+      "sourceId": "332334709",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_5a19bae7edc7"
+      ]
+    },
+    {
+      "id": "p_2b767d95e4ed",
+      "image": "images/p_2b767d95e4ed.webp",
+      "source": "KartaView",
+      "sourceId": "332334781",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_8597782def2b"
+      ]
+    },
+    {
+      "id": "p_3e7b9eb13c31",
+      "image": "images/p_3e7b9eb13c31.webp",
+      "source": "KartaView",
+      "sourceId": "332334835",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_fe0429ffde80"
+      ]
+    },
+    {
+      "id": "p_a154554657b0",
+      "image": "images/p_a154554657b0.webp",
+      "source": "KartaView",
+      "sourceId": "332334859",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_20c887b73851",
+      "image": "images/p_20c887b73851.webp",
+      "source": "KartaView",
+      "sourceId": "332334897",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_976053232f1a",
+      "image": "images/p_976053232f1a.webp",
+      "source": "KartaView",
+      "sourceId": "332334965",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_bca9e8e1f428",
+      "image": "images/p_bca9e8e1f428.webp",
+      "source": "KartaView",
+      "sourceId": "332584729",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_e2f784261dcd",
+      "image": "images/p_e2f784261dcd.webp",
+      "source": "KartaView",
+      "sourceId": "332584931",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_f884462e8cae",
+      "image": "images/p_f884462e8cae.webp",
+      "source": "KartaView",
+      "sourceId": "332585039",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_3a485f23609e",
+        "p_cb425d4f7946"
+      ]
+    },
+    {
+      "id": "p_c1e1ec57da4e",
+      "image": "images/p_c1e1ec57da4e.webp",
+      "source": "KartaView",
+      "sourceId": "332585087",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_4f9589928ea5",
+      "image": "images/p_4f9589928ea5.webp",
+      "source": "KartaView",
+      "sourceId": "332585581",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_5c4791630cc6",
+      "image": "images/p_5c4791630cc6.webp",
+      "source": "KartaView",
+      "sourceId": "332585649",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_7a4a92ecf123"
+      ]
+    },
+    {
+      "id": "p_53e420882117",
+      "image": "images/p_53e420882117.webp",
+      "source": "KartaView",
+      "sourceId": "332585697",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_0a3a4a533247"
+      ]
+    },
+    {
+      "id": "p_02fe07f9cea6",
+      "image": "images/p_02fe07f9cea6.webp",
+      "source": "KartaView",
+      "sourceId": "332585863",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_3b5a06274fec",
+      "image": "images/p_3b5a06274fec.webp",
+      "source": "KartaView",
+      "sourceId": "332585967",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_bd8b4ca72352",
+      "image": "images/p_bd8b4ca72352.webp",
+      "source": "KartaView",
+      "sourceId": "332586037",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_b59d1a110eb5"
+      ]
+    },
+    {
+      "id": "p_ee1bfd94211b",
+      "image": "images/p_ee1bfd94211b.webp",
+      "source": "KartaView",
+      "sourceId": "332586123",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_442d076615c0",
+      "image": "images/p_442d076615c0.webp",
+      "source": "KartaView",
+      "sourceId": "332586209",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b2f4017a3dbc",
+      "image": "images/p_b2f4017a3dbc.webp",
+      "source": "KartaView",
+      "sourceId": "332586269",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_5add6bb95f2d",
+      "image": "images/p_5add6bb95f2d.webp",
+      "source": "KartaView",
+      "sourceId": "332586301",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_b99e6f8689ec",
+        "p_21e4a97cd16c"
+      ]
+    },
+    {
+      "id": "p_4a48f1ba1989",
+      "image": "images/p_4a48f1ba1989.webp",
+      "source": "KartaView",
+      "sourceId": "332586443",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_b72fe92f9106"
+      ]
+    },
+    {
+      "id": "p_b598b38a9abc",
+      "image": "images/p_b598b38a9abc.webp",
+      "source": "KartaView",
+      "sourceId": "332586511",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_8e6f1b4005b3",
+      "image": "images/p_8e6f1b4005b3.webp",
+      "source": "KartaView",
+      "sourceId": "332586591",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_30aa24693ef9",
+      "image": "images/p_30aa24693ef9.webp",
+      "source": "KartaView",
+      "sourceId": "332587377",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_b51d3f7c34d5"
+      ]
+    },
+    {
+      "id": "p_397466e68f8d",
+      "image": "images/p_397466e68f8d.webp",
+      "source": "KartaView",
+      "sourceId": "332587925",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_4cdc89c7cacd"
+      ]
+    },
+    {
+      "id": "p_cd2f3dd85b33",
+      "image": "images/p_cd2f3dd85b33.webp",
+      "source": "KartaView",
+      "sourceId": "332588069",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_9bc55f11bcf8",
+        "p_aab60d78929e"
+      ]
+    },
+    {
+      "id": "p_8ca337553f4c",
+      "image": "images/p_8ca337553f4c.webp",
+      "source": "KartaView",
+      "sourceId": "332588127",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_b10f5dc9caa7",
+        "p_0a4fe7b3e41e",
+        "p_af948bfba803"
+      ]
+    },
+    {
+      "id": "p_7350e6c47325",
+      "image": "images/p_7350e6c47325.webp",
+      "source": "KartaView",
+      "sourceId": "332588577",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_488839115014",
+      "image": "images/p_488839115014.webp",
+      "source": "KartaView",
+      "sourceId": "332588757",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_8fc01eeb89ce",
+      "image": "images/p_8fc01eeb89ce.webp",
+      "source": "KartaView",
+      "sourceId": "332588863",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_10d68a82f59f"
+      ]
+    },
+    {
+      "id": "p_b3b82a092e81",
+      "image": "images/p_b3b82a092e81.webp",
+      "source": "KartaView",
+      "sourceId": "332588909",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_e56fffdfd1e8"
+      ]
+    },
+    {
+      "id": "p_9881025bdf66",
+      "image": "images/p_9881025bdf66.webp",
+      "source": "KartaView",
+      "sourceId": "332979559",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_e80eb3ed1a9a"
+      ]
+    },
+    {
+      "id": "p_57e0079cf0fe",
+      "image": "images/p_57e0079cf0fe.webp",
+      "source": "KartaView",
+      "sourceId": "332981537",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_4187c6ebfa25",
+      "image": "images/p_4187c6ebfa25.webp",
+      "source": "KartaView",
+      "sourceId": "332981575",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_353c6643ff1c",
+        "p_308e4dd94f49"
+      ]
+    },
+    {
+      "id": "p_928be5489898",
+      "image": "images/p_928be5489898.webp",
+      "source": "KartaView",
+      "sourceId": "332981695",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_e5a7c2f3f642",
+      "image": "images/p_e5a7c2f3f642.webp",
+      "source": "KartaView",
+      "sourceId": "332981743",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_94c43a89aa87"
+      ]
+    },
+    {
+      "id": "p_73ccbe3a73a5",
+      "image": "images/p_73ccbe3a73a5.webp",
+      "source": "KartaView",
+      "sourceId": "332981791",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_6a9e444aa7ec",
+      "image": "images/p_6a9e444aa7ec.webp",
+      "source": "KartaView",
+      "sourceId": "332981925",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_906d4197371a"
+      ]
+    },
+    {
+      "id": "p_1def62bb16b8",
+      "image": "images/p_1def62bb16b8.webp",
+      "source": "KartaView",
+      "sourceId": "332982085",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_f2a4d06f36f6",
+      "image": "images/p_f2a4d06f36f6.webp",
+      "source": "KartaView",
+      "sourceId": "332982165",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_6fff77fd871b",
+      "image": "images/p_6fff77fd871b.webp",
+      "source": "KartaView",
+      "sourceId": "334238029",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_425f767b7fe0",
+        "p_935c9844c790"
+      ]
+    },
+    {
+      "id": "p_647f14d6bf2b",
+      "image": "images/p_647f14d6bf2b.webp",
+      "source": "KartaView",
+      "sourceId": "334238115",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_a27f11e6853a"
+      ]
+    },
+    {
+      "id": "p_c22fa493fff2",
+      "image": "images/p_c22fa493fff2.webp",
+      "source": "KartaView",
+      "sourceId": "334238133",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_74ee0e771542"
+      ]
+    },
+    {
+      "id": "p_f26336b4675e",
+      "image": "images/p_f26336b4675e.webp",
+      "source": "KartaView",
+      "sourceId": "334238151",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_6aef7ba2457d",
+      "image": "images/p_6aef7ba2457d.webp",
+      "source": "KartaView",
+      "sourceId": "334238181",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_1f456cf15549"
+      ]
+    },
+    {
+      "id": "p_fe0429ffde80",
+      "image": "images/p_fe0429ffde80.webp",
+      "source": "KartaView",
+      "sourceId": "334238193",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_934ce362b0bb",
+        "p_3e7b9eb13c31",
+        "p_1f456cf15549"
+      ]
+    },
+    {
+      "id": "p_eff9d6d736cf",
+      "image": "images/p_eff9d6d736cf.webp",
+      "source": "KartaView",
+      "sourceId": "359890679",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_e7d9a4210d9e",
+      "image": "images/p_e7d9a4210d9e.webp",
+      "source": "KartaView",
+      "sourceId": "359890775",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_643e3103cb25",
+      "image": "images/p_643e3103cb25.webp",
+      "source": "KartaView",
+      "sourceId": "359890913",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_34bb02b6f073",
+      "image": "images/p_34bb02b6f073.webp",
+      "source": "KartaView",
+      "sourceId": "359891001",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_527b70e2c83f"
+      ]
+    },
+    {
+      "id": "p_e9514a0dff9a",
+      "image": "images/p_e9514a0dff9a.webp",
+      "source": "KartaView",
+      "sourceId": "359891377",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_1c9b61dfb1df",
+      "image": "images/p_1c9b61dfb1df.webp",
+      "source": "KartaView",
+      "sourceId": "359892057",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_5916c1d0b6dc",
+        "p_7f59f376dd11"
+      ]
+    },
+    {
+      "id": "p_3bc461dfe3ac",
+      "image": "images/p_3bc461dfe3ac.webp",
+      "source": "KartaView",
+      "sourceId": "359894429",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_89613d1e6851",
+      "image": "images/p_89613d1e6851.webp",
+      "source": "KartaView",
+      "sourceId": "359896757",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_6f4683a0285d"
+      ]
+    },
+    {
+      "id": "p_d3a6cea021e5",
+      "image": "images/p_d3a6cea021e5.webp",
+      "source": "KartaView",
+      "sourceId": "359897027",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_8d9c870372f0"
+      ]
+    },
+    {
+      "id": "p_ea61236c27da",
+      "image": "images/p_ea61236c27da.webp",
+      "source": "KartaView",
+      "sourceId": "359897405",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_f4efb88b04c6"
+      ]
+    },
+    {
+      "id": "p_76cacab12a83",
+      "image": "images/p_76cacab12a83.webp",
+      "source": "KartaView",
+      "sourceId": "359897465",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_616932b54dde"
+      ]
+    },
+    {
+      "id": "p_1aad30474dcd",
+      "image": "images/p_1aad30474dcd.webp",
+      "source": "KartaView",
+      "sourceId": "359897707",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a455064e8831",
+      "image": "images/p_a455064e8831.webp",
+      "source": "KartaView",
+      "sourceId": "359897785",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_3c77a79ec863",
+      "image": "images/p_3c77a79ec863.webp",
+      "source": "KartaView",
+      "sourceId": "359898085",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b59d1a110eb5",
+      "image": "images/p_b59d1a110eb5.webp",
+      "source": "KartaView",
+      "sourceId": "359898179",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_bd8b4ca72352"
+      ]
+    },
+    {
+      "id": "p_c2c9dbc877d0",
+      "image": "images/p_c2c9dbc877d0.webp",
+      "source": "KartaView",
+      "sourceId": "359898615",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_3a485f23609e",
+      "image": "images/p_3a485f23609e.webp",
+      "source": "KartaView",
+      "sourceId": "359898977",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_f884462e8cae",
+        "p_cb425d4f7946"
+      ]
+    },
+    {
+      "id": "p_698814dfd5bc",
+      "image": "images/p_698814dfd5bc.webp",
+      "source": "KartaView",
+      "sourceId": "359899235",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_52654e1ce6d1",
+      "image": "images/p_52654e1ce6d1.webp",
+      "source": "KartaView",
+      "sourceId": "359900119",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_88c054da05c8",
+      "image": "images/p_88c054da05c8.webp",
+      "source": "KartaView",
+      "sourceId": "359900547",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_9ff2082e14da",
+      "image": "images/p_9ff2082e14da.webp",
+      "source": "KartaView",
+      "sourceId": "359900773",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_ff4aa23f1569",
+      "image": "images/p_ff4aa23f1569.webp",
+      "source": "KartaView",
+      "sourceId": "359901237",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_1096d797e158"
+      ]
+    },
+    {
+      "id": "p_5518cb06983f",
+      "image": "images/p_5518cb06983f.webp",
+      "source": "KartaView",
+      "sourceId": "359901265",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_90be69abf6ea",
+        "p_1b7d43649e9d"
+      ]
+    },
+    {
+      "id": "p_e9d47742dda5",
+      "image": "images/p_e9d47742dda5.webp",
+      "source": "KartaView",
+      "sourceId": "359901327",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_8937304c53a4",
+        "p_55f72fd5ad54",
+        "p_b8a8e1bb64c4"
+      ]
+    },
+    {
+      "id": "p_b99e6f8689ec",
+      "image": "images/p_b99e6f8689ec.webp",
+      "source": "KartaView",
+      "sourceId": "359901373",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_5add6bb95f2d",
+        "p_21e4a97cd16c"
+      ]
+    },
+    {
+      "id": "p_1be33d9897fa",
+      "image": "images/p_1be33d9897fa.webp",
+      "source": "KartaView",
+      "sourceId": "359901409",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_f82ffe786ad5",
+        "p_65096919f339",
+        "p_57b322e74610",
+        "p_1027984a055f",
+        "p_45659cf7769b",
+        "p_bee547968879",
+        "p_b931c56cda1f",
+        "p_7552820099e2"
+      ]
+    },
+    {
+      "id": "p_65096919f339",
+      "image": "images/p_65096919f339.webp",
+      "source": "KartaView",
+      "sourceId": "359901439",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_1be33d9897fa",
+        "p_1027984a055f",
+        "p_b931c56cda1f",
+        "p_7b3da6afcaef",
+        "p_7552820099e2"
+      ]
+    },
+    {
+      "id": "p_ea3c60d89640",
+      "image": "images/p_ea3c60d89640.webp",
+      "source": "KartaView",
+      "sourceId": "359901819",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_96a1c6806433",
+        "p_8734c7a37dae"
+      ]
+    },
+    {
+      "id": "p_eb51e1d18077",
+      "image": "images/p_eb51e1d18077.webp",
+      "source": "KartaView",
+      "sourceId": "359902225",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_174c98dd42c2"
+      ]
+    },
+    {
+      "id": "p_cce0f5bc7c77",
+      "image": "images/p_cce0f5bc7c77.webp",
+      "source": "KartaView",
+      "sourceId": "359902749",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_3ca715765482",
+        "p_7922faa1feba"
+      ]
+    },
+    {
+      "id": "p_abceff209fb2",
+      "image": "images/p_abceff209fb2.webp",
+      "source": "KartaView",
+      "sourceId": "359902881",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_90d03a6c7332",
+        "p_d0fcc067cbf1"
+      ]
+    },
+    {
+      "id": "p_d5d1ab2429af",
+      "image": "images/p_d5d1ab2429af.webp",
+      "source": "KartaView",
+      "sourceId": "359903311",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_4a02029f84fa",
+      "image": "images/p_4a02029f84fa.webp",
+      "source": "KartaView",
+      "sourceId": "359903361",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_667c35885952"
+      ]
+    },
+    {
+      "id": "p_af8130ec8e94",
+      "image": "images/p_af8130ec8e94.webp",
+      "source": "KartaView",
+      "sourceId": "359903521",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_024f8b82ed8e"
+      ]
+    },
+    {
+      "id": "p_a668f636916b",
+      "image": "images/p_a668f636916b.webp",
+      "source": "KartaView",
+      "sourceId": "359903879",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_2ba8cae5dd96",
+      "image": "images/p_2ba8cae5dd96.webp",
+      "source": "KartaView",
+      "sourceId": "359903921",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_9f26983d8bd4",
+      "image": "images/p_9f26983d8bd4.webp",
+      "source": "KartaView",
+      "sourceId": "359904051",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_1096d797e158",
+      "image": "images/p_1096d797e158.webp",
+      "source": "KartaView",
+      "sourceId": "363494625",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_ff4aa23f1569"
+      ]
+    },
+    {
+      "id": "p_90be69abf6ea",
+      "image": "images/p_90be69abf6ea.webp",
+      "source": "KartaView",
+      "sourceId": "363494653",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_5518cb06983f",
+        "p_1b7d43649e9d"
+      ]
+    },
+    {
+      "id": "p_21e4a97cd16c",
+      "image": "images/p_21e4a97cd16c.webp",
+      "source": "KartaView",
+      "sourceId": "363494771",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_5add6bb95f2d",
+        "p_b99e6f8689ec"
+      ]
+    },
+    {
+      "id": "p_57b322e74610",
+      "image": "images/p_57b322e74610.webp",
+      "source": "KartaView",
+      "sourceId": "363494801",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_f82ffe786ad5",
+        "p_1be33d9897fa",
+        "p_1027984a055f",
+        "p_45659cf7769b",
+        "p_bee547968879",
+        "p_b931c56cda1f",
+        "p_7552820099e2"
+      ]
+    },
+    {
+      "id": "p_96a1c6806433",
+      "image": "images/p_96a1c6806433.webp",
+      "source": "KartaView",
+      "sourceId": "363494847",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_ea3c60d89640",
+        "p_8734c7a37dae"
+      ]
+    },
+    {
+      "id": "p_9edaf1fcf015",
+      "image": "images/p_9edaf1fcf015.webp",
+      "source": "KartaView",
+      "sourceId": "363494935",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_577467f306a3",
+      "image": "images/p_577467f306a3.webp",
+      "source": "KartaView",
+      "sourceId": "363494963",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_e80eb3ed1a9a",
+      "image": "images/p_e80eb3ed1a9a.webp",
+      "source": "KartaView",
+      "sourceId": "363495045",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_9881025bdf66"
+      ]
+    },
+    {
+      "id": "p_932b7b3f68fa",
+      "image": "images/p_932b7b3f68fa.webp",
+      "source": "KartaView",
+      "sourceId": "363495065",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_9bc55f11bcf8",
+      "image": "images/p_9bc55f11bcf8.webp",
+      "source": "KartaView",
+      "sourceId": "363495163",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_cd2f3dd85b33",
+        "p_994713ae50a5",
+        "p_aab60d78929e"
+      ]
+    },
+    {
+      "id": "p_0a4fe7b3e41e",
+      "image": "images/p_0a4fe7b3e41e.webp",
+      "source": "KartaView",
+      "sourceId": "363495209",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_b10f5dc9caa7",
+        "p_8ca337553f4c",
+        "p_af948bfba803"
+      ]
+    },
+    {
+      "id": "p_81ee6db4e205",
+      "image": "images/p_81ee6db4e205.webp",
+      "source": "KartaView",
+      "sourceId": "363495233",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_1f456cf15549",
+      "image": "images/p_1f456cf15549.webp",
+      "source": "KartaView",
+      "sourceId": "363495263",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_6aef7ba2457d",
+        "p_fe0429ffde80"
+      ]
+    },
+    {
+      "id": "p_10d68a82f59f",
+      "image": "images/p_10d68a82f59f.webp",
+      "source": "KartaView",
+      "sourceId": "363495377",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_8fc01eeb89ce"
+      ]
+    },
+    {
+      "id": "p_5a19bae7edc7",
+      "image": "images/p_5a19bae7edc7.webp",
+      "source": "KartaView",
+      "sourceId": "363495405",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_43e7dcddec83"
+      ]
+    },
+    {
+      "id": "p_a36452f1319a",
+      "image": "images/p_a36452f1319a.webp",
+      "source": "KartaView",
+      "sourceId": "363495445",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_eb1e37ca3205",
+      "image": "images/p_eb1e37ca3205.webp",
+      "source": "KartaView",
+      "sourceId": "363522533",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_40e38ac72f4b"
+      ]
+    },
+    {
+      "id": "p_1466dfcf719a",
+      "image": "images/p_1466dfcf719a.webp",
+      "source": "KartaView",
+      "sourceId": "363523031",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_bbade05454c1",
+      "image": "images/p_bbade05454c1.webp",
+      "source": "KartaView",
+      "sourceId": "363523071",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_99d059aaa2c2",
+      "image": "images/p_99d059aaa2c2.webp",
+      "source": "KartaView",
+      "sourceId": "363523155",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_12c7da285577",
+      "image": "images/p_12c7da285577.webp",
+      "source": "KartaView",
+      "sourceId": "363523223",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_f995aa2d3afa",
+      "image": "images/p_f995aa2d3afa.webp",
+      "source": "KartaView",
+      "sourceId": "363523505",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_c9c102acc4f3",
+      "image": "images/p_c9c102acc4f3.webp",
+      "source": "KartaView",
+      "sourceId": "363523543",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_55994b865477",
+      "image": "images/p_55994b865477.webp",
+      "source": "KartaView",
+      "sourceId": "363523591",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_bb637cdac232"
+      ]
+    },
+    {
+      "id": "p_0812ed305cbe",
+      "image": "images/p_0812ed305cbe.webp",
+      "source": "KartaView",
+      "sourceId": "364139963",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_74352afed253"
+      ]
+    },
+    {
+      "id": "p_29ecd3c09fa1",
+      "image": "images/p_29ecd3c09fa1.webp",
+      "source": "KartaView",
+      "sourceId": "364365191",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_ccf84d4f2f44"
+      ]
+    },
+    {
+      "id": "p_c2ab6aad2046",
+      "image": "images/p_c2ab6aad2046.webp",
+      "source": "KartaView",
+      "sourceId": "364365935",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_eb506a5ebd87"
+      ]
+    },
+    {
+      "id": "p_79fc3d50d7b5",
+      "image": "images/p_79fc3d50d7b5.webp",
+      "source": "KartaView",
+      "sourceId": "364390735",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_994713ae50a5",
+      "image": "images/p_994713ae50a5.webp",
+      "source": "KartaView",
+      "sourceId": "364392013",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_9bc55f11bcf8"
+      ]
+    },
+    {
+      "id": "p_92479be70f8f",
+      "image": "images/p_92479be70f8f.webp",
+      "source": "KartaView",
+      "sourceId": "364392117",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_23d939a83449",
+        "p_a2b91798ba03"
+      ]
+    },
+    {
+      "id": "p_848bfb8bbb6a",
+      "image": "images/p_848bfb8bbb6a.webp",
+      "source": "KartaView",
+      "sourceId": "364393265",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_5528a9335a19"
+      ]
+    },
+    {
+      "id": "p_bd5f29a135d2",
+      "image": "images/p_bd5f29a135d2.webp",
+      "source": "KartaView",
+      "sourceId": "364393387",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_31f547d3da86",
+      "image": "images/p_31f547d3da86.webp",
+      "source": "KartaView",
+      "sourceId": "364393981",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a382b3306de5",
+      "image": "images/p_a382b3306de5.webp",
+      "source": "KartaView",
+      "sourceId": "364394205",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_fd5d8f57b7c9"
+      ]
+    },
+    {
+      "id": "p_58e756440ec9",
+      "image": "images/p_58e756440ec9.webp",
+      "source": "KartaView",
+      "sourceId": "364396403",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_dd8de2b28210"
+      ]
+    },
+    {
+      "id": "p_95d42f2a49ef",
+      "image": "images/p_95d42f2a49ef.webp",
+      "source": "KartaView",
+      "sourceId": "364396807",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_16e3d950a25b"
+      ]
+    },
+    {
+      "id": "p_491e5ce3f203",
+      "image": "images/p_491e5ce3f203.webp",
+      "source": "KartaView",
+      "sourceId": "364397909",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_f147fe82e449",
+      "image": "images/p_f147fe82e449.webp",
+      "source": "KartaView",
+      "sourceId": "364399365",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_a161888e6bb4"
+      ]
+    },
+    {
+      "id": "p_cce23c155cdb",
+      "image": "images/p_cce23c155cdb.webp",
+      "source": "KartaView",
+      "sourceId": "364399849",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a392f7b8ac95",
+      "image": "images/p_a392f7b8ac95.webp",
+      "source": "KartaView",
+      "sourceId": "364399893",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_dcf51f4f3241",
+        "p_e0a85fb2db27",
+        "p_110bae8bb8a6"
+      ]
+    },
+    {
+      "id": "p_a73b4dc01024",
+      "image": "images/p_a73b4dc01024.webp",
+      "source": "KartaView",
+      "sourceId": "364400461",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_a91168cabf9d"
+      ]
+    },
+    {
+      "id": "p_6a0e3923653e",
+      "image": "images/p_6a0e3923653e.webp",
+      "source": "KartaView",
+      "sourceId": "364407859",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_2a3791b7dd0b",
+      "image": "images/p_2a3791b7dd0b.webp",
+      "source": "KartaView",
+      "sourceId": "364407929",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_ea77d1e102c1",
+      "image": "images/p_ea77d1e102c1.webp",
+      "source": "KartaView",
+      "sourceId": "364408015",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_d0dd9ee7336d",
+      "image": "images/p_d0dd9ee7336d.webp",
+      "source": "KartaView",
+      "sourceId": "364408449",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_8c60eb82aa3e"
+      ]
+    },
+    {
+      "id": "p_1f3f9a518213",
+      "image": "images/p_1f3f9a518213.webp",
+      "source": "KartaView",
+      "sourceId": "364408673",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_78981ad4fe24",
+      "image": "images/p_78981ad4fe24.webp",
+      "source": "KartaView",
+      "sourceId": "364409353",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_cbc686b21613",
+      "image": "images/p_cbc686b21613.webp",
+      "source": "KartaView",
+      "sourceId": "364816135",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_2b13bb8f5b36",
+        "p_35e4b592bb64"
+      ]
+    },
+    {
+      "id": "p_9feb370846e1",
+      "image": "images/p_9feb370846e1.webp",
+      "source": "KartaView",
+      "sourceId": "364827471",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_df815a16d509",
+        "p_bd39efd38b5e",
+        "p_6227e07f708b"
+      ]
+    },
+    {
+      "id": "p_18f2133494a4",
+      "image": "images/p_18f2133494a4.webp",
+      "source": "KartaView",
+      "sourceId": "364827523",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_a1a8c77524b9"
+      ]
+    },
+    {
+      "id": "p_93a345656ed0",
+      "image": "images/p_93a345656ed0.webp",
+      "source": "KartaView",
+      "sourceId": "364831335",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_36ed58ecf480"
+      ]
+    },
+    {
+      "id": "p_8fde8f9d96b7",
+      "image": "images/p_8fde8f9d96b7.webp",
+      "source": "KartaView",
+      "sourceId": "364831381",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_4a42a7983841",
+      "image": "images/p_4a42a7983841.webp",
+      "source": "KartaView",
+      "sourceId": "364831677",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_2716c9780f10",
+      "image": "images/p_2716c9780f10.webp",
+      "source": "KartaView",
+      "sourceId": "364833861",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_1f30da85c879",
+      "image": "images/p_1f30da85c879.webp",
+      "source": "KartaView",
+      "sourceId": "364834823",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_f676343c5d09"
+      ]
+    },
+    {
+      "id": "p_f9843484c05b",
+      "image": "images/p_f9843484c05b.webp",
+      "source": "KartaView",
+      "sourceId": "364834953",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_5528a9335a19",
+      "image": "images/p_5528a9335a19.webp",
+      "source": "KartaView",
+      "sourceId": "364835989",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_848bfb8bbb6a"
+      ]
+    },
+    {
+      "id": "p_85578470d03e",
+      "image": "images/p_85578470d03e.webp",
+      "source": "KartaView",
+      "sourceId": "364836043",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_2e254656b204"
+      ]
+    },
+    {
+      "id": "p_7cd2e4008594",
+      "image": "images/p_7cd2e4008594.webp",
+      "source": "KartaView",
+      "sourceId": "364838247",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_bee564dcb2d9",
+        "p_a086d27b4e18",
+        "p_fe9fef36c5de"
+      ]
+    },
+    {
+      "id": "p_927db7335f32",
+      "image": "images/p_927db7335f32.webp",
+      "source": "KartaView",
+      "sourceId": "364839845",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_ccf84d4f2f44",
+      "image": "images/p_ccf84d4f2f44.webp",
+      "source": "KartaView",
+      "sourceId": "365038019",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_29ecd3c09fa1"
+      ]
+    },
+    {
+      "id": "p_1b7e4a1dd486",
+      "image": "images/p_1b7e4a1dd486.webp",
+      "source": "KartaView",
+      "sourceId": "365038165",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_eb506a5ebd87",
+      "image": "images/p_eb506a5ebd87.webp",
+      "source": "KartaView",
+      "sourceId": "365038255",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_c2ab6aad2046"
+      ]
+    },
+    {
+      "id": "p_2b13bb8f5b36",
+      "image": "images/p_2b13bb8f5b36.webp",
+      "source": "KartaView",
+      "sourceId": "365038461",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_cbc686b21613",
+        "p_35e4b592bb64"
+      ]
+    },
+    {
+      "id": "p_425f767b7fe0",
+      "image": "images/p_425f767b7fe0.webp",
+      "source": "KartaView",
+      "sourceId": "365077289",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_6fff77fd871b",
+        "p_935c9844c790"
+      ]
+    },
+    {
+      "id": "p_4cdc89c7cacd",
+      "image": "images/p_4cdc89c7cacd.webp",
+      "source": "KartaView",
+      "sourceId": "365077851",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_397466e68f8d"
+      ]
+    },
+    {
+      "id": "p_d8ff0ad1dc9b",
+      "image": "images/p_d8ff0ad1dc9b.webp",
+      "source": "KartaView",
+      "sourceId": "365081921",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a086d27b4e18",
+      "image": "images/p_a086d27b4e18.webp",
+      "source": "KartaView",
+      "sourceId": "365082225",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_bee564dcb2d9",
+        "p_7cd2e4008594"
+      ]
+    },
+    {
+      "id": "p_b3712e0bf093",
+      "image": "images/p_b3712e0bf093.webp",
+      "source": "KartaView",
+      "sourceId": "366630509",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_65e8d532e651",
+        "p_62226c7d4d76",
+        "p_9532d9e30823",
+        "p_bbe2bd674aac"
+      ]
+    },
+    {
+      "id": "p_f8e0ef3b7b99",
+      "image": "images/p_f8e0ef3b7b99.webp",
+      "source": "KartaView",
+      "sourceId": "366633505",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_80a9535540e5"
+      ]
+    },
+    {
+      "id": "p_aae404c748e6",
+      "image": "images/p_aae404c748e6.webp",
+      "source": "KartaView",
+      "sourceId": "366633737",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_5a932d74e71e",
+      "image": "images/p_5a932d74e71e.webp",
+      "source": "KartaView",
+      "sourceId": "366633815",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a7b9eaf23984",
+      "image": "images/p_a7b9eaf23984.webp",
+      "source": "KartaView",
+      "sourceId": "366633857",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_894de17d6c74",
+        "p_96a4446744d8"
+      ]
+    },
+    {
+      "id": "p_74ee0e771542",
+      "image": "images/p_74ee0e771542.webp",
+      "source": "KartaView",
+      "sourceId": "366633959",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_c22fa493fff2"
+      ]
+    },
+    {
+      "id": "p_00da058a0969",
+      "image": "images/p_00da058a0969.webp",
+      "source": "KartaView",
+      "sourceId": "366634015",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b50e46184a4e",
+      "image": "images/p_b50e46184a4e.webp",
+      "source": "KartaView",
+      "sourceId": "366634051",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_aab60d78929e",
+      "image": "images/p_aab60d78929e.webp",
+      "source": "KartaView",
+      "sourceId": "366634091",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_cd2f3dd85b33",
+        "p_9bc55f11bcf8"
+      ]
+    },
+    {
+      "id": "p_af948bfba803",
+      "image": "images/p_af948bfba803.webp",
+      "source": "KartaView",
+      "sourceId": "366634161",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_b10f5dc9caa7",
+        "p_8ca337553f4c",
+        "p_0a4fe7b3e41e"
+      ]
+    },
+    {
+      "id": "p_7e02368a1033",
+      "image": "images/p_7e02368a1033.webp",
+      "source": "KartaView",
+      "sourceId": "366634249",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_956ba8d2f063",
+        "p_9faf1daa6452",
+        "p_9d10506034aa",
+        "p_3b5bc4b9091c"
+      ]
+    },
+    {
+      "id": "p_c85dfb698482",
+      "image": "images/p_c85dfb698482.webp",
+      "source": "KartaView",
+      "sourceId": "367903191",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_c65d47f4fb23",
+      "image": "images/p_c65d47f4fb23.webp",
+      "source": "KartaView",
+      "sourceId": "367903297",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_93791d128df4",
+      "image": "images/p_93791d128df4.webp",
+      "source": "KartaView",
+      "sourceId": "367942597",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_88d817e6cb03"
+      ]
+    },
+    {
+      "id": "p_65e8d532e651",
+      "image": "images/p_65e8d532e651.webp",
+      "source": "KartaView",
+      "sourceId": "368469201",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_b3712e0bf093",
+        "p_62226c7d4d76",
+        "p_9532d9e30823",
+        "p_bbe2bd674aac"
+      ]
+    },
+    {
+      "id": "p_8c3690586366",
+      "image": "images/p_8c3690586366.webp",
+      "source": "KartaView",
+      "sourceId": "368469779",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_bd39efd38b5e",
+      "image": "images/p_bd39efd38b5e.webp",
+      "source": "KartaView",
+      "sourceId": "368470959",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_df815a16d509",
+        "p_9feb370846e1",
+        "p_6227e07f708b"
+      ]
+    },
+    {
+      "id": "p_a1a8c77524b9",
+      "image": "images/p_a1a8c77524b9.webp",
+      "source": "KartaView",
+      "sourceId": "368471079",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_18f2133494a4"
+      ]
+    },
+    {
+      "id": "p_a27f11e6853a",
+      "image": "images/p_a27f11e6853a.webp",
+      "source": "KartaView",
+      "sourceId": "368471165",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_647f14d6bf2b"
+      ]
+    },
+    {
+      "id": "p_c0922e39c5df",
+      "image": "images/p_c0922e39c5df.webp",
+      "source": "KartaView",
+      "sourceId": "368471733",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_030a4e099ffc"
+      ]
+    },
+    {
+      "id": "p_23d939a83449",
+      "image": "images/p_23d939a83449.webp",
+      "source": "KartaView",
+      "sourceId": "368471833",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_92479be70f8f",
+        "p_a2b91798ba03"
+      ]
+    },
+    {
+      "id": "p_736fc5fed33c",
+      "image": "images/p_736fc5fed33c.webp",
+      "source": "KartaView",
+      "sourceId": "368472193",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_83695cc6887b",
+      "image": "images/p_83695cc6887b.webp",
+      "source": "KartaView",
+      "sourceId": "368472553",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_295e70e9d22f"
+      ]
+    },
+    {
+      "id": "p_8d9c870372f0",
+      "image": "images/p_8d9c870372f0.webp",
+      "source": "KartaView",
+      "sourceId": "368472885",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_d3a6cea021e5"
+      ]
+    },
+    {
+      "id": "p_fd5d8f57b7c9",
+      "image": "images/p_fd5d8f57b7c9.webp",
+      "source": "KartaView",
+      "sourceId": "368473681",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_a382b3306de5"
+      ]
+    },
+    {
+      "id": "p_ba2f839e0705",
+      "image": "images/p_ba2f839e0705.webp",
+      "source": "KartaView",
+      "sourceId": "368473721",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_9c55ab10cc50"
+      ]
+    },
+    {
+      "id": "p_c9a70db57ea1",
+      "image": "images/p_c9a70db57ea1.webp",
+      "source": "KartaView",
+      "sourceId": "368473779",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_afb1b9307989",
+      "image": "images/p_afb1b9307989.webp",
+      "source": "KartaView",
+      "sourceId": "368474459",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_40e38ac72f4b",
+      "image": "images/p_40e38ac72f4b.webp",
+      "source": "KartaView",
+      "sourceId": "370074291",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_eb1e37ca3205"
+      ]
+    },
+    {
+      "id": "p_8937304c53a4",
+      "image": "images/p_8937304c53a4.webp",
+      "source": "KartaView",
+      "sourceId": "370074435",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_e9d47742dda5",
+        "p_b8a8e1bb64c4"
+      ]
+    },
+    {
+      "id": "p_667c35885952",
+      "image": "images/p_667c35885952.webp",
+      "source": "KartaView",
+      "sourceId": "370074883",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_4a02029f84fa"
+      ]
+    },
+    {
+      "id": "p_024f8b82ed8e",
+      "image": "images/p_024f8b82ed8e.webp",
+      "source": "KartaView",
+      "sourceId": "370074975",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_af8130ec8e94"
+      ]
+    },
+    {
+      "id": "p_906d4197371a",
+      "image": "images/p_906d4197371a.webp",
+      "source": "KartaView",
+      "sourceId": "370075079",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_6a9e444aa7ec"
+      ]
+    },
+    {
+      "id": "p_527b70e2c83f",
+      "image": "images/p_527b70e2c83f.webp",
+      "source": "KartaView",
+      "sourceId": "370075163",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_34bb02b6f073"
+      ]
+    },
+    {
+      "id": "p_5f3a96080280",
+      "image": "images/p_5f3a96080280.webp",
+      "source": "KartaView",
+      "sourceId": "370075409",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_448b56cfa302",
+      "image": "images/p_448b56cfa302.webp",
+      "source": "KartaView",
+      "sourceId": "370075573",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_98b863710d56",
+      "image": "images/p_98b863710d56.webp",
+      "source": "KartaView",
+      "sourceId": "370075703",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_cb425d4f7946",
+      "image": "images/p_cb425d4f7946.webp",
+      "source": "KartaView",
+      "sourceId": "370076019",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_f884462e8cae",
+        "p_3a485f23609e"
+      ]
+    },
+    {
+      "id": "p_5916c1d0b6dc",
+      "image": "images/p_5916c1d0b6dc.webp",
+      "source": "KartaView",
+      "sourceId": "370076313",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_1c9b61dfb1df",
+        "p_7f59f376dd11"
+      ]
+    },
+    {
+      "id": "p_8f9dd0e3c05c",
+      "image": "images/p_8f9dd0e3c05c.webp",
+      "source": "KartaView",
+      "sourceId": "370076781",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_4edb5104c68c",
+        "p_5a946a60b128",
+        "p_a332d745aed5",
+        "p_f593ad18b739"
+      ]
+    },
+    {
+      "id": "p_6911f08d4ebe",
+      "image": "images/p_6911f08d4ebe.webp",
+      "source": "KartaView",
+      "sourceId": "370077317",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_47a4a108bda9",
+        "p_ead2b097765c",
+        "p_90d03a6c7332"
+      ]
+    },
+    {
+      "id": "p_1027984a055f",
+      "image": "images/p_1027984a055f.webp",
+      "source": "KartaView",
+      "sourceId": "370077413",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_f82ffe786ad5",
+        "p_1be33d9897fa",
+        "p_65096919f339",
+        "p_57b322e74610",
+        "p_45659cf7769b",
+        "p_b931c56cda1f",
+        "p_daf1a3d77938",
+        "p_3c71dcd63fee",
+        "p_7552820099e2"
+      ]
+    },
+    {
+      "id": "p_45659cf7769b",
+      "image": "images/p_45659cf7769b.webp",
+      "source": "KartaView",
+      "sourceId": "370077417",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_f82ffe786ad5",
+        "p_1be33d9897fa",
+        "p_57b322e74610",
+        "p_1027984a055f",
+        "p_daf1a3d77938",
+        "p_3c71dcd63fee",
+        "p_7552820099e2"
+      ]
+    },
+    {
+      "id": "p_7beec7ea0a05",
+      "image": "images/p_7beec7ea0a05.webp",
+      "source": "KartaView",
+      "sourceId": "370077615",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_7cd148d96701",
+        "p_837c91dc2e23",
+        "p_4c224c0a4f7f",
+        "p_7556a2a283f4",
+        "p_826ec966a1c5"
+      ]
+    },
+    {
+      "id": "p_4c224c0a4f7f",
+      "image": "images/p_4c224c0a4f7f.webp",
+      "source": "KartaView",
+      "sourceId": "370077625",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_7cd148d96701",
+        "p_837c91dc2e23",
+        "p_7beec7ea0a05",
+        "p_7556a2a283f4",
+        "p_826ec966a1c5"
+      ]
+    },
+    {
+      "id": "p_35e4b592bb64",
+      "image": "images/p_35e4b592bb64.webp",
+      "source": "KartaView",
+      "sourceId": "370077797",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_cbc686b21613",
+        "p_2b13bb8f5b36"
+      ]
+    },
+    {
+      "id": "p_62226c7d4d76",
+      "image": "images/p_62226c7d4d76.webp",
+      "source": "KartaView",
+      "sourceId": "370077869",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_b3712e0bf093",
+        "p_65e8d532e651",
+        "p_9532d9e30823",
+        "p_bbe2bd674aac"
+      ]
+    },
+    {
+      "id": "p_bb637cdac232",
+      "image": "images/p_bb637cdac232.webp",
+      "source": "Mapillary",
+      "sourceId": "1005088720248544",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_55994b865477"
+      ]
+    },
+    {
+      "id": "p_3d48dcf76c08",
+      "image": "images/p_3d48dcf76c08.webp",
+      "source": "Mapillary",
+      "sourceId": "1027380034336394",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_413e8abc2737",
+      "image": "images/p_413e8abc2737.webp",
+      "source": "Mapillary",
+      "sourceId": "1038014780355356",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_cd148b05dc1e"
+      ]
+    },
+    {
+      "id": "p_074bb05df11b",
+      "image": "images/p_074bb05df11b.webp",
+      "source": "Mapillary",
+      "sourceId": "1040563883591487",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_7f59f376dd11",
+      "image": "images/p_7f59f376dd11.webp",
+      "source": "Mapillary",
+      "sourceId": "1064923153917177",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_0a3a4a533247",
+        "p_1c9b61dfb1df",
+        "p_5916c1d0b6dc"
+      ]
+    },
+    {
+      "id": "p_f4efb88b04c6",
+      "image": "images/p_f4efb88b04c6.webp",
+      "source": "Mapillary",
+      "sourceId": "1136653790181996",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_ea61236c27da"
+      ]
+    },
+    {
+      "id": "p_85817c242df2",
+      "image": "images/p_85817c242df2.webp",
+      "source": "Mapillary",
+      "sourceId": "1137843209961630",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_334c522b2a65",
+      "image": "images/p_334c522b2a65.webp",
+      "source": "Mapillary",
+      "sourceId": "1141688532980251",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a515acc4d79e",
+      "image": "images/p_a515acc4d79e.webp",
+      "source": "Mapillary",
+      "sourceId": "114208147393245",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_2c0a8c7f69df",
+      "image": "images/p_2c0a8c7f69df.webp",
+      "source": "Mapillary",
+      "sourceId": "1173970546384070",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_3d83d870d109",
+      "image": "images/p_3d83d870d109.webp",
+      "source": "Mapillary",
+      "sourceId": "1177295896062734",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_c1c452e51139",
+      "image": "images/p_c1c452e51139.webp",
+      "source": "Mapillary",
+      "sourceId": "1178673569236563",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_644f2ded2dc1",
+      "image": "images/p_644f2ded2dc1.webp",
+      "source": "Mapillary",
+      "sourceId": "1183306718809002",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_d3d4f73eebe1",
+      "image": "images/p_d3d4f73eebe1.webp",
+      "source": "Mapillary",
+      "sourceId": "1196812714089695",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_71538cb071e5",
+      "image": "images/p_71538cb071e5.webp",
+      "source": "Mapillary",
+      "sourceId": "1216298492150147",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_cc7f49dadeca",
+      "image": "images/p_cc7f49dadeca.webp",
+      "source": "Mapillary",
+      "sourceId": "1251676208623350",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b51d3f7c34d5",
+      "image": "images/p_b51d3f7c34d5.webp",
+      "source": "Mapillary",
+      "sourceId": "1254516704966991",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_30aa24693ef9"
+      ]
+    },
+    {
+      "id": "p_c202ef29d14e",
+      "image": "images/p_c202ef29d14e.webp",
+      "source": "Mapillary",
+      "sourceId": "1300518513676729",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_512854e51347",
+      "image": "images/p_512854e51347.webp",
+      "source": "Mapillary",
+      "sourceId": "1304090789984322",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_958c4f93b3c9",
+      "image": "images/p_958c4f93b3c9.webp",
+      "source": "Mapillary",
+      "sourceId": "130761072430607",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_03ee5b3a508a",
+      "image": "images/p_03ee5b3a508a.webp",
+      "source": "Mapillary",
+      "sourceId": "132597472235427",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_bee547968879",
+      "image": "images/p_bee547968879.webp",
+      "source": "Mapillary",
+      "sourceId": "132647958899107",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_1be33d9897fa",
+        "p_57b322e74610"
+      ]
+    },
+    {
+      "id": "p_c2e69012fa11",
+      "image": "images/p_c2e69012fa11.webp",
+      "source": "Mapillary",
+      "sourceId": "134062655380200",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_3ed8d455cd58",
+      "image": "images/p_3ed8d455cd58.webp",
+      "source": "Mapillary",
+      "sourceId": "1341318939583563",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_8734c7a37dae",
+      "image": "images/p_8734c7a37dae.webp",
+      "source": "Mapillary",
+      "sourceId": "1353308318368808",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_ea3c60d89640",
+        "p_96a1c6806433"
+      ]
+    },
+    {
+      "id": "p_663d52f27926",
+      "image": "images/p_663d52f27926.webp",
+      "source": "Mapillary",
+      "sourceId": "135929865228097",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_7a4a92ecf123",
+      "image": "images/p_7a4a92ecf123.webp",
+      "source": "Mapillary",
+      "sourceId": "1362497430775640",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_5c4791630cc6"
+      ]
+    },
+    {
+      "id": "p_2fd4ea5559ab",
+      "image": "images/p_2fd4ea5559ab.webp",
+      "source": "Mapillary",
+      "sourceId": "1364963583883615",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_c8b7ffeb1be8",
+      "image": "images/p_c8b7ffeb1be8.webp",
+      "source": "Mapillary",
+      "sourceId": "1368974193488352",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_17b71ce76f61",
+      "image": "images/p_17b71ce76f61.webp",
+      "source": "Mapillary",
+      "sourceId": "1372093753189674",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_9f59b23fe19b",
+      "image": "images/p_9f59b23fe19b.webp",
+      "source": "Mapillary",
+      "sourceId": "1386405455066687",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_f69634ec4e40",
+      "image": "images/p_f69634ec4e40.webp",
+      "source": "Mapillary",
+      "sourceId": "1388070228243257",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a80f029586a4",
+      "image": "images/p_a80f029586a4.webp",
+      "source": "Mapillary",
+      "sourceId": "1398844023829785",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_a7da8724f4e1"
+      ]
+    },
+    {
+      "id": "p_36779f9d76bf",
+      "image": "images/p_36779f9d76bf.webp",
+      "source": "Mapillary",
+      "sourceId": "1413644032327640",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_642d61a6a4fd",
+      "image": "images/p_642d61a6a4fd.webp",
+      "source": "Mapillary",
+      "sourceId": "1427175054303602",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_c3969ba67d72",
+      "image": "images/p_c3969ba67d72.webp",
+      "source": "Mapillary",
+      "sourceId": "143447107798503",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_b969c8d14d88"
+      ]
+    },
+    {
+      "id": "p_a387670edb5d",
+      "image": "images/p_a387670edb5d.webp",
+      "source": "Mapillary",
+      "sourceId": "1435896850105255",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_ed062c6d7b1c",
+      "image": "images/p_ed062c6d7b1c.webp",
+      "source": "Mapillary",
+      "sourceId": "144011564405200",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_5c62440a94ec",
+      "image": "images/p_5c62440a94ec.webp",
+      "source": "Mapillary",
+      "sourceId": "144273961012657",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_cb21889e3f7a",
+      "image": "images/p_cb21889e3f7a.webp",
+      "source": "Mapillary",
+      "sourceId": "1449805228685084",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_e956995d2df6",
+      "image": "images/p_e956995d2df6.webp",
+      "source": "Mapillary",
+      "sourceId": "145076450926186",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_80c938aefda4",
+      "image": "images/p_80c938aefda4.webp",
+      "source": "Mapillary",
+      "sourceId": "147299843970306",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_7bf3d7daf850",
+      "image": "images/p_7bf3d7daf850.webp",
+      "source": "Mapillary",
+      "sourceId": "1476273692704962",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_47a4a108bda9",
+      "image": "images/p_47a4a108bda9.webp",
+      "source": "Mapillary",
+      "sourceId": "1479362752407217",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_6911f08d4ebe"
+      ]
+    },
+    {
+      "id": "p_5118296a33f7",
+      "image": "images/p_5118296a33f7.webp",
+      "source": "Mapillary",
+      "sourceId": "147990530632855",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_cc2e3e42ce6f",
+        "p_5613bf35ec96",
+        "p_ce4e44899c4b"
+      ]
+    },
+    {
+      "id": "p_93799e05257e",
+      "image": "images/p_93799e05257e.webp",
+      "source": "Mapillary",
+      "sourceId": "151297036958497",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_98c75302db07"
+      ]
+    },
+    {
+      "id": "p_0e9fe1f123e2",
+      "image": "images/p_0e9fe1f123e2.webp",
+      "source": "Mapillary",
+      "sourceId": "152074830217726",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_1435352352b3",
+      "image": "images/p_1435352352b3.webp",
+      "source": "Mapillary",
+      "sourceId": "156158609848874",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_383bb11e3192"
+      ]
+    },
+    {
+      "id": "p_5a946a60b128",
+      "image": "images/p_5a946a60b128.webp",
+      "source": "Mapillary",
+      "sourceId": "159281509536980",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_4edb5104c68c",
+        "p_8f9dd0e3c05c",
+        "p_a332d745aed5"
+      ]
+    },
+    {
+      "id": "p_b922e926ce4b",
+      "image": "images/p_b922e926ce4b.webp",
+      "source": "Mapillary",
+      "sourceId": "161274976000726",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_ee942985bd84",
+      "image": "images/p_ee942985bd84.webp",
+      "source": "Mapillary",
+      "sourceId": "1638148503048684",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a332d745aed5",
+      "image": "images/p_a332d745aed5.webp",
+      "source": "Mapillary",
+      "sourceId": "166685385369936",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_4edb5104c68c",
+        "p_8f9dd0e3c05c",
+        "p_5a946a60b128"
+      ]
+    },
+    {
+      "id": "p_f2cd527a6fb5",
+      "image": "images/p_f2cd527a6fb5.webp",
+      "source": "Mapillary",
+      "sourceId": "167348128646551",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_493bf5c19ae5",
+      "image": "images/p_493bf5c19ae5.webp",
+      "source": "Mapillary",
+      "sourceId": "169929318272006",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_44750af31b0a",
+      "image": "images/p_44750af31b0a.webp",
+      "source": "Mapillary",
+      "sourceId": "173486191347858",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b28c21579acb",
+      "image": "images/p_b28c21579acb.webp",
+      "source": "Mapillary",
+      "sourceId": "173743867878088",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_6850abf000a9",
+      "image": "images/p_6850abf000a9.webp",
+      "source": "Mapillary",
+      "sourceId": "173779304540141",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_ce37249bb571",
+      "image": "images/p_ce37249bb571.webp",
+      "source": "Mapillary",
+      "sourceId": "1744258619095224",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_0992a254f94d",
+      "image": "images/p_0992a254f94d.webp",
+      "source": "Mapillary",
+      "sourceId": "174756801107609",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_295e70e9d22f",
+      "image": "images/p_295e70e9d22f.webp",
+      "source": "Mapillary",
+      "sourceId": "177194947617628",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_83695cc6887b"
+      ]
+    },
+    {
+      "id": "p_3f7d8576d978",
+      "image": "images/p_3f7d8576d978.webp",
+      "source": "Mapillary",
+      "sourceId": "177335347604492",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_9b5cd916b7d0",
+      "image": "images/p_9b5cd916b7d0.webp",
+      "source": "Mapillary",
+      "sourceId": "177563660919065",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_5622cf3ee0a6",
+      "image": "images/p_5622cf3ee0a6.webp",
+      "source": "Mapillary",
+      "sourceId": "178525220815415",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_8597782def2b",
+      "image": "images/p_8597782def2b.webp",
+      "source": "Mapillary",
+      "sourceId": "179242034073943",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_2b767d95e4ed"
+      ]
+    },
+    {
+      "id": "p_17c7d7906f2b",
+      "image": "images/p_17c7d7906f2b.webp",
+      "source": "Mapillary",
+      "sourceId": "1814553768705846",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a5489857c5c9",
+      "image": "images/p_a5489857c5c9.webp",
+      "source": "Mapillary",
+      "sourceId": "181851990471980",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_9789b2c2bbc7",
+      "image": "images/p_9789b2c2bbc7.webp",
+      "source": "Mapillary",
+      "sourceId": "183491406990332",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_1343eae11a4e",
+      "image": "images/p_1343eae11a4e.webp",
+      "source": "Mapillary",
+      "sourceId": "1841535232685508",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_9d65f413981e",
+      "image": "images/p_9d65f413981e.webp",
+      "source": "Mapillary",
+      "sourceId": "1865838310259130",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_1f150ca4ddcd",
+      "image": "images/p_1f150ca4ddcd.webp",
+      "source": "Mapillary",
+      "sourceId": "1921305201369374",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_9faf1daa6452",
+      "image": "images/p_9faf1daa6452.webp",
+      "source": "Mapillary",
+      "sourceId": "193490082610040",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_7e02368a1033"
+      ]
+    },
+    {
+      "id": "p_dbf3556f96a7",
+      "image": "images/p_dbf3556f96a7.webp",
+      "source": "Mapillary",
+      "sourceId": "194897239122900",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_9532d9e30823",
+      "image": "images/p_9532d9e30823.webp",
+      "source": "Mapillary",
+      "sourceId": "195393862421950",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_b3712e0bf093",
+        "p_65e8d532e651",
+        "p_62226c7d4d76"
+      ]
+    },
+    {
+      "id": "p_3243e775eac0",
+      "image": "images/p_3243e775eac0.webp",
+      "source": "Mapillary",
+      "sourceId": "196878428929422",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_616932b54dde",
+      "image": "images/p_616932b54dde.webp",
+      "source": "Mapillary",
+      "sourceId": "197518158875830",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_76cacab12a83"
+      ]
+    },
+    {
+      "id": "p_1623c2160ec1",
+      "image": "images/p_1623c2160ec1.webp",
+      "source": "Mapillary",
+      "sourceId": "203326184952173",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_bdc9ed4138fd",
+      "image": "images/p_bdc9ed4138fd.webp",
+      "source": "Mapillary",
+      "sourceId": "203920358055395",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a150a8e331a9",
+      "image": "images/p_a150a8e331a9.webp",
+      "source": "Mapillary",
+      "sourceId": "206671681072626",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_ead2b097765c",
+      "image": "images/p_ead2b097765c.webp",
+      "source": "Mapillary",
+      "sourceId": "212113303810819",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_6911f08d4ebe",
+        "p_d494315c46cb"
+      ]
+    },
+    {
+      "id": "p_0c917f5f09f7",
+      "image": "images/p_0c917f5f09f7.webp",
+      "source": "Mapillary",
+      "sourceId": "215076416805992",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_2f09b75b4328",
+      "image": "images/p_2f09b75b4328.webp",
+      "source": "Mapillary",
+      "sourceId": "216611286619206",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_d00887121fd8",
+      "image": "images/p_d00887121fd8.webp",
+      "source": "Mapillary",
+      "sourceId": "217404396857244",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_5613bf35ec96",
+      "image": "images/p_5613bf35ec96.webp",
+      "source": "Mapillary",
+      "sourceId": "217601359837636",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_cc2e3e42ce6f",
+        "p_5118296a33f7"
+      ]
+    },
+    {
+      "id": "p_5e041d83e4eb",
+      "image": "images/p_5e041d83e4eb.webp",
+      "source": "Mapillary",
+      "sourceId": "217891349811982",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_174c98dd42c2",
+      "image": "images/p_174c98dd42c2.webp",
+      "source": "Mapillary",
+      "sourceId": "2191860134289374",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_eb51e1d18077"
+      ]
+    },
+    {
+      "id": "p_4c4317521793",
+      "image": "images/p_4c4317521793.webp",
+      "source": "Mapillary",
+      "sourceId": "220288952861348",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_3198a5cc6889",
+      "image": "images/p_3198a5cc6889.webp",
+      "source": "Mapillary",
+      "sourceId": "230284868863810",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_8e825f73c111",
+      "image": "images/p_8e825f73c111.webp",
+      "source": "Mapillary",
+      "sourceId": "231811215406824",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_868cb7bcfc99"
+      ]
+    },
+    {
+      "id": "p_de0db9dd83b3",
+      "image": "images/p_de0db9dd83b3.webp",
+      "source": "Mapillary",
+      "sourceId": "235718611662559",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_46006395927e",
+      "image": "images/p_46006395927e.webp",
+      "source": "Mapillary",
+      "sourceId": "252156713355651",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_9d10506034aa",
+      "image": "images/p_9d10506034aa.webp",
+      "source": "Mapillary",
+      "sourceId": "2529887423973949",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_956ba8d2f063",
+        "p_7e02368a1033"
+      ]
+    },
+    {
+      "id": "p_9cee0547c147",
+      "image": "images/p_9cee0547c147.webp",
+      "source": "Mapillary",
+      "sourceId": "2554985184795328",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_0a3a4a533247"
+      ]
+    },
+    {
+      "id": "p_143aa4d65058",
+      "image": "images/p_143aa4d65058.webp",
+      "source": "Mapillary",
+      "sourceId": "260242549132280",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_c6385db3595d",
+      "image": "images/p_c6385db3595d.webp",
+      "source": "Mapillary",
+      "sourceId": "2696535157305221",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_90d03a6c7332",
+      "image": "images/p_90d03a6c7332.webp",
+      "source": "Mapillary",
+      "sourceId": "270411974777536",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_abceff209fb2",
+        "p_6911f08d4ebe"
+      ]
+    },
+    {
+      "id": "p_b0abdd742fec",
+      "image": "images/p_b0abdd742fec.webp",
+      "source": "Mapillary",
+      "sourceId": "2722297591320908",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_0f2d2ef6e372",
+      "image": "images/p_0f2d2ef6e372.webp",
+      "source": "Mapillary",
+      "sourceId": "2773232859595256",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_e8d00bd3a2de"
+      ]
+    },
+    {
+      "id": "p_50920c217587",
+      "image": "images/p_50920c217587.webp",
+      "source": "Mapillary",
+      "sourceId": "279481047225580",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b931c56cda1f",
+      "image": "images/p_b931c56cda1f.webp",
+      "source": "Mapillary",
+      "sourceId": "2795244590728655",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_1be33d9897fa",
+        "p_65096919f339",
+        "p_57b322e74610",
+        "p_1027984a055f",
+        "p_7552820099e2"
+      ]
+    },
+    {
+      "id": "p_c615970e715e",
+      "image": "images/p_c615970e715e.webp",
+      "source": "Mapillary",
+      "sourceId": "279745797165324",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_20b5b5e36154",
+      "image": "images/p_20b5b5e36154.webp",
+      "source": "Mapillary",
+      "sourceId": "281421083626123",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b4b41982f388",
+      "image": "images/p_b4b41982f388.webp",
+      "source": "Mapillary",
+      "sourceId": "286881689749996",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_61442c027f3a",
+      "image": "images/p_61442c027f3a.webp",
+      "source": "Mapillary",
+      "sourceId": "288086662953088",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a9d1ffeb3ddc",
+      "image": "images/p_a9d1ffeb3ddc.webp",
+      "source": "Mapillary",
+      "sourceId": "288109239636229",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_302c074c1def",
+      "image": "images/p_302c074c1def.webp",
+      "source": "Mapillary",
+      "sourceId": "288140029636949",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_95dfbe618e0e",
+      "image": "images/p_95dfbe618e0e.webp",
+      "source": "Mapillary",
+      "sourceId": "289149909370058",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_6d3e58ecb594",
+      "image": "images/p_6d3e58ecb594.webp",
+      "source": "Mapillary",
+      "sourceId": "290415596087769",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_21fc3b916eb0",
+      "image": "images/p_21fc3b916eb0.webp",
+      "source": "Mapillary",
+      "sourceId": "291349112695362",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_447d17610980",
+      "image": "images/p_447d17610980.webp",
+      "source": "Mapillary",
+      "sourceId": "291641839326289",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_35591d0e7654"
+      ]
+    },
+    {
+      "id": "p_6f4683a0285d",
+      "image": "images/p_6f4683a0285d.webp",
+      "source": "Mapillary",
+      "sourceId": "292072485803256",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_89613d1e6851"
+      ]
+    },
+    {
+      "id": "p_383bb11e3192",
+      "image": "images/p_383bb11e3192.webp",
+      "source": "Mapillary",
+      "sourceId": "293366905739920",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_1435352352b3"
+      ]
+    },
+    {
+      "id": "p_dac58102c3d0",
+      "image": "images/p_dac58102c3d0.webp",
+      "source": "Mapillary",
+      "sourceId": "2948892442099690",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_e0a85fb2db27",
+      "image": "images/p_e0a85fb2db27.webp",
+      "source": "Mapillary",
+      "sourceId": "295917255573228",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_dcf51f4f3241",
+        "p_a392f7b8ac95",
+        "p_110bae8bb8a6"
+      ]
+    },
+    {
+      "id": "p_aab9f69f1a3d",
+      "image": "images/p_aab9f69f1a3d.webp",
+      "source": "Mapillary",
+      "sourceId": "2973675912879059",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_4cb1d39b1bf8",
+      "image": "images/p_4cb1d39b1bf8.webp",
+      "source": "Mapillary",
+      "sourceId": "297975648609446",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_d8fe71e3fb0f",
+      "image": "images/p_d8fe71e3fb0f.webp",
+      "source": "Mapillary",
+      "sourceId": "298295195289925",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_5c1cf7e80067",
+      "image": "images/p_5c1cf7e80067.webp",
+      "source": "Mapillary",
+      "sourceId": "2984798415140758",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_7f67910cf238",
+      "image": "images/p_7f67910cf238.webp",
+      "source": "Mapillary",
+      "sourceId": "298626631815977",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_97da95fc69d1"
+      ]
+    },
+    {
+      "id": "p_ce0cc22503eb",
+      "image": "images/p_ce0cc22503eb.webp",
+      "source": "Mapillary",
+      "sourceId": "300516118224030",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_16e3d950a25b",
+      "image": "images/p_16e3d950a25b.webp",
+      "source": "Mapillary",
+      "sourceId": "300678721642059",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_95d42f2a49ef"
+      ]
+    },
+    {
+      "id": "p_d8bcdb9ae5c6",
+      "image": "images/p_d8bcdb9ae5c6.webp",
+      "source": "Mapillary",
+      "sourceId": "3009050846083955",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_4c32986176d2",
+      "image": "images/p_4c32986176d2.webp",
+      "source": "Mapillary",
+      "sourceId": "301243064909180",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b0d804c5fea7",
+      "image": "images/p_b0d804c5fea7.webp",
+      "source": "Mapillary",
+      "sourceId": "302057454783652",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_70e3ca47e441",
+      "image": "images/p_70e3ca47e441.webp",
+      "source": "Mapillary",
+      "sourceId": "302557501497283",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_55f72fd5ad54",
+      "image": "images/p_55f72fd5ad54.webp",
+      "source": "Mapillary",
+      "sourceId": "303273121391391",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_e9d47742dda5"
+      ]
+    },
+    {
+      "id": "p_f835bd662397",
+      "image": "images/p_f835bd662397.webp",
+      "source": "Mapillary",
+      "sourceId": "305399247836333",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_f676343c5d09",
+      "image": "images/p_f676343c5d09.webp",
+      "source": "Mapillary",
+      "sourceId": "305869400946532",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_1f30da85c879"
+      ]
+    },
+    {
+      "id": "p_0f0022d630b2",
+      "image": "images/p_0f0022d630b2.webp",
+      "source": "Mapillary",
+      "sourceId": "305901304342150",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_54c674128834"
+      ]
+    },
+    {
+      "id": "p_da1126f0b138",
+      "image": "images/p_da1126f0b138.webp",
+      "source": "Mapillary",
+      "sourceId": "305997274310728",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a8f857ad29dd",
+      "image": "images/p_a8f857ad29dd.webp",
+      "source": "Mapillary",
+      "sourceId": "306118227589676",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_110bae8bb8a6",
+      "image": "images/p_110bae8bb8a6.webp",
+      "source": "Mapillary",
+      "sourceId": "308061174305812",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_dcf51f4f3241",
+        "p_a392f7b8ac95",
+        "p_e0a85fb2db27"
+      ]
+    },
+    {
+      "id": "p_935c9844c790",
+      "image": "images/p_935c9844c790.webp",
+      "source": "Mapillary",
+      "sourceId": "3081337428756715",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_6fff77fd871b",
+        "p_425f767b7fe0"
+      ]
+    },
+    {
+      "id": "p_ce4e44899c4b",
+      "image": "images/p_ce4e44899c4b.webp",
+      "source": "Mapillary",
+      "sourceId": "3090880404472989",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_cc2e3e42ce6f",
+        "p_5118296a33f7"
+      ]
+    },
+    {
+      "id": "p_88d817e6cb03",
+      "image": "images/p_88d817e6cb03.webp",
+      "source": "Mapillary",
+      "sourceId": "309126463925249",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_93791d128df4"
+      ]
+    },
+    {
+      "id": "p_f85bbcf533b8",
+      "image": "images/p_f85bbcf533b8.webp",
+      "source": "Mapillary",
+      "sourceId": "309495380672239",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_089809987992",
+      "image": "images/p_089809987992.webp",
+      "source": "Mapillary",
+      "sourceId": "311466847209688",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_bed4f7cc71ec",
+      "image": "images/p_bed4f7cc71ec.webp",
+      "source": "Mapillary",
+      "sourceId": "311872077051271",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_cf640d476b15",
+      "image": "images/p_cf640d476b15.webp",
+      "source": "Mapillary",
+      "sourceId": "313876753483451",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a4e551b4aa48",
+      "image": "images/p_a4e551b4aa48.webp",
+      "source": "Mapillary",
+      "sourceId": "314727420228210",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_5f91c3ae7ce7"
+      ]
+    },
+    {
+      "id": "p_2b601f18f4c8",
+      "image": "images/p_2b601f18f4c8.webp",
+      "source": "Mapillary",
+      "sourceId": "316590756916862",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_db3f03006d02",
+      "image": "images/p_db3f03006d02.webp",
+      "source": "Mapillary",
+      "sourceId": "316749916512516",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_ec1e8c71d02e",
+      "image": "images/p_ec1e8c71d02e.webp",
+      "source": "Mapillary",
+      "sourceId": "317519789820078",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_7b3da6afcaef",
+      "image": "images/p_7b3da6afcaef.webp",
+      "source": "Mapillary",
+      "sourceId": "317735156540283",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_65096919f339"
+      ]
+    },
+    {
+      "id": "p_daf1a3d77938",
+      "image": "images/p_daf1a3d77938.webp",
+      "source": "Mapillary",
+      "sourceId": "318272743004424",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_f82ffe786ad5",
+        "p_1027984a055f",
+        "p_45659cf7769b",
+        "p_3c71dcd63fee"
+      ]
+    },
+    {
+      "id": "p_3241fd5d115a",
+      "image": "images/p_3241fd5d115a.webp",
+      "source": "Mapillary",
+      "sourceId": "318651376309930",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_7d626ffb5c7b",
+      "image": "images/p_7d626ffb5c7b.webp",
+      "source": "Mapillary",
+      "sourceId": "320441816345223",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_8ca8ed924c1a",
+      "image": "images/p_8ca8ed924c1a.webp",
+      "source": "Mapillary",
+      "sourceId": "320867646334796",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_2db90c1c14bc",
+      "image": "images/p_2db90c1c14bc.webp",
+      "source": "Mapillary",
+      "sourceId": "322037705950765",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_6c37665df530",
+      "image": "images/p_6c37665df530.webp",
+      "source": "Mapillary",
+      "sourceId": "322590985967067",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_6264d476b74e",
+      "image": "images/p_6264d476b74e.webp",
+      "source": "Mapillary",
+      "sourceId": "323906035748757",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_1d3624c42086"
+      ]
+    },
+    {
+      "id": "p_ef9f6fc60ca5",
+      "image": "images/p_ef9f6fc60ca5.webp",
+      "source": "Mapillary",
+      "sourceId": "324015982574379",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_c10240c4c0b2",
+      "image": "images/p_c10240c4c0b2.webp",
+      "source": "Mapillary",
+      "sourceId": "326393868870701",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_3b5bc4b9091c",
+      "image": "images/p_3b5bc4b9091c.webp",
+      "source": "Mapillary",
+      "sourceId": "330031231796449",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_956ba8d2f063",
+        "p_7e02368a1033"
+      ]
+    },
+    {
+      "id": "p_a0e4894cd120",
+      "image": "images/p_a0e4894cd120.webp",
+      "source": "Mapillary",
+      "sourceId": "338074954421442",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_3c71dcd63fee",
+      "image": "images/p_3c71dcd63fee.webp",
+      "source": "Mapillary",
+      "sourceId": "352483829887016",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_f82ffe786ad5",
+        "p_1027984a055f",
+        "p_45659cf7769b",
+        "p_daf1a3d77938"
+      ]
+    },
+    {
+      "id": "p_f4c69559ff90",
+      "image": "images/p_f4c69559ff90.webp",
+      "source": "Mapillary",
+      "sourceId": "3709957139132974",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_483a5782b57e",
+      "image": "images/p_483a5782b57e.webp",
+      "source": "Mapillary",
+      "sourceId": "3716821348441216",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_34ae5d1e5ef7",
+      "image": "images/p_34ae5d1e5ef7.webp",
+      "source": "Mapillary",
+      "sourceId": "375591410445026",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_d0fcc067cbf1",
+      "image": "images/p_d0fcc067cbf1.webp",
+      "source": "Mapillary",
+      "sourceId": "376255077017656",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_abceff209fb2"
+      ]
+    },
+    {
+      "id": "p_c66c33896ef0",
+      "image": "images/p_c66c33896ef0.webp",
+      "source": "Mapillary",
+      "sourceId": "376558813683106",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_db09266835a7",
+      "image": "images/p_db09266835a7.webp",
+      "source": "Mapillary",
+      "sourceId": "378158890142976",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b156c42d1685",
+      "image": "images/p_b156c42d1685.webp",
+      "source": "Mapillary",
+      "sourceId": "3885766521500064",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_96a4446744d8",
+      "image": "images/p_96a4446744d8.webp",
+      "source": "Mapillary",
+      "sourceId": "3896840980413858",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_894de17d6c74",
+        "p_a7b9eaf23984"
+      ]
+    },
+    {
+      "id": "p_0a5b8fbbfb4c",
+      "image": "images/p_0a5b8fbbfb4c.webp",
+      "source": "Mapillary",
+      "sourceId": "3901438469944631",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_41773862e5bb",
+      "image": "images/p_41773862e5bb.webp",
+      "source": "Mapillary",
+      "sourceId": "3902195913149833",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_0c5511662a8f",
+      "image": "images/p_0c5511662a8f.webp",
+      "source": "Mapillary",
+      "sourceId": "3961839330577044",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_0e9553fa1117"
+      ]
+    },
+    {
+      "id": "p_85c628c73ee9",
+      "image": "images/p_85c628c73ee9.webp",
+      "source": "Mapillary",
+      "sourceId": "4046272712098648",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_42df869c6889",
+      "image": "images/p_42df869c6889.webp",
+      "source": "Mapillary",
+      "sourceId": "4059551100754466",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_2a340b8d5ec2",
+      "image": "images/p_2a340b8d5ec2.webp",
+      "source": "Mapillary",
+      "sourceId": "4064015960287730",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_3cf8faa22ecf",
+      "image": "images/p_3cf8faa22ecf.webp",
+      "source": "Mapillary",
+      "sourceId": "407241464003133",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_043eacd12c44",
+      "image": "images/p_043eacd12c44.webp",
+      "source": "Mapillary",
+      "sourceId": "4169287293128801",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_d78320cc3f50",
+      "image": "images/p_d78320cc3f50.webp",
+      "source": "Mapillary",
+      "sourceId": "4614794528537421",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_cd148b05dc1e",
+      "image": "images/p_cd148b05dc1e.webp",
+      "source": "Mapillary",
+      "sourceId": "461541204947880",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_413e8abc2737"
+      ]
+    },
+    {
+      "id": "p_5efd8fb28c8f",
+      "image": "images/p_5efd8fb28c8f.webp",
+      "source": "Mapillary",
+      "sourceId": "462986121653181",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_f88ceb071904",
+      "image": "images/p_f88ceb071904.webp",
+      "source": "Mapillary",
+      "sourceId": "465667354547315",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_1f8a4f592800",
+      "image": "images/p_1f8a4f592800.webp",
+      "source": "Mapillary",
+      "sourceId": "466876651083886",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_9c55ab10cc50",
+      "image": "images/p_9c55ab10cc50.webp",
+      "source": "Mapillary",
+      "sourceId": "467429321152184",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_ba2f839e0705"
+      ]
+    },
+    {
+      "id": "p_7129c2793373",
+      "image": "images/p_7129c2793373.webp",
+      "source": "Mapillary",
+      "sourceId": "468677074212172",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_2de0a5bb3699",
+      "image": "images/p_2de0a5bb3699.webp",
+      "source": "Mapillary",
+      "sourceId": "468711884412920",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b643ab3a0fdd",
+      "image": "images/p_b643ab3a0fdd.webp",
+      "source": "Mapillary",
+      "sourceId": "468915250846916",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_8dc5de4022f2",
+      "image": "images/p_8dc5de4022f2.webp",
+      "source": "Mapillary",
+      "sourceId": "469059581014383",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b8a8e1bb64c4",
+      "image": "images/p_b8a8e1bb64c4.webp",
+      "source": "Mapillary",
+      "sourceId": "472445887346387",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_e9d47742dda5",
+        "p_8937304c53a4"
+      ]
+    },
+    {
+      "id": "p_4b376a5cff25",
+      "image": "images/p_4b376a5cff25.webp",
+      "source": "Mapillary",
+      "sourceId": "472506717146756",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_3ec3580fcfcd"
+      ]
+    },
+    {
+      "id": "p_ab788873290f",
+      "image": "images/p_ab788873290f.webp",
+      "source": "Mapillary",
+      "sourceId": "473812180499592",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_d494315c46cb",
+      "image": "images/p_d494315c46cb.webp",
+      "source": "Mapillary",
+      "sourceId": "476669356759176",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_ead2b097765c"
+      ]
+    },
+    {
+      "id": "p_3ca715765482",
+      "image": "images/p_3ca715765482.webp",
+      "source": "Mapillary",
+      "sourceId": "478174580059177",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_cce0f5bc7c77"
+      ]
+    },
+    {
+      "id": "p_fe9fef36c5de",
+      "image": "images/p_fe9fef36c5de.webp",
+      "source": "Mapillary",
+      "sourceId": "481250073091601",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_7cd2e4008594"
+      ]
+    },
+    {
+      "id": "p_c21f1c09c4cc",
+      "image": "images/p_c21f1c09c4cc.webp",
+      "source": "Mapillary",
+      "sourceId": "481287802924393",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_ba92e323befd",
+      "image": "images/p_ba92e323befd.webp",
+      "source": "Mapillary",
+      "sourceId": "481743593045037",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_030a4e099ffc",
+      "image": "images/p_030a4e099ffc.webp",
+      "source": "Mapillary",
+      "sourceId": "482272552890504",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_c0922e39c5df"
+      ]
+    },
+    {
+      "id": "p_532e321a47fb",
+      "image": "images/p_532e321a47fb.webp",
+      "source": "Mapillary",
+      "sourceId": "485100116063429",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_af675370e46b",
+      "image": "images/p_af675370e46b.webp",
+      "source": "Mapillary",
+      "sourceId": "486042952644371",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_066d8938e602",
+      "image": "images/p_066d8938e602.webp",
+      "source": "Mapillary",
+      "sourceId": "486495709137873",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_64cd91bda38c",
+      "image": "images/p_64cd91bda38c.webp",
+      "source": "Mapillary",
+      "sourceId": "487711445617428",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_9bc576452011",
+      "image": "images/p_9bc576452011.webp",
+      "source": "Mapillary",
+      "sourceId": "490623868852912",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_f15ea7de8449"
+      ]
+    },
+    {
+      "id": "p_4dcee4c1d315",
+      "image": "images/p_4dcee4c1d315.webp",
+      "source": "Mapillary",
+      "sourceId": "491203215650258",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_bfab7b7ea653",
+      "image": "images/p_bfab7b7ea653.webp",
+      "source": "Mapillary",
+      "sourceId": "496494834997876",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_f760a7635c56",
+      "image": "images/p_f760a7635c56.webp",
+      "source": "Mapillary",
+      "sourceId": "501756347933007",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_19d9a780ae59",
+      "image": "images/p_19d9a780ae59.webp",
+      "source": "Mapillary",
+      "sourceId": "505873007119131",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_2ccd714630eb",
+      "image": "images/p_2ccd714630eb.webp",
+      "source": "Mapillary",
+      "sourceId": "506688777379139",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_85c78324f916",
+      "image": "images/p_85c78324f916.webp",
+      "source": "Mapillary",
+      "sourceId": "509789540364463",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_1357d9c338ac",
+      "image": "images/p_1357d9c338ac.webp",
+      "source": "Mapillary",
+      "sourceId": "513799183365793",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b969c8d14d88",
+      "image": "images/p_b969c8d14d88.webp",
+      "source": "Mapillary",
+      "sourceId": "518523062652987",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_c3969ba67d72"
+      ]
+    },
+    {
+      "id": "p_018e5763b78c",
+      "image": "images/p_018e5763b78c.webp",
+      "source": "Mapillary",
+      "sourceId": "519242209095513",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_1dd93be970ad",
+      "image": "images/p_1dd93be970ad.webp",
+      "source": "Mapillary",
+      "sourceId": "520834885586523",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b72fe92f9106",
+      "image": "images/p_b72fe92f9106.webp",
+      "source": "Mapillary",
+      "sourceId": "522810192231370",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_4a48f1ba1989"
+      ]
+    },
+    {
+      "id": "p_7556a2a283f4",
+      "image": "images/p_7556a2a283f4.webp",
+      "source": "Mapillary",
+      "sourceId": "523055792383203",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_7cd148d96701",
+        "p_837c91dc2e23",
+        "p_7beec7ea0a05",
+        "p_4c224c0a4f7f",
+        "p_826ec966a1c5"
+      ]
+    },
+    {
+      "id": "p_452c3637bc8a",
+      "image": "images/p_452c3637bc8a.webp",
+      "source": "Mapillary",
+      "sourceId": "525957245244949",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_826ec966a1c5",
+      "image": "images/p_826ec966a1c5.webp",
+      "source": "Mapillary",
+      "sourceId": "526590195018341",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_7cd148d96701",
+        "p_837c91dc2e23",
+        "p_7beec7ea0a05",
+        "p_4c224c0a4f7f",
+        "p_7556a2a283f4"
+      ]
+    },
+    {
+      "id": "p_a7d1290eacb4",
+      "image": "images/p_a7d1290eacb4.webp",
+      "source": "Mapillary",
+      "sourceId": "531539351336836",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_1b48a95294d3",
+      "image": "images/p_1b48a95294d3.webp",
+      "source": "Mapillary",
+      "sourceId": "531678417826044",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b4dc701464e8",
+      "image": "images/p_b4dc701464e8.webp",
+      "source": "Mapillary",
+      "sourceId": "538983670819533",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_dd8de2b28210",
+      "image": "images/p_dd8de2b28210.webp",
+      "source": "Mapillary",
+      "sourceId": "539875943715578",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_58e756440ec9"
+      ]
+    },
+    {
+      "id": "p_393b7a51aacc",
+      "image": "images/p_393b7a51aacc.webp",
+      "source": "Mapillary",
+      "sourceId": "5427352564004997",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_801d0f03c4ec",
+      "image": "images/p_801d0f03c4ec.webp",
+      "source": "Mapillary",
+      "sourceId": "546759486319173",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_dad96f9e3c06",
+      "image": "images/p_dad96f9e3c06.webp",
+      "source": "Mapillary",
+      "sourceId": "550996996285733",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b93b83f4cafc",
+      "image": "images/p_b93b83f4cafc.webp",
+      "source": "Mapillary",
+      "sourceId": "5829408127084184",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b0a70cef7b2d",
+      "image": "images/p_b0a70cef7b2d.webp",
+      "source": "Mapillary",
+      "sourceId": "586328582254868",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_3bb9d533be12",
+      "image": "images/p_3bb9d533be12.webp",
+      "source": "Mapillary",
+      "sourceId": "598189721061612",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_d5b964668410",
+      "image": "images/p_d5b964668410.webp",
+      "source": "Mapillary",
+      "sourceId": "737073776983089",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_9e236b7184e2",
+      "image": "images/p_9e236b7184e2.webp",
+      "source": "Mapillary",
+      "sourceId": "739539526723924",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_f389ccd5dfae",
+      "image": "images/p_f389ccd5dfae.webp",
+      "source": "Mapillary",
+      "sourceId": "743067499698397",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_6b8315f0c0aa",
+      "image": "images/p_6b8315f0c0aa.webp",
+      "source": "Mapillary",
+      "sourceId": "748002639177005",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_353c6643ff1c",
+      "image": "images/p_353c6643ff1c.webp",
+      "source": "Mapillary",
+      "sourceId": "748295899170196",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_4187c6ebfa25"
+      ]
+    },
+    {
+      "id": "p_6713589a1723",
+      "image": "images/p_6713589a1723.webp",
+      "source": "Mapillary",
+      "sourceId": "752542812099214",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_f593ad18b739",
+      "image": "images/p_f593ad18b739.webp",
+      "source": "Mapillary",
+      "sourceId": "755848245098887",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_4edb5104c68c",
+        "p_8f9dd0e3c05c"
+      ]
+    },
+    {
+      "id": "p_1b7d43649e9d",
+      "image": "images/p_1b7d43649e9d.webp",
+      "source": "Mapillary",
+      "sourceId": "760497367968844",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_5518cb06983f",
+        "p_90be69abf6ea"
+      ]
+    },
+    {
+      "id": "p_13f665492179",
+      "image": "images/p_13f665492179.webp",
+      "source": "Mapillary",
+      "sourceId": "763609541003300",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_bde4c5ac339e",
+      "image": "images/p_bde4c5ac339e.webp",
+      "source": "Mapillary",
+      "sourceId": "765709784117672",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_5988a80e4187",
+      "image": "images/p_5988a80e4187.webp",
+      "source": "Mapillary",
+      "sourceId": "766989280679356",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_40a177a7a807",
+      "image": "images/p_40a177a7a807.webp",
+      "source": "Mapillary",
+      "sourceId": "772345053427725",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_591c2389199d",
+      "image": "images/p_591c2389199d.webp",
+      "source": "Mapillary",
+      "sourceId": "772526176770847",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_7922faa1feba",
+      "image": "images/p_7922faa1feba.webp",
+      "source": "Mapillary",
+      "sourceId": "775074320038701",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_cce0f5bc7c77"
+      ]
+    },
+    {
+      "id": "p_95c65a95c7aa",
+      "image": "images/p_95c65a95c7aa.webp",
+      "source": "Mapillary",
+      "sourceId": "775274313132516",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_ef8e1ac0203f",
+      "image": "images/p_ef8e1ac0203f.webp",
+      "source": "Mapillary",
+      "sourceId": "778665782838015",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_bbe2bd674aac",
+      "image": "images/p_bbe2bd674aac.webp",
+      "source": "Mapillary",
+      "sourceId": "784932612144768",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_b3712e0bf093",
+        "p_65e8d532e651",
+        "p_62226c7d4d76"
+      ]
+    },
+    {
+      "id": "p_95446bdae563",
+      "image": "images/p_95446bdae563.webp",
+      "source": "Mapillary",
+      "sourceId": "787292305287976",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_7cf861a08487",
+      "image": "images/p_7cf861a08487.webp",
+      "source": "Mapillary",
+      "sourceId": "790403071603434",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_f18811531fa2",
+      "image": "images/p_f18811531fa2.webp",
+      "source": "Mapillary",
+      "sourceId": "791054291784075",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_eedb8d76a455",
+      "image": "images/p_eedb8d76a455.webp",
+      "source": "Mapillary",
+      "sourceId": "797833347528857",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_5eaa45d58c54",
+      "image": "images/p_5eaa45d58c54.webp",
+      "source": "Mapillary",
+      "sourceId": "798688264079518",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_ee53482dbdff",
+      "image": "images/p_ee53482dbdff.webp",
+      "source": "Mapillary",
+      "sourceId": "803774043880131",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_7552820099e2",
+      "image": "images/p_7552820099e2.webp",
+      "source": "Mapillary",
+      "sourceId": "804346510263908",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_f82ffe786ad5",
+        "p_1be33d9897fa",
+        "p_65096919f339",
+        "p_57b322e74610",
+        "p_1027984a055f",
+        "p_45659cf7769b",
+        "p_b931c56cda1f"
+      ]
+    },
+    {
+      "id": "p_6227e07f708b",
+      "image": "images/p_6227e07f708b.webp",
+      "source": "Mapillary",
+      "sourceId": "810121686271808",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_df815a16d509",
+        "p_9feb370846e1",
+        "p_bd39efd38b5e"
+      ]
+    },
+    {
+      "id": "p_418516ff2d41",
+      "image": "images/p_418516ff2d41.webp",
+      "source": "Mapillary",
+      "sourceId": "811649959480959",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_a2b91798ba03",
+      "image": "images/p_a2b91798ba03.webp",
+      "source": "Mapillary",
+      "sourceId": "813331366232087",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_92479be70f8f",
+        "p_23d939a83449"
+      ]
+    },
+    {
+      "id": "p_4e10943ff5f1",
+      "image": "images/p_4e10943ff5f1.webp",
+      "source": "Mapillary",
+      "sourceId": "816292409298863",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_21328bcef114",
+      "image": "images/p_21328bcef114.webp",
+      "source": "Mapillary",
+      "sourceId": "817774895509730",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_d70e4ed2bb11",
+      "image": "images/p_d70e4ed2bb11.webp",
+      "source": "Mapillary",
+      "sourceId": "826159821611221",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_65f99a085409",
+      "image": "images/p_65f99a085409.webp",
+      "source": "Mapillary",
+      "sourceId": "828937707730768",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_80a9535540e5",
+      "image": "images/p_80a9535540e5.webp",
+      "source": "Mapillary",
+      "sourceId": "832413687373838",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_f8e0ef3b7b99"
+      ]
+    },
+    {
+      "id": "p_868cb7bcfc99",
+      "image": "images/p_868cb7bcfc99.webp",
+      "source": "Mapillary",
+      "sourceId": "835360917188902",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_8e825f73c111"
+      ]
+    },
+    {
+      "id": "p_29e07c6bb035",
+      "image": "images/p_29e07c6bb035.webp",
+      "source": "Mapillary",
+      "sourceId": "837678050501286",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_2a326edaa80c",
+      "image": "images/p_2a326edaa80c.webp",
+      "source": "Mapillary",
+      "sourceId": "839112500017971",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_f79b4d8caf73"
+      ]
+    },
+    {
+      "id": "p_7b6ff752e791",
+      "image": "images/p_7b6ff752e791.webp",
+      "source": "Mapillary",
+      "sourceId": "843322272935197",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_e56fffdfd1e8",
+      "image": "images/p_e56fffdfd1e8.webp",
+      "source": "Mapillary",
+      "sourceId": "850357525558268",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_b3b82a092e81"
+      ]
+    },
+    {
+      "id": "p_988d947c9da5",
+      "image": "images/p_988d947c9da5.webp",
+      "source": "Mapillary",
+      "sourceId": "859700394893246",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_d5a11e383b3e",
+      "image": "images/p_d5a11e383b3e.webp",
+      "source": "Mapillary",
+      "sourceId": "895793540982239",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_d972afd99ced",
+      "image": "images/p_d972afd99ced.webp",
+      "source": "Mapillary",
+      "sourceId": "904065803486650",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_4d84925bafb1",
+      "image": "images/p_4d84925bafb1.webp",
+      "source": "Mapillary",
+      "sourceId": "906142240168991",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_308e4dd94f49",
+      "image": "images/p_308e4dd94f49.webp",
+      "source": "Mapillary",
+      "sourceId": "910376319529302",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_4187c6ebfa25"
+      ]
+    },
+    {
+      "id": "p_19c01b421dcc",
+      "image": "images/p_19c01b421dcc.webp",
+      "source": "Mapillary",
+      "sourceId": "914939029082158",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_8ccd728d2e36",
+      "image": "images/p_8ccd728d2e36.webp",
+      "source": "Mapillary",
+      "sourceId": "916161885903583",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_72571d5406ab",
+      "image": "images/p_72571d5406ab.webp",
+      "source": "Mapillary",
+      "sourceId": "917403852163520",
+      "neighborhood": "Bushwick",
+      "nearbyIds": [
+        "p_97da95fc69d1"
+      ]
+    },
+    {
+      "id": "p_7e1f9087ac94",
+      "image": "images/p_7e1f9087ac94.webp",
+      "source": "Mapillary",
+      "sourceId": "925739201538414",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_c11639506fcf",
+      "image": "images/p_c11639506fcf.webp",
+      "source": "Mapillary",
+      "sourceId": "927885824716085",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_b94ea3a58c5d",
+      "image": "images/p_b94ea3a58c5d.webp",
+      "source": "Mapillary",
+      "sourceId": "929935011163972",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_28b906e0f324",
+      "image": "images/p_28b906e0f324.webp",
+      "source": "Mapillary",
+      "sourceId": "934219523790553",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_19e262a4c43f",
+      "image": "images/p_19e262a4c43f.webp",
+      "source": "Mapillary",
+      "sourceId": "934501547400993",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_c250c8e07399",
+      "image": "images/p_c250c8e07399.webp",
+      "source": "Mapillary",
+      "sourceId": "940955939992604",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_d30deda8a1a9",
+      "image": "images/p_d30deda8a1a9.webp",
+      "source": "Mapillary",
+      "sourceId": "949259395889689",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_94c43a89aa87",
+      "image": "images/p_94c43a89aa87.webp",
+      "source": "Mapillary",
+      "sourceId": "953147725495085",
+      "neighborhood": "Ridgewood",
+      "nearbyIds": [
+        "p_e5a7c2f3f642"
+      ]
+    },
+    {
+      "id": "p_b963804d4771",
+      "image": "images/p_b963804d4771.webp",
+      "source": "Mapillary",
+      "sourceId": "958328904931283",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_d83c9062f8f5",
+      "image": "images/p_d83c9062f8f5.webp",
+      "source": "Mapillary",
+      "sourceId": "964110170795730",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_fe7e623f88ac",
+      "image": "images/p_fe7e623f88ac.webp",
+      "source": "Mapillary",
+      "sourceId": "972636883478027",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_2a2de0892132",
+      "image": "images/p_2a2de0892132.webp",
+      "source": "Mapillary",
+      "sourceId": "974819263644061",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_3d5edd641325",
+      "image": "images/p_3d5edd641325.webp",
+      "source": "Mapillary",
+      "sourceId": "977543809655874",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    },
+    {
+      "id": "p_7ae3cac0df3e",
+      "image": "images/p_7ae3cac0df3e.webp",
+      "source": "Mapillary",
+      "sourceId": "984694625700494",
+      "neighborhood": "Bushwick",
+      "nearbyIds": []
+    }
+  ]
+}

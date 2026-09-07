@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <meta
+    name="theme-color"
+    content="#111111"
+  >
+
+  <title>Ridgewood or Bushwick?</title>
+
+  <meta
+    name="description"
+    content="Can you tell Ridgewood from Bushwick? Guess the neighborhood from eight street photos."
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=VT323&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
+</head>
+
+<body>
+
+  <div id="app">
+
+    <!-- =====================================
+         WELCOME
+    ====================================== -->
+
+    <main
+      id="startScreen"
+      class="screen start-screen"
+    >
+
+      <section class="start-background">
+
+        <p class="eyebrow">
+          THE NEIGHBORHOOD GUESSING GAME
+        </p>
+
+        <h1 class="arcade-title">
+          <span class="ridgewood-word">RIDGEWOOD</span>
+          <span class="versus-word">or</span>
+          <span class="bushwick-word">BUSHWICK?</span>
+        </h1>
+
+      </section>
+
+
+      <div
+        id="welcomeOverlay"
+        class="welcome-overlay"
+      >
+
+        <section
+          class="welcome-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="welcomeTitle"
+        >
+
+          
+
+          <h2 id="welcomeTitle">
+            Think you know your way around town?
+          </h2>
+
+          <p>
+            Since the dawn of time there have been two bordering neighborhoods,
+            both very similar to each other, but different in crucial ways.
+            Think you're enough of a new yorker to tell the difference?
+            <br><br>
+            Try the transplant tracker to win acclaim, bragging rights,
+            and/or a blowjob from Aaron Grimes Square.
+            Look at the following 8 photos and choose the right answer.
+          </p>
+
+          <p class="welcome-note">
+            Brought to you by the good folks at Ridgewood Crave.
+          </p>
+
+          <button
+            id="beginButton"
+            class="primary-button"
+            type="button"
+          >
+            <span class="ui-jitter-label">BEGIN</span>
+          </button>
+
+        </section>
+
+      </div>
+
+    </main>
+
+
+    <!-- =====================================
+         GAME
+    ====================================== -->
+
+    <main
+      id="gameScreen"
+      class="screen game-screen hidden"
+      aria-live="polite"
+    >
+
+      <header class="game-header">
+
+        <div class="brand">
+          Ridgewood or Bushwick?
+        </div>
+
+
+        <div class="game-stats">
+
+          <span id="questionProgress">
+            1 / 8
+          </span>
+
+
+          <div
+            id="scoreTracker"
+            class="score-tracker"
+            aria-label="Score: no questions answered yet"
+          >
+
+            <span class="score-dot" data-score-index="0"></span>
+            <span class="score-dot" data-score-index="1"></span>
+            <span class="score-dot" data-score-index="2"></span>
+            <span class="score-dot" data-score-index="3"></span>
+            <span class="score-dot" data-score-index="4"></span>
+            <span class="score-dot" data-score-index="5"></span>
+            <span class="score-dot" data-score-index="6"></span>
+            <span class="score-dot" data-score-index="7"></span>
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <section class="photo-stage">
+
+        <div
+          id="photoFrame"
+          class="photo-frame"
+        >
+
+          <div
+            id="photoLoading"
+            class="photo-loading"
+          >
+            Loading photo…
+          </div>
+
+          <img
+            id="gamePhoto"
+            alt="Street scene in Ridgewood or Bushwick"
+            decoding="async"
+          >
+
+        </div>
+
+
+        <div class="photo-credit">
+          Photo:
+          <span id="photoSource">
+            —
+          </span>
+        </div>
+
+      </section>
+
+
+      <section
+        id="answerArea"
+        class="answer-area"
+      >
+
+        <p class="question-prompt">
+          Where was this photo taken?
+        </p>
+
+
+        <div class="answer-buttons">
+
+          <button
+            id="ridgewoodButton"
+            class="answer-button ridgewood-button"
+            type="button"
+          >
+            <span class="choice-label">RIDGEWOOD</span>
+          </button>
+
+          <button
+            id="bushwickButton"
+            class="answer-button bushwick-button"
+            type="button"
+          >
+            <span class="choice-label">BUSHWICK</span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           ANSWER FEEDBACK
+      ================================== -->
+
+      <section
+        id="feedbackPanel"
+        class="feedback-panel hidden"
+      >
+
+        <div
+          id="feedbackIcon"
+          class="feedback-icon"
+          aria-hidden="true"
+        ></div>
+
+        <h2 id="feedbackTitle"></h2>
+
+        <p id="feedbackText"></p>
+
+        <button
+          id="nextButton"
+          class="primary-button next-button"
+          type="button"
+        >
+            <span class="ui-jitter-label">NEXT PHOTO</span>
+          </button>
+
+      </section>
+
+    </main>
+
+
+    <!-- =====================================
+         RESULTS
+    ====================================== -->
+
+    <main
+      id="resultsScreen"
+      class="screen results-screen hidden"
+    >
+
+      <section class="results-card">
+
+        
+
+
+        <div class="final-score">
+
+          <strong id="finalScore">
+            0
+          </strong>
+
+          <span>
+            / 8
+          </span>
+
+        </div>
+
+
+        <h2 id="resultHeadline">
+          How'd you do?
+        </h2>
+
+        <p id="resultMessage"></p>
+
+
+        <div
+          id="finalScoreTracker"
+          class="final-score-tracker"
+          aria-label="Final question results"
+        ></div>
+
+
+        <div class="results-actions">
+
+          <button
+            id="shareButton"
+            class="primary-button"
+            type="button"
+          >
+            <span class="ui-jitter-label">COPY SCORE TO SHARE</span>
+          </button>
+
+          <button
+            id="playAgainButton"
+            class="secondary-button"
+            type="button"
+          >
+            <span class="ui-jitter-label">PLAY AGAIN</span>
+          </button>
+
+          <a
+            id="followButton"
+            class="follow-button"
+            href="https://x.com/Ridgewood_Crave"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="ui-jitter-label">FOLLOW @RIDGEWOOD_CRAVE</span>
+          </a>
+
+        </div>
+
+
+        <p
+          id="copyConfirmation"
+          class="copy-confirmation hidden"
+          aria-live="polite"
+        >
+          Score copied!
+        </p>
+
+
+        <p class="seen-note">
+          The game tries not to repeat photos
+          you've already seen.
+        </p>
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <div
+    id="announcer"
+    class="sr-only"
+    aria-live="assertive"
+  ></div>
+
+
+  <script
+    src="game.js"
+    defer
+  ></script>
+
+</body>
+
+</html>
