@@ -6918,3 +6918,40 @@ button,
   }
 }
 
+/* BUSHWICK ICON SPACING ONLY */
+#bushwickButton .choice-label {
+  gap: 14px !important;
+}
+
+@media (max-width: 520px) {
+  #bushwickButton .choice-label {
+    gap: 12px !important;
+  }
+}
+
+/* BUSHWICK ICON ALIGNMENT — ICONS ONLY */
+#bushwickButton .choice-label {
+  gap: 8px !important;
+}
+
+#bushwickButton .choice-label::before {
+  transform: translateX(-6px) !important;
+}
+
+#bushwickButton .choice-label::after {
+  transform: translateX(6px) !important;
+}
+
+@media (max-width: 520px) {
+  #bushwickButton .choice-label {
+    gap: 6px !important;
+  }
+
+  #bushwickButton .choice-label::before {
+    transform: translateX(-5px) !important;
+  }
+
+  #bushwickButton .choice-label::after {
+    transform: translateX(5px) !important;
+  }
+}

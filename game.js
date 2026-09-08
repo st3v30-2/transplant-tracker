@@ -1428,12 +1428,9 @@ async function shareScore() {
 
   if (prefersNativeShare()) {
     try {
-      const nativeShareText =
-        text.split("\n").slice(0, -1).join("\n");
-
       await navigator.share({
         title: GAME_NAME,
-        text: nativeShareText,
+        text,
         url: GAME_URL
       });
 
