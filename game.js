@@ -661,7 +661,10 @@ async function loadManifest() {
 // RESET ROUND
 // -----------------------------------------
 
+let analyticsSubmitted = false;
+
 function resetGameState() {
+  analyticsSubmitted = false;
   currentIndex = 0;
   score = 0;
   answers = [];
@@ -1196,6 +1199,55 @@ function resultCopy() {
 }
 
 
+const ANALYTICS_ENDPOINT =
+  "https://transplant-quest-analytics.transplantquest.workers.dev/api/complete";
+
+async function submitAnalytics() {
+  if (
+    analyticsSubmitted ||
+    answers.length !== QUESTION_COUNT
+  ) {
+    return;
+  }
+
+  analyticsSubmitted = true;
+
+  const payload = {
+    score,
+    answers: answers.map(answer => ({
+      id: answer.id,
+      correct: answer.correct
+    }))
+  };
+
+  try {
+    const response = await fetch(
+      ANALYTICS_ENDPOINT,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload),
+        keepalive: true
+      }
+    );
+
+    if (!response.ok) {
+      console.warn(
+        "Analytics submission failed:",
+        response.status
+      );
+    }
+  } catch (error) {
+    console.warn(
+      "Analytics submission failed:",
+      error
+    );
+  }
+}
+
+
 // -----------------------------------------
 // SHOW RESULTS
 // -----------------------------------------
@@ -1216,6 +1268,8 @@ function showResults() {
     copy.message;
 
   renderFinalTracker();
+
+  void submitAnalytics();
 
   copyConfirmation.classList.add(
     "hidden"
