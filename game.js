@@ -1353,7 +1353,7 @@ async function initialize() {
 
     beginButton.disabled = false;
 
-    setButtonText(beginButton, "FINE.");
+    setButtonText(beginButton, "LET'S DO THIS THING");
 
   } catch (error) {
     console.error(error);

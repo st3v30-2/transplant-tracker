@@ -3639,7 +3639,7 @@ button,
 /* Welcome copy update */
 
 .welcome-modal::before {
-  content: "* * * Welcome Neighbor! * * *";
+  content: "* * * TRANSPLANT TRACKER * * *";
 }
 
 
