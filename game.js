@@ -988,7 +988,7 @@ function showResults() {
     "hidden"
   );
 
-  setButtonText(shareButton, "COPY SCORE TO SHARE");
+  setButtonText(shareButton, "SHARE SCORE");
 
   showOnly(resultsScreen);
 
@@ -1032,10 +1032,7 @@ function buildShareText() {
   ].join("\n");
 }
 
-async function copyScore() {
-  const text =
-    buildShareText();
-
+async function copyTextToClipboard(text) {
   let copied = false;
 
   if (
@@ -1053,6 +1050,10 @@ async function copyScore() {
       copied = false;
     }
   }
+
+  /*
+    Older-browser fallback.
+  */
 
   if (!copied) {
     const textarea =
@@ -1091,26 +1092,121 @@ async function copyScore() {
     textarea.remove();
   }
 
+  return copied;
+}
+
+
+/* -----------------------------------------
+   MOBILE / TOUCH DEVICE CHECK
+----------------------------------------- */
+
+function prefersNativeShare() {
+  const touchDevice =
+    navigator.maxTouchPoints > 0;
+
+  const coarsePointer =
+    window.matchMedia &&
+    window.matchMedia(
+      "(pointer: coarse)"
+    ).matches;
+
+  return (
+    typeof navigator.share ===
+      "function" &&
+    (
+      touchDevice ||
+      coarsePointer
+    )
+  );
+}
+
+
+/* -----------------------------------------
+   SHARE BUTTON
+----------------------------------------- */
+
+async function shareScore() {
+  const text =
+    buildShareText();
+
+  /*
+    Phones and tablets:
+    open the operating system's native share menu.
+  */
+
+  if (prefersNativeShare()) {
+    try {
+      await navigator.share({
+        title: GAME_NAME,
+        text
+      });
+
+      return;
+
+    } catch (error) {
+      /*
+        If the player simply closes the share
+        sheet, do nothing.
+      */
+
+      if (
+        error &&
+        error.name ===
+          "AbortError"
+      ) {
+        return;
+      }
+
+      /*
+        If native sharing unexpectedly fails,
+        fall through to clipboard copying.
+      */
+
+      console.warn(
+        "Native sharing failed; using clipboard fallback.",
+        error
+      );
+    }
+  }
+
+
+  /*
+    Desktop:
+    copy the exact formatted score.
+  */
+
+  const copied =
+    await copyTextToClipboard(
+      text
+    );
+
   if (copied) {
     copyConfirmation.classList.remove(
       "hidden"
     );
 
-    setButtonText(shareButton, "SCORE COPIED");
+    setButtonText(
+      shareButton,
+      "SCORE COPIED"
+    );
 
     setTimeout(
       () => {
-        setButtonText(shareButton, "COPY SCORE TO SHARE");
+        setButtonText(
+          shareButton,
+          "SHARE SCORE"
+        );
       },
       1800
     );
 
   } else {
     alert(
-      "Your browser could not copy the score automatically."
+      "Your browser could not share or copy the score automatically."
     );
   }
 }
+
 
 // -----------------------------------------
 // EVENTS
@@ -1149,7 +1245,7 @@ playAgainButton.addEventListener(
 
 shareButton.addEventListener(
   "click",
-  copyScore
+  shareScore
 );
 
 // -----------------------------------------

@@ -5888,3 +5888,368 @@ button,
 
 }
 
+
+/* Results-screen bottom breathing room */
+
+.results-spacer {
+  height: 1em;
+  margin: 10px 0 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+
+/* =========================================================
+   PIXEL MAP SPLASH BACKGROUND
+========================================================= */
+
+#startScreen {
+  position: relative;
+
+  isolation: isolate;
+
+  overflow: hidden;
+
+  background: #000 !important;
+}
+
+
+/* Pixel-art map layer */
+
+#startScreen .splash-map-bg {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+
+  pointer-events: none;
+
+  background-image:
+    url("splash-map.webp");
+
+  background-size:
+    cover;
+
+  background-position:
+    center center;
+
+  background-repeat:
+    no-repeat;
+
+  image-rendering:
+    pixelated;
+
+  filter:
+    brightness(0.72)
+    contrast(1.15)
+    saturate(0.8);
+}
+
+
+/* Dark green-black veil.
+   This is what suppresses the large white areas. */
+
+#startScreen .splash-map-bg::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(0, 10, 0, 0.58) 0%,
+      rgba(0, 5, 0, 0.74) 65%,
+      rgba(0, 0, 0, 0.88) 100%
+    );
+
+  pointer-events: none;
+}
+
+
+/* Keep the existing title/window above the map */
+
+#startScreen .start-background {
+  position: relative;
+
+  z-index: 1;
+}
+
+#startScreen .welcome-overlay {
+  z-index: 50;
+}
+
+
+/* On phones, darken it a little more because
+   more of the map gets cropped behind the modal. */
+
+@media (max-width: 620px) {
+
+  #startScreen .splash-map-bg {
+    background-position:
+      center center;
+
+    filter:
+      brightness(0.62)
+      contrast(1.15)
+      saturate(0.75);
+  }
+
+  #startScreen .splash-map-bg::after {
+    background:
+      rgba(0, 5, 0, 0.76);
+  }
+
+}
+
+
+/* =========================================================
+   SPLASH MAP — VISIBILITY FIX
+========================================================= */
+
+#startScreen .splash-map-bg {
+  background-image: url("splash-map.webp") !important;
+
+  background-size: cover !important;
+  background-position: center center !important;
+
+  opacity: 0.78 !important;
+
+  filter:
+    brightness(0.48)
+    contrast(1.22)
+    saturate(0.75) !important;
+}
+
+
+/* Remove the overly dark second veil from the map itself */
+
+#startScreen .splash-map-bg::after {
+  background:
+    rgba(0, 12, 0, 0.16) !important;
+}
+
+
+/* The modal is already opaque enough to remain readable,
+   so let much more of the map show around it */
+
+#startScreen .welcome-overlay {
+  background:
+    rgba(0, 0, 0, 0.28) !important;
+
+  backdrop-filter:
+    none !important;
+
+  -webkit-backdrop-filter:
+    none !important;
+}
+
+
+/* Keep the actual popup dark and readable */
+
+#startScreen .welcome-modal {
+  background:
+    rgba(0, 5, 0, 0.96) !important;
+}
+
+
+/* Phones get a little more dimming */
+
+@media (max-width: 620px) {
+
+  #startScreen .splash-map-bg {
+    opacity: 0.68 !important;
+
+    filter:
+      brightness(0.42)
+      contrast(1.2)
+      saturate(0.7) !important;
+  }
+
+  #startScreen .welcome-overlay {
+    background:
+      rgba(0, 0, 0, 0.34) !important;
+  }
+
+}
+
+
+/* =========================================================
+   SPLASH BACKGROUND — RESTORED
+   Map experiment disabled
+========================================================= */
+
+#startScreen {
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(57, 255, 20, 0.06),
+      transparent 55%
+    ),
+    #000 !important;
+}
+
+
+/* Hide map layer in case an old cached HTML copy contains it */
+
+#startScreen .splash-map-bg {
+  display: none !important;
+}
+
+
+/* Restore the darker original overlay */
+
+#startScreen .welcome-overlay {
+  background:
+    rgba(0, 0, 0, 0.76) !important;
+
+  backdrop-filter:
+    blur(4px) !important;
+
+  -webkit-backdrop-filter:
+    blur(4px) !important;
+}
+
+
+/* Keep the popup itself unchanged */
+
+#startScreen .welcome-modal {
+  background:
+    rgba(0, 5, 0, 0.97) !important;
+}
+
+
+/* Keep the dotted background box removed */
+
+#startScreen .start-background {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#startScreen .start-background::before,
+#startScreen .start-background::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* =========================================================
+   BRICK WALL SPLASH BACKGROUND
+========================================================= */
+
+#startScreen {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  background:
+    #000 !important;
+}
+
+
+/* Brick texture */
+
+#startScreen::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 0;
+
+  background-image:
+    url("brick-wall-splash.webp");
+
+  background-size:
+    cover;
+
+  background-position:
+    center center;
+
+  background-repeat:
+    no-repeat;
+
+  image-rendering:
+    pixelated;
+
+  filter:
+    brightness(0.46)
+    contrast(1.12)
+    saturate(0.72);
+}
+
+
+/* Dark overlay so the popup remains dominant */
+
+#startScreen::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.40),
+      rgba(0, 0, 0, 0.52)
+    );
+}
+
+
+/* Keep splash content above the wall */
+
+#startScreen .start-background {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* Welcome overlay becomes lighter so the brick remains visible */
+
+#startScreen .welcome-overlay {
+  z-index: 50;
+
+  background:
+    rgba(0, 0, 0, 0.28) !important;
+
+  backdrop-filter:
+    none !important;
+
+  -webkit-backdrop-filter:
+    none !important;
+}
+
+
+/* Actual popup remains dark and readable */
+
+#startScreen .welcome-modal {
+  background:
+    rgba(0, 5, 0, 0.96) !important;
+}
+
+
+/* Phones: slightly darker */
+
+@media (max-width: 620px) {
+
+  #startScreen::before {
+    filter:
+      brightness(0.40)
+      contrast(1.1)
+      saturate(0.68);
+  }
+
+  #startScreen::after {
+    background:
+      rgba(0, 0, 0, 0.50);
+  }
+
+}
+
