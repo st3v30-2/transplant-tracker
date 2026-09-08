@@ -6462,3 +6462,10 @@ button,
 
 }
 
+
+/* Keep splash credit green even after visiting */
+.welcome-credit-link,
+.welcome-credit-link:visited {
+  color: #39ff14 !important;
+}
+
