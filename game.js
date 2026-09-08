@@ -4,7 +4,7 @@
 // GAME ENGINE
 // =========================================
 
-const GAME_NAME = "Transplant Tracker";
+const GAME_NAME = "Transplant Quest";
 
 const QUESTION_COUNT = 8;
 
@@ -36,7 +36,7 @@ const SEEN_STORAGE_KEY =
 // Replace this one value when the game
 // has its real public URL.
 const GAME_URL =
-  "https://st3v30-2.github.io/transplant-tracker/";
+  "https://transplant.quest/";
 
 document.title = GAME_NAME;
 
@@ -703,6 +703,118 @@ function preloadQuestion(index) {
   image.src = photo.image;
 }
 
+function renderPhotoCredit(photo, linked = false) {
+  photoSource.replaceChildren();
+
+  const credit = photo.attribution;
+
+  if (!credit) {
+    photoSource.textContent = photo.source;
+    return;
+  }
+
+  if (!linked) {
+    photoSource.textContent = [
+      credit.contributor,
+      credit.source,
+      credit.license
+    ].filter(Boolean).join(" · ");
+
+    return;
+  }
+
+  const addSeparator = () => {
+    photoSource.appendChild(
+      document.createTextNode(" · ")
+    );
+  };
+
+  if (credit.contributorUrl) {
+    const contributorLink =
+      document.createElement("a");
+
+    contributorLink.href =
+      credit.contributorUrl;
+
+    contributorLink.target =
+      "_blank";
+
+    contributorLink.rel =
+      "noopener noreferrer";
+
+    contributorLink.textContent =
+      credit.contributor;
+
+    photoSource.appendChild(
+      contributorLink
+    );
+  } else {
+    photoSource.appendChild(
+      document.createTextNode(
+        credit.contributor
+      )
+    );
+  }
+
+  addSeparator();
+
+  if (credit.imageUrl) {
+    const sourceLink =
+      document.createElement("a");
+
+    sourceLink.href =
+      credit.imageUrl;
+
+    sourceLink.target =
+      "_blank";
+
+    sourceLink.rel =
+      "noopener noreferrer";
+
+    sourceLink.textContent =
+      credit.source;
+
+    photoSource.appendChild(
+      sourceLink
+    );
+  } else {
+    photoSource.appendChild(
+      document.createTextNode(
+        credit.source
+      )
+    );
+  }
+
+  addSeparator();
+
+  if (credit.licenseUrl) {
+    const licenseLink =
+      document.createElement("a");
+
+    licenseLink.href =
+      credit.licenseUrl;
+
+    licenseLink.target =
+      "_blank";
+
+    licenseLink.rel =
+      "noopener noreferrer";
+
+    licenseLink.textContent =
+      credit.license;
+
+    photoSource.appendChild(
+      licenseLink
+    );
+  } else {
+    photoSource.appendChild(
+      document.createTextNode(
+        credit.license
+      )
+    );
+  }
+}
+
 function displayQuestion() {
   const photo =
     questions[currentIndex];
@@ -728,8 +840,7 @@ function displayQuestion() {
   questionProgress.textContent =
     `${currentIndex + 1} / ${QUESTION_COUNT}`;
 
-  photoSource.textContent =
-    photo.source;
+  renderPhotoCredit(photo, false);
 
   gamePhoto.classList.remove(
     "loaded"
@@ -811,6 +922,59 @@ function startGame() {
 }
 
 // -----------------------------------------
+// PHOTO SOURCES / CENSORING MODAL
+// -----------------------------------------
+
+const photoAboutButton =
+  document.getElementById("photoAboutButton");
+
+const photoAboutModal =
+  document.getElementById("photoAboutModal");
+
+const photoAboutClose =
+  document.getElementById("photoAboutClose");
+
+function openPhotoAbout() {
+  photoAboutModal.classList.remove("hidden");
+  photoAboutClose.focus();
+}
+
+function closePhotoAbout() {
+  photoAboutModal.classList.add("hidden");
+  photoAboutButton.focus();
+}
+
+photoAboutButton.addEventListener(
+  "click",
+  openPhotoAbout
+);
+
+photoAboutClose.addEventListener(
+  "click",
+  closePhotoAbout
+);
+
+photoAboutModal
+  .querySelector(".photo-about-backdrop")
+  .addEventListener(
+    "click",
+    closePhotoAbout
+  );
+
+document.addEventListener(
+  "keydown",
+  event => {
+    if (
+      event.key === "Escape" &&
+      !photoAboutModal.classList.contains("hidden")
+    ) {
+      closePhotoAbout();
+    }
+  }
+);
+
+
+// -----------------------------------------
 // ANSWER
 // -----------------------------------------
 
@@ -840,6 +1004,8 @@ function answerQuestion(guess) {
     answer: photo.neighborhood,
     correct
   });
+
+  renderPhotoCredit(photo, true);
 
   updateScoreTracker(
     currentIndex,
@@ -1077,18 +1243,7 @@ function resultSymbols() {
 }
 
 function buildShareText() {
-  const symbols =
-    resultSymbols();
-
-  const topRow =
-    symbols
-      .slice(0, 4)
-      .join("");
-
-  const bottomRow =
-    symbols
-      .slice(4, 8)
-      .join("");
+  const score = answers.filter((answer) => answer.correct).length;
 
   const shareLabels = [
     "I’M A PATHETIC TRANSPLANT",
@@ -1102,24 +1257,16 @@ function buildShareText() {
     "CERTIFIED NATIVE"
   ];
 
-  const shareLabel =
-    shareLabels[
-      Math.max(
-        0,
-        Math.min(
-          score,
-          shareLabels.length - 1
-        )
-      )
-    ];
+  const symbols = resultSymbols();
+  const row1 = symbols.slice(0, 4).join("");
+  const row2 = symbols.slice(4, 8).join("");
 
   return [
-    `Transplant Tracker ${score}/${QUESTION_COUNT}`,
-    shareLabel,
-    topRow,
-    bottomRow,
-    "Think you can beat me?",
-    GAME_URL
+    "transplant.quest",
+    shareLabels[score],
+    row1,
+    row2,
+    "Think you can beat me?"
   ].join("\n");
 }
 

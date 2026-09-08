@@ -14,7 +14,7 @@
     content="#111111"
   >
 
-  <title>Transplant Tracker</title>
+  <title>Transplant Quest</title>
 
   <meta
     name="description"
@@ -90,11 +90,11 @@
           </h2>
 
           <p>
-            Since the dawn of time the neighboring kingdoms of Ridgewood and Bushwick have lived in side by side in peace, that is… until the arrival of the transplants. These fearsome creatures laid siege to what were once provincial outer-borough enclaves, bringing with them rising rents, matcha lattes, and “experimental” sound collage art.
+            Since the dawn of time the neighboring kingdoms of Ridgewood and Bushwick have lived side by side in peace. That is… until the arrival of the transplants. These fearsome creatures laid siege to what were once provincial outer-borough enclaves, bringing with them rising rents, matcha lattes, and “experimental” sound collage art.
           </p>
 
           <p>
-            Can you prove you’re not one of them? How well do you know the lay of the land? Check out the following 8 photos taken in Ridgewood or Bushwick, and correctly identify where they were taken. Best the transplant tracker to win acclaim, bragging rights, and the chance to enjoy a beer/shot combo with Zohran Mamdani.
+            Can you prove you’re not one of them? How well do you know the lay of the land? Check out the following 8 photos taken in Ridgewood or Bushwick, and correctly identify where they were taken. Conquer the Transplant Quest to win acclaim, bragging rights, and the chance to enjoy a beer/shot combo with Zohran Mamdani.
           </p>
 
           <p class="welcome-note">
@@ -103,7 +103,7 @@
               href="https://x.com/Ridgewood_Crave"
               target="_blank"
               rel="noopener noreferrer"
-            >Brought to you by the good folks at<br>Ridgewood Crave.</a>
+            >Brought to you by the good folks at Ridgewood Crave.</a>
           </p>
 
           <button
@@ -134,7 +134,7 @@
       <header class="game-header">
 
         <div class="brand">
-          TRANSPLANT TRACKER - RIDGEWOOD OR BUSHWICK?
+          TRANSPLANT QUEST - RIDGEWOOD OR BUSHWICK?
         </div>
 
 
@@ -190,11 +190,23 @@
         </div>
 
 
-        <div class="photo-credit">
-          Photo:
-          <span id="photoSource">
-            —
-          </span>
+        <div class="photo-meta-row">
+
+          <button
+            id="photoAboutButton"
+            class="photo-about-button photo-credit"
+            type="button"
+          >
+            ABOUT SOURCES
+          </button>
+
+          <div class="photo-credit">
+            Photo:
+            <span id="photoSource">
+              —
+            </span>
+          </div>
+
         </div>
 
       </section>
@@ -206,7 +218,7 @@
       >
 
         <p class="question-prompt">
-          Where was this photo taken?
+          Where is this?
         </p>
 
 
@@ -368,6 +380,51 @@
     src="game.js"
     defer
   ></script>
+
+
+  <div
+    id="photoAboutModal"
+    class="photo-about-modal hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="photoAboutTitle"
+  >
+    <div class="photo-about-backdrop"></div>
+
+    <div class="photo-about-window">
+      <h2 id="photoAboutTitle">
+        ABOUT PHOTO SOURCES
+      </h2>
+
+      <p>
+        The street-level imagery in Transplant Quest is sourced from Mapillary and KartaView contributors and is used under the Creative Commons Attribution-ShareAlike 4.0 license. Individual contributor, source, and license information appears beneath each photo, and is available to visit once you have answered the question.
+      </p>
+
+      <p>
+        Some images used in this game might be resized, compressed, cropped, or additionally blurred. Some details have been obscured if they would have revealed the location or otherwise spoiled the game.
+      </p>
+
+      <p>
+        The photographs remain credited to their original contributors. Modifications made for Transplant Quest do not imply endorsement by Mapillary, KartaView, or the individual contributors.
+      </p>
+
+      <p class="photo-about-links">
+        <a href="https://www.mapillary.com/" target="_blank" rel="noopener noreferrer">Mapillary</a>
+        ·
+        <a href="https://kartaview.org/" target="_blank" rel="noopener noreferrer">KartaView</a>
+        ·
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+      </p>
+
+      <button
+        id="photoAboutClose"
+        class="photo-about-close"
+        type="button"
+      >
+        OK
+      </button>
+    </div>
+  </div>
 
 </body>
 
