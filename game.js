@@ -1071,8 +1071,8 @@ function resultSymbols() {
   return answers.map(
     answer =>
       answer.correct
-        ? "🟩"
-        : "🟥"
+        ? "🟢"
+        : "🔴"
   );
 }
 
