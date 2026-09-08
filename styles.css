@@ -6712,3 +6712,100 @@ button,
   background-blend-mode: normal !important;
   filter: none !important;
 }
+
+/* =========================================================
+   MOBILE GAMEPLAY — KEEP QUESTION + FEEDBACK ON ONE SCREEN
+========================================================= */
+
+@media (max-width: 699px) {
+
+  #gameScreen {
+    min-height: 100dvh;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  /* Normal question state */
+  #gameScreen .photo-frame {
+    max-height: 42dvh !important;
+  }
+
+  #gameScreen .photo-frame img {
+    width: 100% !important;
+    max-height: 42dvh !important;
+    object-fit: contain !important;
+  }
+
+  #gameScreen .photo-meta-row {
+    margin-top: 3px !important;
+  }
+
+  #gameScreen .photo-credit,
+  #gameScreen .photo-about-button {
+    padding-top: 2px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    line-height: 1.1 !important;
+  }
+
+  #gameScreen .question-prompt {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+
+  #gameScreen .answer-area {
+    padding-top: 4px !important;
+    margin-top: 0 !important;
+  }
+
+  #gameScreen .answer-buttons {
+    gap: 7px !important;
+  }
+
+  #gameScreen .answer-buttons button {
+    min-height: 48px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+
+  /*
+    Once the player answers, shrink the photo further
+    to make room for feedback + NEXT PHOTO.
+  */
+
+  #gameScreen:has(#feedbackPanel:not(.hidden)) .photo-frame {
+    max-height: 29dvh !important;
+  }
+
+  #gameScreen:has(#feedbackPanel:not(.hidden)) .photo-frame img {
+    max-height: 29dvh !important;
+  }
+
+  #gameScreen:has(#feedbackPanel:not(.hidden)) .photo-meta-row {
+    margin-top: 2px !important;
+  }
+
+  #gameScreen #feedbackPanel {
+    margin-top: 5px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    gap: 5px !important;
+  }
+
+  #gameScreen #feedbackPanel .feedback-title {
+    margin-top: 0 !important;
+    margin-bottom: 3px !important;
+  }
+
+  #gameScreen #feedbackPanel .feedback-text {
+    margin-top: 0 !important;
+    margin-bottom: 5px !important;
+  }
+
+  #gameScreen #nextButton {
+    min-height: 46px !important;
+    margin-top: 4px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
