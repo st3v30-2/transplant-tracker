@@ -21,11 +21,11 @@ const CORRECT_MESSAGES = [
 
 const INCORRECT_MESSAGES = [
   `Incorrect! Try looking up from your phone every once in a while!`,
-  `Wrong! What, did your mother never teach you about boundaries?`,
+  `Wrong! Didn’t your mother ever teach you about boundaries?`,
   `Try Again! You wouldn’t know Bushwick from your own damn bush (pubic hair)!`,
   `Missed Again! Are you “Ridgewood Sober” right now?`,
   `Nope! Are you sure you’re not thinking of New Jersey?`,
-  `Yikes! I wouldn’t show my face on the L train if I were you!`,
+  `Yikes! I wouldn’t show my face on the M train if I were you!`,
   `Brutal! You can’t feel good about the decisions you’ve made in life that have led you here.`,
   `Wrong again! Are you fucking stupid?`
 ];
@@ -1062,7 +1062,7 @@ function answerQuestion(guess) {
     incorrectMessageIndex++;
 
     feedbackText.textContent =
-      `That photo was taken in ${photo.neighborhood}.`;
+      `That’s ${photo.neighborhood}.`;
   }
 
   if (
@@ -1133,7 +1133,7 @@ function resultCopy() {
   const results = [
     {
       headline:
-        "TRANSPLANT DETECTED",
+        "TRANSPLANT DETECTED.",
       message:
         "You would probably get lost walking from Myrtle-Wyckoff to Myrtle-Wyckoff."
     },
@@ -1177,7 +1177,7 @@ function resultCopy() {
       headline:
         "LOCAL SICKO.",
       message:
-        "How many roommates did you have in 2017?"
+        "At least 70% of your body must be covered in bad tattoos."
     },
     {
       headline:
