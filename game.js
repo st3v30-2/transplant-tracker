@@ -1316,7 +1316,7 @@ function buildShareText() {
   const row2 = symbols.slice(4, 8).join("");
 
   return [
-    "transplant.quest",
+    "https://transplant.quest/",
     shareLabels[score],
     row1,
     row2,
