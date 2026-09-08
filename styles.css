@@ -6253,3 +6253,100 @@ button,
 
 }
 
+
+/* =========================================================
+   FEEDBACK COPY — EXTRA SPACE BELOW LONG HEADLINES
+========================================================= */
+
+@media (min-width: 700px) {
+
+  #gameScreen .feedback-panel p {
+    margin-top: 10px !important;
+  }
+
+}
+
+@media (max-width: 699px) {
+
+  #gameScreen .feedback-panel p {
+    margin-top: 12px !important;
+  }
+
+}
+
+
+/* =========================================================
+   FEEDBACK COPY — NO OVERLAP
+========================================================= */
+
+@media (min-width: 700px) {
+
+  #gameScreen .feedback-panel:not(.hidden) {
+    grid-template-columns:
+      52px
+      minmax(0, 1fr)
+      210px !important;
+
+    grid-template-rows:
+      auto
+      auto !important;
+
+    grid-template-areas:
+      "icon title button"
+      "icon text button" !important;
+
+    align-content: center !important;
+    align-items: center !important;
+
+    column-gap: 16px !important;
+    row-gap: 7px !important;
+  }
+
+
+  #gameScreen .feedback-panel .feedback-icon {
+    grid-area: icon !important;
+
+    align-self: center !important;
+  }
+
+
+  #gameScreen .feedback-panel h2 {
+    grid-area: title !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    align-self: end !important;
+
+    font-size:
+      clamp(18px, 2vw, 24px) !important;
+
+    line-height: 1.08 !important;
+
+    text-align: left !important;
+  }
+
+
+  #gameScreen .feedback-panel p {
+    grid-area: text !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    align-self: start !important;
+
+    font-size: 18px !important;
+    line-height: 1.15 !important;
+
+    text-align: left !important;
+  }
+
+
+  #gameScreen .feedback-panel .next-button {
+    grid-area: button !important;
+
+    align-self: center !important;
+  }
+
+}
+

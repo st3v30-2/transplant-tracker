@@ -8,6 +8,28 @@ const GAME_NAME = "Transplant Tracker";
 
 const QUESTION_COUNT = 8;
 
+const CORRECT_MESSAGES = [
+  `Right! Keep it going!`,
+  `Correct! You seem to know your way around!`,
+  `Good job! Celebrate by cracking a brew at Billy's Birreria!`,
+  `You got it! This will look great on your Hinge profile.`,
+  `Nice! Reward yourself with a Light Blue American Spirit outside TV Eye.`,
+  `Yes! Yes! Oh god, yes! Don’t Stop!`,
+  `You’re right! You’ve earned the right to complain that Ridgewood was better six months before you moved here.`,
+  `Wow! Are you Zohran Mamdani? Please be honest if you are. Also DM us back.`
+];
+
+const INCORRECT_MESSAGES = [
+  `Incorrect! Try looking up from your phone every once in a while!`,
+  `Wrong! What, did your mother never teach you about boundaries?`,
+  `Try Again! You wouldn’t know Bushwick from your own damn bush (pubic hair)!`,
+  `Missed Again! Are you “Ridgewood Sober” right now?`,
+  `Nope! Are you sure you’re not thinking of New Jersey?`,
+  `Yikes! I wouldn’t show my face on the L train if I were you!`,
+  `Brutal! You can’t feel good about the decisions you’ve made in life that have led you here.`,
+  `Wrong again! Are you fucking stupid?`
+];
+
 const SEEN_STORAGE_KEY =
   "ridgewood-or-bushwick-seen-v1";
 
@@ -118,6 +140,9 @@ let currentIndex = 0;
 let score = 0;
 let answers = [];
 let acceptingAnswer = false;
+
+let correctMessageIndex = 0;
+let incorrectMessageIndex = 0;
 
 // -----------------------------------------
 // HELPERS
@@ -640,6 +665,9 @@ function resetGameState() {
   currentIndex = 0;
   score = 0;
   answers = [];
+
+  correctMessageIndex = 0;
+  incorrectMessageIndex = 0;
   acceptingAnswer = false;
 
   resetScoreTracker();
@@ -839,7 +867,14 @@ function answerQuestion(guess) {
       "✓";
 
     feedbackTitle.textContent =
-      "Correct!";
+      CORRECT_MESSAGES[
+        Math.min(
+          correctMessageIndex,
+          CORRECT_MESSAGES.length - 1
+        )
+      ];
+
+    correctMessageIndex++;
 
     feedbackText.textContent =
       `That's ${photo.neighborhood}.`;
@@ -848,7 +883,14 @@ function answerQuestion(guess) {
       "X";
 
     feedbackTitle.textContent =
-      "Not quite.";
+      INCORRECT_MESSAGES[
+        Math.min(
+          incorrectMessageIndex,
+          INCORRECT_MESSAGES.length - 1
+        )
+      ];
+
+    incorrectMessageIndex++;
 
     feedbackText.textContent =
       `That photo was taken in ${photo.neighborhood}.`;
@@ -919,49 +961,74 @@ function renderFinalTracker() {
 // -----------------------------------------
 
 function resultCopy() {
-  if (score === 8) {
-    return {
+  const results = [
+    {
       headline:
-        "Perfect score.",
+        "TRANSPLANT DETECTED",
       message:
-        "You know your Ridgewood from your Bushwick."
-    };
-  }
-
-  if (score >= 6) {
-    return {
+        "You would probably get lost walking from Myrtle-Wyckoff to Myrtle-Wyckoff."
+    },
+    {
       headline:
-        "Neighborhood expert.",
+        "NEW IN TOWN?",
       message:
-        "You clearly know your way around the border."
-    };
-  }
-
-  if (score >= 4) {
-    return {
+        "Don’t worry. Your broker probably told you this was East East Williamsburg anyway."
+    },
+    {
       headline:
-        "Not bad.",
+        "YOU SEEM CONFUSED.",
       message:
-        "The Ridgewood–Bushwick border can be trickier than it looks."
-    };
-  }
-
-  if (score >= 2) {
-    return {
+        "Try exploring more than just your local coffee shop."
+    },
+    {
       headline:
-        "The border got you.",
+        "BORDERLINE LOCAL.",
       message:
-        "A few more walks around the neighborhood might help."
-    };
-  }
+        "You know just enough to correct someone and still be wrong."
+    },
+    {
+      headline:
+        "EH. 50% LOCAL.",
+      message:
+        "A coin could have done this well, but a coin can’t complain about the rent."
+    },
+    {
+      headline:
+        "RIDGEWOOD ADJACENT.",
+      message:
+        "You’re one rent increase away from becoming genuinely insufferable."
+    },
+    {
+      headline:
+        "DIVE BAR CARTOGRAPHER.",
+      message:
+        "You clearly know your way around. Now get a job."
+    },
+    {
+      headline:
+        "LOCAL SICKO.",
+      message:
+        "How many roommates did you have in 2017?"
+    },
+    {
+      headline:
+        "CERTIFIED NATIVE.",
+      message:
+        "Congratulations. You may now correct strangers about whether they’re technically in Ridgewood. Ridgewood Crave."
+    }
+  ];
 
-  return {
-    headline:
-      "Time for a neighborhood walk.",
-    message:
-      "Ridgewood and Bushwick had you guessing this time."
-  };
+  return results[
+    Math.max(
+      0,
+      Math.min(
+        score,
+        results.length - 1
+      )
+    )
+  ];
 }
+
 
 // -----------------------------------------
 // SHOW RESULTS
@@ -1023,8 +1090,32 @@ function buildShareText() {
       .slice(4, 8)
       .join("");
 
+  const shareLabels = [
+    "I’M A PATHETIC TRANSPLANT",
+    "I’M NEW IN TOWN",
+    "I AM CONFUSED",
+    "I’M BORDERLINE LOCAL",
+    "I’M 50% LOCAL",
+    "I’M RIDGEWOOD ADJACENT",
+    "DIVE BAR CARTOGRAPHER",
+    "LOCAL SICKO",
+    "CERTIFIED NATIVE"
+  ];
+
+  const shareLabel =
+    shareLabels[
+      Math.max(
+        0,
+        Math.min(
+          score,
+          shareLabels.length - 1
+        )
+      )
+    ];
+
   return [
-    `TransplantTracker ${score}/${QUESTION_COUNT}`,
+    `Transplant Tracker ${score}/${QUESTION_COUNT}`,
+    shareLabel,
     topRow,
     bottomRow,
     "Think you can beat me?",
