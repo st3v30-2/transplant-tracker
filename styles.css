@@ -6809,3 +6809,112 @@ button,
   }
 }
 
+
+/* RIDGEWOOD BUTTON — INVERT BLACK/WHITE */
+#ridgewoodButton {
+  filter: invert(1) !important;
+}
+
+
+/* ANSWER BUTTON CASTLE ICONS */
+
+#ridgewoodButton .choice-label,
+#bushwickButton .choice-label {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+}
+
+#ridgewoodButton .choice-label::before,
+#ridgewoodButton .choice-label::after,
+#bushwickButton .choice-label::before,
+#bushwickButton .choice-label::after {
+  content: "" !important;
+  display: inline-block !important;
+
+  width: 17px !important;
+  height: 17px !important;
+  flex: 0 0 17px !important;
+
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+
+  filter: invert(1) !important;
+}
+
+#ridgewoodButton .choice-label::before,
+#ridgewoodButton .choice-label::after {
+  background-image: url("ridgewood-castle.svg") !important;
+}
+
+#bushwickButton .choice-label::before,
+#bushwickButton .choice-label::after {
+  background-image: url("bushwick-castle.svg") !important;
+}
+
+@media (max-width: 520px) {
+  #ridgewoodButton .choice-label,
+  #bushwickButton .choice-label {
+    gap: 6px !important;
+  }
+
+  #ridgewoodButton .choice-label::before,
+  #ridgewoodButton .choice-label::after,
+  #bushwickButton .choice-label::before,
+  #bushwickButton .choice-label::after {
+    width: 14px !important;
+    height: 14px !important;
+    flex-basis: 14px !important;
+  }
+}
+
+
+
+/* Slightly larger answer-button icons */
+
+#ridgewoodButton .choice-label::before,
+#ridgewoodButton .choice-label::after,
+#bushwickButton .choice-label::before,
+#bushwickButton .choice-label::after {
+  width: 21px !important;
+  height: 21px !important;
+  flex-basis: 21px !important;
+}
+
+@media (max-width: 520px) {
+  #ridgewoodButton .choice-label::before,
+  #ridgewoodButton .choice-label::after,
+  #bushwickButton .choice-label::before,
+  #bushwickButton .choice-label::after {
+    width: 17px !important;
+    height: 17px !important;
+    flex-basis: 17px !important;
+  }
+}
+
+
+
+/* Max-safe answer-button icon size */
+
+#ridgewoodButton .choice-label::before,
+#ridgewoodButton .choice-label::after,
+#bushwickButton .choice-label::before,
+#bushwickButton .choice-label::after {
+  width: 24px !important;
+  height: 24px !important;
+  flex-basis: 24px !important;
+}
+
+@media (max-width: 520px) {
+  #ridgewoodButton .choice-label::before,
+  #ridgewoodButton .choice-label::after,
+  #bushwickButton .choice-label::before,
+  #bushwickButton .choice-label::after {
+    width: 20px !important;
+    height: 20px !important;
+    flex-basis: 20px !important;
+  }
+}
+
