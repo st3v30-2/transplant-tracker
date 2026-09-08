@@ -6692,3 +6692,23 @@ button,
 }
 
 .photo-meta-row .photo-about-button { font-size: 16px !important; line-height: inherit !important; }
+
+/* FINAL RESULTS — BRICK WALL BACKGROUND */
+#resultsScreen {
+  background-image: linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.68)), url("brick-wall-splash.webp") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+#resultsScreen {
+  background-image: linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.76)), url("brick-wall-splash.webp") !important;
+  background-blend-mode: multiply !important;
+  filter: saturate(0.82) !important;
+}
+
+#resultsScreen {
+  background-image: linear-gradient(rgba(0,0,0,0.64), rgba(0,0,0,0.72)), url("brick-wall-splash.webp") !important;
+  background-blend-mode: normal !important;
+  filter: none !important;
+}
