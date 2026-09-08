@@ -1071,7 +1071,7 @@ function answerQuestion(guess) {
   ) {
     setButtonText(nextButton, "SEE MY SCORE");
   } else {
-    setButtonText(nextButton, "NEXT PHOTO");
+    setButtonText(nextButton, "NEXT");
   }
 }
 
@@ -1316,11 +1316,11 @@ function buildShareText() {
   const row2 = symbols.slice(4, 8).join("");
 
   return [
-    "https://transplant.quest/",
     shareLabels[score],
     row1,
     row2,
-    "Think you can beat me?"
+    "Think you can beat me?",
+    "https://transplant.quest/"
   ].join("\n");
 }
 
@@ -1428,9 +1428,13 @@ async function shareScore() {
 
   if (prefersNativeShare()) {
     try {
+      const nativeShareText =
+        text.split("\n").slice(0, -1).join("\n");
+
       await navigator.share({
         title: GAME_NAME,
-        text
+        text: nativeShareText,
+        url: GAME_URL
       });
 
       return;
